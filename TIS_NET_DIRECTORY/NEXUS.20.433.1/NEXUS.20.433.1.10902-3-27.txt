@@ -2,12 +2,13 @@
 
 
 @1
+
    MOV -1   ACC
    ADD UP
 
-N: SWP
-   MOV -1   ACC
+N: SAV
 
+   MOV -1   ACC
    ADD 1
    JRO DOWN
 
@@ -19,12 +20,15 @@ N: SWP
 
 
 @3
+#X,0 -> OUT(N)
 
+#0,1 -> OUT(N+1)
+#1,1 -> OUT(2N+1)
 
 @4
 N: MOV 1    UP
-   MOV UP   ACC
 
+   MOV UP   ACC
 G: MOV -1   ANY
 E: MOV 2    DOWN
    SUB DOWN
@@ -32,28 +36,14 @@ E: MOV 2    DOWN
 
    ADD 1
    JNZ N
-   MOV 2    UP
-   MOV 2    DOWN
+Z: MOV 2    UP
+   MOV 2    ANY
    MOV UP   ACC
    JGZ E
-   MOV 1    DOWN
+   MOV 1    LAST
 
 @5
-#N: MOV 1    UP
-#   MOV 1  DOWN
-#   MOV UP   ACC
-#JRO 3
-#G: MOV -1   ANY
-#E: MOV 0  DOWN
-#   SUB DOWN
-#   JGZ G
-#   ADD 1
-#   JNZ N
-#   MOV 2    UP
-#   MOV 0  DOWN
-#   MOV UP   ACC
-#   JGZ E
-#   MOV -999  DOWN
+
 
 @6
 
@@ -63,20 +53,17 @@ E: MOV 2    DOWN
 
 @8
    ADD 1
+
 J: JRO UP
 
    MOV 0   ACC
 
-   MOV ACC ANY
+O: MOV ACC ANY
+
    JNZ J
 
 @9
 
-#   SUB UP
-#   JGZ G
-#   MOV 0   ACC
-
-#G: MOV ACC ANY
 
 @10
 

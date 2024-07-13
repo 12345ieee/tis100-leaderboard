@@ -1,0 +1,50 @@
+@0
+
+
+@1
+   SUB UP
+   MOV 1   ANY
+   MOV UP  ANY
+L: ADD 1
+   MOV ACC ANY
+   JLZ L
+
+@2
+MOV LEFT DOWN
+
+@3
+
+
+@4
+
+
+@5
+
+
+@6
+MOV ACC ANY
+JRO UP
+MOV UP ACC
+
+@7
+
+
+@8
+
+
+@9
+
+
+@10
+   MOV UP  LAST
+   JLZ L
+   MOV -1  LAST
+
+S: MOV 0   ANY
+   MOV ACC DOWN
+   SUB 599
+
+L: ADD 20
+
+@11
+

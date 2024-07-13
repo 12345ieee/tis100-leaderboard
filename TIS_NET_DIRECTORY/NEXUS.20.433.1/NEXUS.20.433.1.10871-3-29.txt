@@ -1,0 +1,64 @@
+@0
+
+
+@1
+S: MOV -1   ACC
+   ADD UP
+   JRO 2
+
+   SWP
+   MOV ACC  DOWN
+   JEZ S
+   SAV
+
+   MOV -1   ACC
+   ADD 1
+   JRO DOWN
+
+@2
+
+
+@3
+
+
+@4
+   MOV UP   ACC
+G: MOV -1   ANY
+E: MOV 2    DOWN
+   SUB DOWN
+   JGZ G
+   ADD 1
+   JNZ N
+Z: MOV -5   UP
+   MOV 2    DOWN
+   MOV UP   ACC
+   JGZ E
+   MOV 1    DOWN
+   JRO -999
+N: MOV -6   UP
+
+@5
+
+
+@6
+
+
+@7
+
+
+@8
+   ADD 1
+
+J: JRO UP
+
+   MOV 0   ACC
+
+O: MOV ACC ANY
+
+   JNZ J
+
+@9
+
+
+@10
+

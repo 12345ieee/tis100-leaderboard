@@ -1,6 +1,5 @@
 @0
-#HERSMUNCH
-#701/5/58
+
 
 @1
    MOV -199 ACC
@@ -23,7 +22,9 @@ L: MOV 4    DOWN
 
 
 @3
-
+#!MOV 430 ACC
+#L: SUB 1
+#JGZ L
 
 @4
    JRO UP

@@ -1,0 +1,75 @@
+@0
+   MOV UP    ACC
+   MOV DOWN  LEFT
+L: MOV 0     RIGHT
+   JMP O
+L2:MOV LEFT  RIGHT
+O: SUB 1
+   JNZ L2
+   MOV LEFT  ACC
+   ADD 1
+L3:MOV ACC   LEFT
+   MOV RIGHT ACC
+   JNZ L3
+   MOV UP    ACC
+   JNZ L
+   MOV LEFT  DOWN
+
+@1
+   MOV 0    RIGHT
+   MOV -100 UP
+   MOV -100 UP
+   MOV -100 UP
+   MOV -100 UP
+   MOV -100 UP
+
+L2:MOV ACC  RIGHT
+   MOV UP   ACC
+   MOV ACC  RIGHT
+   JNZ L2
+
+   MOV 0    RIGHT
+
+@2
+T: MOV LEFT UP
+   MOV UP   ACC
+K: ADD LEFT
+   MOV -2   DOWN
+Z: SUB LEFT
+   JGZ K
+   JLZ W
+   ADD LEFT
+   MOV -5   DOWN
+   JMP Z
+W: MOV LEFT ACC
+   JEZ T
+   MOV -7   DOWN
+   JMP Z
+
+@3
+##NODE&CYCLE
+
+#BY CSABOKA
+
+@4
+
+
+@5
+   MOV -5  ACC
+   MOV UP  NIL
+
+   SAV
+   JMP Q
+   SWP
+   MOV -6  ACC
+   SWP
+Q: ADD 1
+   JEZ D
+   JRO UP
+
+D: SWP
+   ADD 6
+   MOV ACC DOWN
+
+@6
+

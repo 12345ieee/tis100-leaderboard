@@ -1,0 +1,60 @@
+@0
+   MOV ANY  ACC
+   MOV ACC  DOWN
+   JNZ N
+
+Z: MOV 0    DOWN
+   JRO 6
+
+N: MOV LAST ACC
+   MOV ACC  DOWN
+   MOV ACC  DOWN
+   JNZ N
+
+L: MOV ACC  RIGHT
+   MOV DOWN ACC
+   JNZ L
+
+@1
+
+
+@2
+#7
+#31
+#55
+#79
+#103
+#127
+#151
+
+@3
+S: MOV ACC  DOWN
+   JMP E
+
+E2:MOV DOWN ACC
+   MOV UP   DOWN
+L: MOV ACC  DOWN
+   SUB UP
+   JLZ E2
+E: MOV UP   ACC
+   JNZ L
+
+O: MOV ANY  RIGHT
+O2:MOV ANY  ACC
+   MOV ACC  ANY
+   JNZ O2
+
+@4
+MOV LEFT DOWN
+
+@5
+
+
+@6
+#!MOV UP UP
+
+@7
+MOV UP DOWN
+
+@8
+

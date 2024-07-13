@@ -36,9 +36,9 @@ Z: SWP
    MOV UP  ACC
    MOV ACC RIGHT
    JMP N
-
 L: MOV UP  RIGHT
    SWP
+
 N: SAV
    MOV UP  RIGHT
    SUB UP

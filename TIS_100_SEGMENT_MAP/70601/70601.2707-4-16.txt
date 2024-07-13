@@ -1,13 +1,12 @@
 @0
-#HERSMUNCH
-#2707/4/16
+
 
 @1
-   MOV ANY  ACC
-   SUB 1
-G: MOV LAST ANY
-   SUB 1
-   JGZ G
+   SUB ANY
+   ADD 1
+L: MOV LAST ANY
+   ADD 1
+   JLZ L
 
 @2
 MOV LEFT ACC
@@ -36,13 +35,14 @@ MOV UP DOWN
 
 
 @10
-   MOV 0   DOWN
+S: MOV 0   ANY
    MOV ACC DOWN
    SUB 599
 
-L: MOV UP  DOWN
-   ADD 20
+L: ADD 20
+   MOV UP  LAST
    JLZ L
-   MOV -1  DOWN
+   MOV -1  LAST
 
 @11
+

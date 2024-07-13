@@ -1,0 +1,99 @@
+@0
+#MOV 9 RIGHT
+#MOV 8 RIGHT
+#MOV 7 RIGHT
+#MOV 6 RIGHT
+#MOV 5 RIGHT
+#MOV 4 RIGHT
+#MOV 3 RIGHT
+#MOV 2 RIGHT
+#MOV -1 RIGHT
+
+#2 < LEN <= 8
+
+@1
+#  MOV UP ACC#
+#  JRO 3      #
+S: MOV UP  ACC
+   MOV ACC RIGHT
+   #MOV ACC RIGHT
+   SWP
+   ADD 10  #N
+   SWP
+   JGZ S
+
+   SWP
+   ADD 1  #M
+G: SUB 2   #L
+   JGZ G
+
+@2
+
+
+@3
+#ADD 6,SUB 4#IDEAL
+#3->24-4=20 =0->20
+#4->30-4=26 =1->25
+#5...    32  2->30
+#...
+#8  54-4=50 =5->45
+
+#ADD 5, ADD 3
+#3 20+3=23
+#4 25+3=28
+#8 45+3=48
+
+#HMM BUT -1 IN ACC
+#ON ALL BUT 1ST
+#RUN
+
+@4
+#N  M  L
+
+#NO [0] SKIP
+#6  4  1 = 749
+#12 10 2 = 747
+#11 5  2 = 743
+
+#[0] SKIP
+#11 6  2 = 726
+
+@5
+  MOV ACC  RIGHT#
+  MOV UP   ACC
+  MOV ACC   DOWN
+S: MOV ACC   RIGHT
+   MOV UP    ACC
+   MOV ACC   DOWN
+   MOV ACC   DOWN
+   JGZ S
+G: MOV ACC   UP
+   MOV RIGHT ACC
+   JGZ G
+
+O: MOV UP    ACC
+   MOV ACC   DOWN
+   JGZ O
+
+@6
+
+
+@7
+S: MOV UP  ACC
+   JLZ L
+   NEG
+   SAV
+   ADD UP
+   JLZ S
+   SUB UP
+   JRO -3
+O: MOV ACC DOWN
+L: SWP
+   SAV
+   ADD UP
+   JGZ O
+   JEZ O
+E: MOV -1  DOWN
+
+@8
+

@@ -63,8 +63,7 @@ X: MOV 0  LEFT
    JMP 1
 
 @4
-#HERSMUNCH
-#234/6/47
+
 
 @5
 
@@ -82,3 +81,4 @@ MOV UP DOWN
 MOV UP DOWN
 
 @10
+

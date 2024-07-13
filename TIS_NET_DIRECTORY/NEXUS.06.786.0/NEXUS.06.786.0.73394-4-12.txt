@@ -1,0 +1,40 @@
+@0
+#MOV 102 ANY
+
+@1
+#MOV LEFT  RIGHT
+MOV UP    RIGHT
+MOV RIGHT NIL
+
+@2
+   MOV 96   ANY
+   ADD ANY
+   ADD -99
+G: SUB 1
+   JGZ G
+   NOP
+
+@3
+#MOV 100 ANY
+
+@4
+
+
+@5
+MOV ANY ACC
+ADD 1
+MOV ACC DOWN
+
+@6
+
+
+@7
+
+
+@8
+#MOV RIGHT LEFT
+
+@9
+MOV UP ANY
+
+@10

@@ -1,0 +1,50 @@
+@0
+MOV -5 ACC
+ADD RIGHT
+MOV ACC DOWN
+
+@1
+MOV UP  ACC
+ADD ACC
+MOV ACC LEFT
+
+@2
+MOV UP DOWN
+
+@3
+
+
+@4
+MOV UP RIGHT
+
+@5
+MOV LEFT DOWN
+
+@6
+MOV UP DOWN
+
+@7
+
+
+@8
+#MOV UP  ANY
+MOV ANY ANY
+
+@9
+   JMP J
+   MOV ANY  ACC
+   JMP J
+   SWP
+   MOV ANY  ACC
+   SWP
+J: JRO UP
+   SWP
+   JRO 3
+   MOV ACC  DOWN
+   JMP J
+   MOV ACC  LEFT
+   SWP
+   ADD LEFT
+
+@10
+MOV UP LEFT

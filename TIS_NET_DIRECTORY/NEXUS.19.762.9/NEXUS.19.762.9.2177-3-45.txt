@@ -19,8 +19,7 @@ Z: MOV LEFT ACC
 
 
 @2
-#HERSMUNCH
-#2177/3/45
+
 
 @3
 

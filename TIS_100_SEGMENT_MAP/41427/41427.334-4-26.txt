@@ -1,6 +1,5 @@
 @0
-#HERSMUNCH
-#334/4/26
+
 
 @1
 MOV UP  ACC
@@ -28,8 +27,8 @@ MOV UP DOWN
 @8
    MOV UP  RIGHT
    JMP G
-L: MOV -3  RIGHT
-   MOV UP  ACC
+L: MOV UP  ACC
+   MOV -3  RIGHT
    MOV ACC RIGHT
    MOV ACC RIGHT
    SWP
@@ -38,8 +37,8 @@ E: SAV
    JLZ L
 G: MOV UP  ACC
    JNZ E
-Z: SWP
-   MOV 1   RIGHT
+Z: MOV 1   RIGHT
+   SWP
    MOV ACC DOWN
 
 @9
@@ -55,3 +54,4 @@ L: JRO LEFT
    MOV ACC  DOWN
 
 @10
+

@@ -1,0 +1,70 @@
+@0
+#MOV -1    ACC
+MOV -5    ACC
+ADD RIGHT
+MOV ACC   DOWN
+
+@1
+#MOV UP  ACC
+#ADD ACC
+#MOV ACC LAST
+
+MOV UP  ACC
+ADD ACC
+MOV ACC LAST
+
+MOV UP  ACC
+ADD ACC
+MOV ACC ANY
+
+@2
+#MOV UP LAST
+MOV UP ANY
+
+@3
+
+
+@4
+#   JMP J
+#   MOV -5 DOWN
+#J: JRO UP
+#   MOV -3 DOWN
+#   JMP J
+#   MOV -1 DOWN
+#   JMP J
+#   MOV 3  DOWN
+#   JMP J
+#   MOV 1  DOWN
+MOV UP DOWN
+
+@5
+MOV DOWN DOWN
+
+@6
+MOV UP DOWN
+
+@7
+
+
+@8
+MOV UP RIGHT
+
+@9
+   MOV RIGHT ACC
+   JMP J
+   SWP
+   MOV RIGHT ACC
+   SWP
+J: JRO LEFT
+   SWP
+   JRO 3
+   MOV ACC   DOWN
+   JMP J
+   #SWP
+   MOV ACC   UP
+   SWP
+   ADD UP
+   JMP J
+
+@10
+MOV UP LEFT

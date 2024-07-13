@@ -18,8 +18,7 @@ Z: MOV LEFT ACC
 
 
 @2
-#HERSMUNCH
-#2214/3/38
+
 
 @3
 
@@ -64,3 +63,4 @@ N: MOV LEFT ACC
    JNZ N
 
 @8
+

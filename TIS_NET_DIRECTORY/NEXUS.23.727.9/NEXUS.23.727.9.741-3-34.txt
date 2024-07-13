@@ -4,7 +4,7 @@
    ADD ACC
    SUB LEFT
    MOV ACC  DOWN
-   MOV 0    LEFT
+   MOV -0   LEFT#7
    JRO 3
 L: SUB 2
    MOV DOWN LEFT
@@ -19,20 +19,23 @@ O: MOV ACC  DOWN
 
 
 @2
-#HERSMUNCH
-#741/3/34
+
 
 @3
 
 
 @4
-   ADD 8
-S: SUB 1
+   ADD 8#49
+S: SUB 1#8
    MOV ACC DOWN
    JGZ S
-
+   #MOV ACC DOWN
+   #MOV ANY ANY
+   #MOV ANY ANY
+   #MOV ANY ANY
+   #MOV ANY ANY
    MOV ANY ANY
-   JRO -1
+   JRO -1#5
 
 @5
 
@@ -45,7 +48,7 @@ N: MOV ACC  LEFT
 N2:MOV UP   ACC
    JGZ N
 
-   SUB UP
+   SUB UP#ADD UP
    JRO 3
 G: MOV LEFT UP
    ADD 2

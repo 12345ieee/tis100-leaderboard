@@ -1,0 +1,63 @@
+@0
+
+
+@1
+   #MOV UP  ACC
+   JRO 2#JEZ Z
+#   MOV ACC RIGHT
+#   MOV UP  ACC
+#   JEZ 1
+#   MOV ACC RIGHT
+#   MOV UP  ACC
+#   JNZ N
+#1: MOV 1   DOWN
+#   JRO -99
+N: MOV ACC RIGHT
+   MOV UP  ACC
+   JNZ N
+Z: MOV 1   DOWN
+O: MOV -99 DOWN
+
+@2
+
+
+@3
+MOV -1 ANY
+NOP
+NOP
+
+@4
+MOV 8    ACC
+SUB 1
+JRO ANY
+MOV ACC  RIGHT
+
+JRO ACC
+MOV 0    DOWN
+JRO UP
+#JRO UP
+#JRO UP
+#!MOV LEFT NIL
+#MOV 6    ACC
+#JRO -10
+
+@5
+#   MOV UP   ACC
+#   JEZ Z
+   JRO LEFT
+   MOV UP   DOWN
+   MOV UP   DOWN
+   MOV UP   DOWN
+   MOV UP   DOWN
+   MOV UP   DOWN
+#   MOV ACC  DOWN
+Z: MOV 0    DOWN
+
+@6
+
+
+@7
+MOV UP DOWN
+
+@8
+

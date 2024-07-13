@@ -13,8 +13,7 @@ L: SUB 1#C
    JGZ L
 
 @1
-#HERSMUNCH
-#1541/3/35
+
 
 @2
 #7

@@ -1,6 +1,5 @@
 @0
-#HERSMUNCH
-#558/4/36
+
 
 @1
    MOV UP  DOWN
@@ -68,3 +67,4 @@ MOV 3    DOWN
 MOV -1   DOWN
 
 @10
+

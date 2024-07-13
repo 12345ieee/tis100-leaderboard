@@ -12,11 +12,10 @@ L: MOV ACC  RIGHT
 
 
 @2
-#HERSMUNCH
-#1503/4/26
+
 
 @3
-   MOV 0    DOWN
+   MOV ACC  DOWN
    MOV UP   NIL
    JMP E
 L: MOV DOWN ACC
@@ -48,3 +47,4 @@ N: MOV ACC  DOWN
 MOV UP DOWN
 
 @8
+

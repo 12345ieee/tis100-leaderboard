@@ -1,6 +1,5 @@
 @0
-#HERSMUNCH
-#649/4/25
+
 
 @1
    MOV UP ACC

@@ -1,8 +1,8 @@
 @0
-#HERSMUNCH
-#318/4/23
+
 
 @1
+#   MOV ANY ANY
 S: MOV UP  ACC
    ADD ACC
    ADD 1
@@ -12,13 +12,14 @@ S: MOV UP  ACC
    MOV ANY ANY
 
 @2
+#MOV UP LAST
 MOV UP ANY
 
 @3
 
 
 @4
-
+#MOV RIGHT RIGHT
 
 @5
 MOV ANY DOWN

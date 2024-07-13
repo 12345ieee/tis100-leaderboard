@@ -1,0 +1,56 @@
+@0
+MOV UP DOWN
+
+#MOV 3  ACC
+#SUB UP
+
+#JRO ACC
+
+@1
+#G E L
+#0 1 0
+#0 0 1
+#1 0 0
+
+
+#0 = 0
+#1 = 1
+#2 = 0
+
+#G:02
+#E:12
+#L:01
+
+@2
+
+
+@3
+
+
+@4
+MOV UP DOWN
+
+@5
+MOV UP RIGHT
+
+@6
+MOV LEFT RIGHT
+MOV 0    ANY
+MOV 1    ANY
+
+@7
+   MOV LEFT ACC
+   JGZ N
+   JEZ Z
+N: MOV LEFT RIGHT
+   MOV 0    DOWN
+
+   MOV LEFT ACC
+   JGZ N
+   JLZ N
+
+Z: MOV LEFT DOWN
+   MOV 0    RIGHT
+
+@8
+MOV LEFT ANY

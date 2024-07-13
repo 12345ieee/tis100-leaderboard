@@ -27,13 +27,13 @@ MOV ACC LEFT
 
 
 @5
-   MOV ANY ACC
+   MOV UP  ACC
    JMP S
 
-G: ADD ANY
+G: ADD UP
    MOV -2  ANY
 
-S: SUB ANY
+S: SUB UP
    JGZ G
 
    MOV -3  ANY

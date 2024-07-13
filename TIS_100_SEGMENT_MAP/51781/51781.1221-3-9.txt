@@ -1,0 +1,38 @@
+@0
+#1221/3/9
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+MOV 3 DOWN
+MOV 0 DOWN
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+MOV ANY DOWN
+
+@10
+   MOV 0   ANY
+   MOV ACC ANY
+   SUB 539
+L: ADD 18
+   JLZ L
+   MOV -1  ANY

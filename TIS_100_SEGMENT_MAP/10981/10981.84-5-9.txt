@@ -27,7 +27,6 @@ MOV ANY DOWN
 
 
 @8
-MOV UP DOWN
+MOV ANY DOWN
 
 @9
-

@@ -1,0 +1,42 @@
+@0
+
+
+@1
+MOV RIGHT DOWN
+MOV UP    DOWN
+
+@2
+S: MOV RIGHT LEFT
+   MOV UP    ACC
+
+   JLZ L
+   JEZ S
+
+L: MOV DOWN  NIL
+   MOV 0     DOWN
+
+@3
+MOV UP LEFT
+
+@4
+
+
+@5
+MOV UP RIGHT
+
+@6
+MOV ANY ANY
+
+@7
+
+
+@8
+
+
+@9
+MOV UP  ACC
+ADD UP
+MOV ACC DOWN
+
+@10
+

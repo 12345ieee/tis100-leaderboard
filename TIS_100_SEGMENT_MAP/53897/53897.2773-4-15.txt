@@ -1,0 +1,46 @@
+@0
+#HERSMUNCH
+#2773/4/15
+
+@1
+   SUB UP
+
+L: ADD 18
+   MOV ACC ANY
+   SUB 17
+   JEZ Z
+   MOV 0   LAST
+   JMP L
+
+Z: MOV 1   ANY
+
+@2
+MOV LEFT DOWN
+
+@3
+
+
+@4
+
+
+@5
+
+
+@6
+MOV UP DOWN
+
+@7
+
+
+@8
+
+
+@9
+MOV ACC DOWN
+MOV UP  DOWN
+MOV 3   DOWN
+MOV -1  DOWN
+
+ADD UP
+
+@10

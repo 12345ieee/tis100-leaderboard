@@ -1,0 +1,47 @@
+@0
+#HERSMUNCH
+#7760/5/18
+
+@1
+MOV UP DOWN
+MOV 0  DOWN
+MOV 0  DOWN
+
+@2
+
+
+@3
+
+
+@4
+   MOV UP  ACC
+   JGZ G
+
+   SWP
+G: SUB 10
+   JLZ O
+   SWP
+   ADD 1
+   JRO -5
+
+O: ADD 10
+   MOV ACC ANY
+
+@5
+
+
+@6
+
+
+@7
+MOV RIGHT DOWN
+
+@8
+MOV UP RIGHT
+MOV UP DOWN
+MOV UP LEFT
+
+@9
+MOV LEFT DOWN
+
+@10

@@ -1,0 +1,49 @@
+@0
+
+
+@1
+   MOV UP  ACC
+   JEZ Z
+   SUB 270
+Z: SUB 997
+   ADD 998
+   SAV
+   MOV UP  ACC
+   JMP E
+N: SWP
+   MOV ACC ANY
+   SWP
+E: SUB 1
+   MOV 0   LAST
+   JNZ N
+
+@2
+MOV ACC DOWN
+SWP
+ADD ANY
+
+@3
+
+
+@4
+
+
+@5
+
+
+@6
+MOV UP DOWN
+
+@7
+
+
+@8
+
+
+@9
+MOV LAST DOWN
+MOV ANY  DOWN
+MOV 3    DOWN
+MOV -1   DOWN
+
+@10

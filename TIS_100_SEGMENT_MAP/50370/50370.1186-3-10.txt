@@ -1,8 +1,8 @@
 @0
-
+#1186/3/10
 
 @1
-##MIN CYCLES
+
 
 @2
 
@@ -14,7 +14,7 @@
 
 
 @5
-   MOV 3 DOWN
+MOV 3 ANY
 
 @6
 
@@ -23,17 +23,17 @@
 
 
 @8
-   SUB 509 #521
-&: ADD 18
-   JLZ &
-   MOV -1 RIGHT
-   MOV 0 RIGHT
-   MOV ACC RIGHT
+
 
 @9
-   MOV LAST DOWN
-   MOV LAST DOWN
-   MOV ANY DOWN
+MOV LAST DOWN
+MOV ANY  DOWN
+MOV ANY  DOWN
 
 @10
-
+   MOV ACC ANY
+   SUB 579
+L: ADD 20
+   JLZ L
+   MOV -1  ANY
+   MOV 0   ANY

@@ -1,0 +1,52 @@
+@0
+#HERSMUNCH
+#318/4/23
+
+@1
+S: MOV UP  ACC
+   ADD ACC
+   ADD 1
+   MOV ACC LAST
+   SUB 3
+   JGZ S
+   MOV ANY ANY
+
+@2
+MOV UP ANY
+
+@3
+
+
+@4
+
+
+@5
+MOV ANY DOWN
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+J: JRO UP
+   MOV ANY  ACC
+   JMP J
+   SWP
+   MOV ANY  ACC
+   SWP
+   JMP J
+   SWP
+   JRO 3
+   MOV ACC  DOWN
+   JMP J
+   MOV ACC  UP
+   SWP
+   ADD UP
+
+@10
+

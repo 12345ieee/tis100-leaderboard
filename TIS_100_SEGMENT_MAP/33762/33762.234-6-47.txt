@@ -1,0 +1,84 @@
+@0
+   MOV UP NIL
+
+0: MOV UP ACC
+   JEZ X
+
+01:MOV 1  RIGHT
+
+
+1: MOV UP ACC
+
+X: MOV 0  RIGHT
+   JEZ 0
+   JMP 1
+
+@1
+   MOV UP   NIL
+   MOV UP   ACC
+   JEZ X
+   MOV 2    RIGHT
+   MOV LEFT NIL
+   JMP 1
+
+0: MOV UP   ACC
+   JEZ X
+01:MOV LEFT NIL
+   MOV 2    RIGHT
+1: MOV UP   ACC
+X: MOV LEFT RIGHT
+   JEZ 0
+   JMP 1
+
+@2
+   ADD ANY
+   MOV ACC   DOWN
+0: MOV UP    ACC
+   JEZ Z
+01:MOV RIGHT NIL
+   MOV LEFT  NIL
+   MOV 3     DOWN
+   MOV UP    ACC
+   JEZ Z
+1: MOV RIGHT ACC
+   ADD LEFT
+   MOV ACC   DOWN
+   MOV UP    ACC
+X: JNZ 1
+Z: ADD ANY
+
+@3
+   MOV UP NIL
+
+0: MOV UP ACC
+   JEZ X
+
+01:MOV 4  LEFT
+
+
+1: MOV UP ACC
+
+X: MOV 0  LEFT
+   JEZ 0
+   JMP 1
+
+@4
+#HERSMUNCH
+#234/6/47
+
+@5
+
+
+@6
+MOV UP DOWN
+
+@7
+
+
+@8
+
+
+@9
+MOV UP DOWN
+
+@10

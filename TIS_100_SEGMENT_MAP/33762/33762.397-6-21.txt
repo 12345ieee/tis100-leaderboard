@@ -1,0 +1,51 @@
+@0
+MOV UP RIGHT
+
+@1
+MOV RIGHT ACC
+ADD ACC
+ADD UP
+ADD ACC
+ADD LEFT
+MOV ACC   RIGHT
+
+@2
+   MOV RIGHT LEFT
+   MOV ACC   DOWN
+
+   MOV UP    ACC
+   JEZ Z
+   MOV -3    ACC
+
+Z: SUB LEFT
+   MOV ACC   DOWN
+
+@3
+MOV UP LEFT
+
+@4
+#HERSMUNCH
+#397/6/21
+
+@5
+
+
+@6
+MOV UP DOWN
+
+@7
+
+
+@8
+
+
+@9
+   MOV UP  ACC
+   SUB UP
+   JGZ G
+   MOV 0   ACC
+
+G: MOV ACC DOWN
+
+@10
+

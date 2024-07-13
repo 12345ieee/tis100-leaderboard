@@ -1,0 +1,40 @@
+@0
+#140/5/13
+
+@1
+MOV UP  ACC
+MOV ACC RIGHT
+MOV ACC DOWN
+
+@2
+S: MOV UP   ACC
+   MOV ACC  DOWN
+   SUB LEFT
+   JLZ Z
+   MOV DOWN DOWN
+Z: MOV 0    DOWN
+
+@3
+
+
+@4
+
+
+@5
+MOV UP RIGHT
+
+@6
+MOV ANY ANY
+
+@7
+
+
+@8
+
+
+@9
+MOV UP ANY
+MOV UP DOWN
+
+@10
+

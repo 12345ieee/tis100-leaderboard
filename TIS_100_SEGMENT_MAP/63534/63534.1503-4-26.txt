@@ -1,0 +1,50 @@
+@0
+N: MOV ANY  ACC
+   MOV ACC  DOWN
+   MOV ACC  DOWN
+   JNZ N
+
+L: MOV ACC  RIGHT
+   MOV DOWN ACC
+   JNZ L
+
+@1
+
+
+@2
+#HERSMUNCH
+#1503/4/26
+
+@3
+   MOV 0    DOWN
+   MOV UP   NIL
+   JMP E
+L: MOV DOWN ACC
+   MOV UP   DOWN
+G: MOV ACC  DOWN
+   SUB UP
+   JLZ L
+E: MOV UP   ACC
+   JGZ G
+
+O: MOV DOWN RIGHT
+N: MOV ANY  ACC
+   MOV ACC  ANY
+   JNZ N
+
+@4
+   MOV LEFT ACC
+   JNZ N
+   MOV UP   LEFT
+N: MOV ACC  DOWN
+
+@5
+
+
+@6
+
+
+@7
+MOV UP DOWN
+
+@8

@@ -1,0 +1,56 @@
+@0
+##JP CRAZINESS
+
+#HERSMUNCH
+#17826/6/26
+
+@1
+   MOV ANY  ACC
+S: MOV ACC  RIGHT
+G: SUB DOWN
+   JLZ L
+   SWP
+   MOV -98  DOWN
+   ADD 1
+   SWP
+   JGZ G
+   SWP
+   MOV -98  DOWN
+   JMP S
+L: MOV 0    ACC
+   SWP
+   MOV -97  DOWN
+
+@2
+MOV ANY ANY
+
+@3
+
+
+@4
+   MOV 1   ACC
+   MOV 100 UP
+
+N: ADD UP
+   JEZ Z
+   ADD 98
+Z: MOV ACC ANY
+   JNZ N
+
+@5
+MOV UP ANY
+
+@6
+
+
+@7
+
+
+@8
+MOV UP DOWN
+
+@9
+MOV UP NIL
+
+@10
+

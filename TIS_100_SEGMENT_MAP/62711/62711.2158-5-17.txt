@@ -1,0 +1,40 @@
+@0
+MOV UP    RIGHT
+MOV RIGHT RIGHT
+
+@1
+MOV UP DOWN
+
+@2
+#2158/5/17
+
+@3
+G: MOV UP    ACC
+   MOV ACC   DOWN
+   JGZ G
+
+   MOV 10    ACC
+   SUB RIGHT
+
+L: SUB 1
+   MOV DOWN  UP
+   JGZ L
+
+   MOV DOWN  RIGHT
+
+@4
+MOV UP   LEFT
+MOV LEFT DOWN
+
+@5
+
+
+@6
+
+
+@7
+MOV UP  ACC
+MOV ACC LEFT
+MOV ACC DOWN
+
+@8

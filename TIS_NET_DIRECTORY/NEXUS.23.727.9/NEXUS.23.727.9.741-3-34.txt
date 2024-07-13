@@ -1,0 +1,61 @@
+@0
+   MOV UP   LEFT
+   MOV UP   ACC
+   ADD ACC
+   SUB LEFT
+   MOV ACC  DOWN
+   MOV 0    LEFT
+   JRO 3
+L: SUB 2
+   MOV DOWN LEFT
+   JGZ L
+Z: JNZ N
+I: MOV UP   DOWN
+N: MOV LEFT ACC
+O: MOV ACC  DOWN
+   JGZ N
+
+@1
+
+
+@2
+#HERSMUNCH
+#741/3/34
+
+@3
+
+
+@4
+   ADD 8
+S: SUB 1
+   MOV ACC DOWN
+   JGZ S
+
+   MOV ANY ANY
+   JRO -1
+
+@5
+
+
+@6
+
+
+@7
+N: MOV ACC  LEFT
+N2:MOV UP   ACC
+   JGZ N
+
+   SUB UP
+   JRO 3
+G: MOV LEFT UP
+   ADD 2
+   JLZ G
+
+   JNZ O
+Z: MOV LEFT NIL
+   JMP N2
+O: MOV LEFT ACC
+   MOV ACC  DOWN
+
+@8
+

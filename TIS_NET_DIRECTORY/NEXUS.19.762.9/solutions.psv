@@ -1,4 +1,4 @@
-210/8/99/c|biggiemac42||cCN,cCI,cCX,cNC,cNI,cNX,cIC,cIN,cIX
+210/8/99/c|biggiemac42||cCN,cCI,cCX
 362/8/90|PocketLint2012||CN,CI,CX
 755/9/89|jpgrossman||
 786/8/86|Csaboka||
@@ -11,11 +11,11 @@
 1237/4/48|Andrash||
 2159/4/35|Hersmunch||
 2171/4/34|Hersmunch||
-2177/3/45|Hersmunch||NC
+2177/3/45|Hersmunch||NC,cNC
 2184/3/43|Hersmunch||
 2186/3/41|Hersmunch||
 2193/3/39|Hersmunch||
-2214/3/38|Hersmunch||NX
+2214/3/38|Hersmunch||NX,cNX
 2273/4/31|jpgrossman||
-2576/4/28|jpgrossman||IC,IN,IX
-2584/3/37|Hersmunch||NI
+2576/4/28|jpgrossman||IC,IN,IX,cIC,cIN,cIX
+2584/3/37|Hersmunch||NI,cNI

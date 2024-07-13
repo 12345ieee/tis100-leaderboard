@@ -1,0 +1,45 @@
+@0
+
+
+@1
+MOV UP,RIGHT
+
+@2
+MOV LEFT,ACC
+JEZ N
+SAV
+J:SUB 1
+MOV UP,NIL
+JNZ J
+SWP
+N:SUB ANY
+MOV UP,DOWN
+M:MOV UP,DOWN
+ADD 1
+JNZ M
+MOV 0 DOWN
+B:MOV UP,ACC
+JNZ B
+
+@3
+
+
+@4
+
+
+@5
+
+
+@6
+MOV UP,DOWN
+
+@7
+
+
+@8
+
+
+@9
+MOV UP,DOWN
+
+@10

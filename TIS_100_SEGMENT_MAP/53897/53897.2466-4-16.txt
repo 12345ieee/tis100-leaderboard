@@ -1,0 +1,44 @@
+@0
+
+
+@1
+MOV UP ANY
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+SUB UP
+N: ADD 18
+MOV ACC DOWN
+SUB 17
+JEZ E
+MOV 0 DOWN
+JMP N
+E: MOV 1 DOWN
+
+@6
+
+
+@7
+
+
+@8
+MOV ACC RIGHT
+MOV UP RIGHT
+ADD UP
+
+@9
+MOV LEFT DOWN
+MOV LEFT DOWN
+MOV 3 DOWN
+MOV -1 DOWN
+
+@10
+

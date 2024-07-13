@@ -1,10 +1,10 @@
 @0
-## SERIES
+
 
 @1
-   MOV UP ACC
-   ADD ACC
-   MOV ACC DOWN
+MOV ANY ACC
+ADD ACC
+MOV ACC DOWN
 
 @2
 
@@ -13,7 +13,7 @@
 
 
 @4
-   MOV UP DOWN
+MOV ANY DOWN
 
 @5
 
@@ -22,10 +22,10 @@
 
 
 @7
-   MOV UP RIGHT
+MOV ANY RIGHT
 
 @8
-   MOV LEFT DOWN
+MOV ANY DOWN
 
 @9
 

@@ -1,0 +1,48 @@
+@0
+
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+START:
+ MOV 0 DOWN
+ MOV ACC DOWN
+ ADD 1
+ MOV 1 DOWN
+ MOV ACC DOWN
+ ADD 1
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+START:
+ MOV 30 ACC
+ MOV UP DOWN
+ MOV UP DOWN
+LOOP:
+ MOV 3 DOWN
+ MOV 0 DOWN
+ SUB 2
+ JGZ LOOP
+CLOSE:
+ MOV -1 DOWN
+
+@10
+

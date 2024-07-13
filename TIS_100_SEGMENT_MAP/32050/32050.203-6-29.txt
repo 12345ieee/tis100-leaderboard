@@ -1,0 +1,57 @@
+@0
+## CYCLES
+
+# SEPT 2017
+
+@1
+   MOV ACC DOWN
+   MOV UP ACC
+   MOV ACC DOWN
+   MOV ACC RIGHT
+   MOV UP ACC
+   MOV ACC RIGHT
+
+@2
+   MOV LEFT ACC
+   SUB LEFT
+   JGZ A
+   NEG
+A: MOV ACC DOWN
+
+@3
+
+
+@4
+
+
+@5
+   MOV UP ACC
+   SUB UP
+   JGZ A
+   NEG
+A: MOV ACC DOWN
+
+@6
+S: MOV UP ACC
+   SUB 9
+   JGZ O
+   MOV 0 DOWN
+   JMP S
+O: MOV 1 DOWN
+
+@7
+
+
+@8
+S: MOV UP ACC
+   SUB 9
+   JGZ O
+   MOV 0 RIGHT
+   JMP S
+O: MOV 1 RIGHT
+
+@9
+   MOV ANY DOWN
+
+@10
+

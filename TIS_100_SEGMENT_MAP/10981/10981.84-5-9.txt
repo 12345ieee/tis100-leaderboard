@@ -1,0 +1,33 @@
+@0
+## PARALLEL
+
+@1
+   MOV UP DOWN
+
+@2
+
+
+@3
+
+
+@4
+   MOV UP ANY
+
+@5
+   MOV LEFT ACC
+   ADD ACC
+   MOV ACC DOWN
+
+@6
+
+
+@7
+   MOV UP ACC
+   ADD ACC
+   MOV ACC RIGHT
+
+@8
+   MOV ANY DOWN
+
+@9
+

@@ -1,0 +1,69 @@
+@0
+## 6 PER INPUT
+
+# SEPT 2017
+
+# ACTIVE + IDLE
+
+@1
+   MOV UP ACC
+
+   MOV ACC RIGHT
+   MOV ACC DOWN
+
+   # 5 + 1
+
+@2
+   MOV UP ACC
+   MOV ACC RIGHT
+   SUB LEFT
+   MOV ACC DOWN
+
+   # 6
+
+@3
+   MOV LEFT ACC
+   SWP
+   SWP
+   MOV ACC DOWN
+
+
+   # 5 + 1
+
+@4
+
+
+@5
+   MOV UP RIGHT
+
+@6
+T: MOV UP ACC
+   JGZ O
+   MOV RIGHT DOWN
+O: MOV LEFT DOWN
+
+   # 4 + 2 IF >0
+   # 6 + 0 IF <0
+
+@7
+   MOV UP ANY
+
+   # DOWN IF MAX
+   # LEFT IF MIN
+
+@8
+
+
+@9
+   MOV UP DOWN
+   MOV ANY DOWN
+   MOV 0 DOWN
+
+   # 6
+
+@10
+   MOV UP ACC
+
+   MOV ACC LEFT
+
+   # 3 + 3

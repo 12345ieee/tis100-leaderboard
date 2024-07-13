@@ -1,31 +1,31 @@
 @0
-
+## SERIES
 
 @1
-MOV UP,ACC
-ADD ACC
-MOV ACC RIGHT
+   MOV UP ACC
+   ADD ACC
+   MOV ACC DOWN
 
 @2
-MOV LEFT DOWN
+
 
 @3
 
 
 @4
-
+   MOV UP DOWN
 
 @5
-MOV UP DOWN
+
 
 @6
 
 
 @7
-
+   MOV UP RIGHT
 
 @8
-MOV UP DOWN
+   MOV LEFT DOWN
 
 @9
 

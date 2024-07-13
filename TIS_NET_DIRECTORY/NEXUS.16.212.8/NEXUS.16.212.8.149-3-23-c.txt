@@ -1,0 +1,52 @@
+@0
+## CHEAT
+
+@1
+
+
+@2
+   JRO UP
+   JMP 1
+2: MOV 12 DOWN
+   MOV 11 DOWN
+1: MOV 3 DOWN
+   MOV 4 DOWN
+   JMP C
+   JMP 7
+C: MOV 11 DOWN
+   MOV 6 DOWN
+   MOV 6 DOWN
+7: MOV 7 DOWN
+   MOV 14 DOWN
+   MOV 11 DOWN
+   MOV 6 DOWN
+
+@3
+
+
+@4
+
+
+@5
+
+
+@6
+   MOV UP ACC
+E: MOV -1 DOWN
+   SUB 1
+   JGZ E
+   MOV 1 DOWN
+
+@7
+
+
+@8
+
+
+@9
+
+
+@10
+   MOV 0 DOWN
+   JRO UP
+   MOV 1 DOWN

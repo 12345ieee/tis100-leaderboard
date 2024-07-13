@@ -1,0 +1,70 @@
+@0
+##4NODE MIN CYCLES
+
+@1
+^: MOV UP RIGHT
+   MOV UP ACC
+   SAV
+   SUB RIGHT
+   SWP
+<: MOV 3 RIGHT
+   SUB 1
+   JGZ <
+   SWP
+   SUB 1
+>: MOV 0 RIGHT
+   ADD 1
+   JLZ >
+
+@2
+   MOV LEFT ACC
+   MOV ACC LEFT
+>: MOV 3 DOWN
+   MOV LEFT DOWN
+   SUB 1
+   JEZ <
+   MOV 1 DOWN
+   JMP >
+<: MOV 1 DOWN
+   MOV 0 DOWN
+   MOV LEFT ACC
+   MOV ACC DOWN
+   JGZ <
+   MOV 3 DOWN
+
+@3
+
+
+@4
+
+
+@5
+
+
+@6
+   MOV 17 ACC
+^: MOV ACC DOWN
+   MOV UP DOWN
+   MOV UP DOWN
+   SUB 1
+   JRO UP
+   MOV -5 DOWN
+   JMP ^
+   MOV 1 DOWN
+
+@7
+
+
+@8
+
+
+@9
+   MOV ACC DOWN #X
+   MOV UP DOWN  #Y
+   MOV UP DOWN  #1
+   MOV UP DOWN  #2
+   MOV -1 DOWN
+   JRO UP
+   ADD 2
+
+@10

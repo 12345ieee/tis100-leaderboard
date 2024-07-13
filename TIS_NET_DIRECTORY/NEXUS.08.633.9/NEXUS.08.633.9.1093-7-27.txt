@@ -1,0 +1,53 @@
+@0
+## MIN CYCLES
+
+# SEPT 2017
+
+@1
+   MOV UP DOWN
+
+@2
+
+
+@3
+   MOV -20 ACC
+A: ADD RIGHT
+   JLZ A
+   MOV ACC DOWN
+
+@4
+   MOV -99 ACC
+   ADD UP
+   JMP D
+L: SUB 100
+D: MOV 1 LEFT
+   JGZ L
+   MOV 19 LEFT
+   MOV ACC RIGHT
+
+@5
+   MOV LEFT DOWN
+
+@6
+
+
+@7
+   MOV UP DOWN
+
+@8
+   MOV -20 ACC
+A: ADD RIGHT
+   JLZ A
+   MOV ACC DOWN
+
+@9
+   MOV 100 ACC
+   ADD UP
+L: SUB 10
+   MOV 1 LEFT
+   JGZ L
+   MOV 19 LEFT
+   ADD 9
+   MOV ACC DOWN
+
+@10

@@ -1,0 +1,39 @@
+@0
+
+
+@1
+##MIN CYCLES
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+   MOV 3 DOWN
+
+@6
+
+
+@7
+
+
+@8
+   SUB 509 #521
+&: ADD 18
+   JLZ &
+   MOV -1 RIGHT
+   MOV 0 RIGHT
+   MOV ACC RIGHT
+
+@9
+   MOV LAST DOWN
+   MOV LAST DOWN
+   MOV ANY DOWN
+
+@10
+

@@ -1,0 +1,77 @@
+@0
+## MIN NODES
+
+# SEPT 2017
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+#  1 -> WRITE DIFF
+# -1 -> WRITE SAME
+# 99 -> END LINE
+
+# NEW LINE OFFSET
+# IS GIVEN BY NODE
+# AT RIGHT
+
+@5
+P: MOV RIGHT ACC
+M: MOV 1 DOWN
+   SUB 1
+   JGZ M
+   MOV RIGHT ACC
+N: ADD 1
+   MOV -1 DOWN
+   JLZ N
+   JEZ P
+   MOV 99 DOWN
+   MOV ACC DOWN
+
+@6
+   ADD 1
+   MOV ACC LEFT
+   SAV
+   ADD ACC
+   SUB 31
+   MOV ACC LEFT
+   SWP
+   MOV ACC LEFT
+   MOV 16 LEFT
+   MOV ACC LEFT
+   SWP
+   MOV ACC LEFT
+   SWP
+   MOV ACC LEFT
+   MOV 17 LEFT
+
+@7
+
+
+@8
+
+
+@9
+S: MOV 0 DOWN
+   MOV ACC DOWN
+   JRO UP
+   MOV 3 DOWN
+W: JRO UP
+   MOV 0 DOWN
+   JRO UP
+   MOV 3 DOWN
+   JMP W
+P: MOV -1 DOWN
+   NEG
+   ADD UP
+   JMP S
+   JMP P
+
+@10
+

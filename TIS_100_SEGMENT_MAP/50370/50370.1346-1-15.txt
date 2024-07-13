@@ -1,0 +1,52 @@
+@0
+##NODE OPTIMAL
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+MOV 0 DOWN
+MOV ACC DOWN
+ MOV 3 DOWN
+ MOV 3 DOWN
+SUB 559
+L:MOV 3 DOWN
+ MOV 3 DOWN
+ MOV 3 DOWN
+ MOV 3 DOWN
+ MOV 3 DOWN
+ MOV 3 DOWN
+ MOV 3 DOWN
+ ADD 140
+JLZ L
+MOV -1 DOWN
+
+@10
+#2282/1/7   #1*30
+#1742/1/8   #2*15
+#1562/1/9   #3*10
+#1558/1/10  #4*8
+#1418/1/11  #5*6
+#1382/1/12  #6*5
+#1346/1/15  #7*4+2

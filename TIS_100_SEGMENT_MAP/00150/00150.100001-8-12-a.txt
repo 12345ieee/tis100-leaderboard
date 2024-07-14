@@ -1,0 +1,32 @@
+@0
+
+MOV UP, DOWN
+
+@1
+
+F:MOV RIGHT,DOWN
+
+@2
+F:MOV UP,LEFT
+
+@3
+MOV UP, DOWN
+
+@4
+ADD 854
+S:
+ SUB 1
+ JEZ S
+ JGZ S
+MOV UP,DOWN
+
+@5
+
+MOV UP,DOWN
+
+@6
+
+MOV UP,RIGHT
+
+@7
+MOV LEFT,DOWN

@@ -8,4 +8,4 @@ This is the companion repository for the [reddit wiki](https://www.reddit.com/r/
 
 ## I have a solution I want to add
 
-The [wiki section of submitting a new record](https://www.reddit.com/r/tis100/wiki/index#wiki_submitting_a_new_solution) has all the info you need.
+The [wiki section of submitting a new record](https://www.reddit.com/r/tis100/wiki/index#wiki_submitting_and_accessing_solutions) has all the info you need.

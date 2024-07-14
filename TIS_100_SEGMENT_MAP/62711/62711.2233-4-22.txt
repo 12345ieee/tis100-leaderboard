@@ -1,0 +1,44 @@
+@0
+MOV UP RIGHT
+MOV RIGHT RIGHT
+
+@1
+S: MOV LEFT ACC
+   MOV ACC  DOWN
+   JNZ S
+   ADD UP
+   SUB 10
+   MOV ACC  DOWN
+L: ADD 1
+   MOV DOWN LEFT
+   JLZ L
+
+@2
+
+
+@3
+
+
+@4
+MOV ANY ANY
+
+@5
+
+
+@6
+
+
+@7
+S: MOV ACC  LEFT
+   MOV UP   ACC
+   JGZ S
+   MOV 0    LEFT
+   MOV UP   ACC
+L: MOV LEFT UP
+   ADD 1
+   JLZ L
+O: MOV LEFT ACC
+   MOV ACC  DOWN
+
+@8
+

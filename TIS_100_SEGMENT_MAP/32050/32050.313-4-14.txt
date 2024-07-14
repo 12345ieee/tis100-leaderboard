@@ -1,5 +1,5 @@
 @0
-#313/4/14
+
 
 @1
 MOV UP  ACC
@@ -43,3 +43,4 @@ E: MOV UP ACC
    JMP E
 
 @10
+

@@ -2,7 +2,19 @@
 MOV UP DOWN
 
 @1
-#296/6/15
+#G E L
+#0 1 0
+#0 0 1
+#1 0 0
+
+
+#0 = 0
+#1 = 1
+#2 = 0
+
+#G:02
+#E:12
+#L:01
 
 @2
 
@@ -17,9 +29,9 @@ MOV UP DOWN
 MOV UP RIGHT
 
 @6
-MOV LEFT RIGHT
-MOV 0   ANY
-MOV 1   ANY
+S: MOV LEFT RIGHT
+   MOV 0    ANY
+   MOV 1    ANY
 
 @7
    MOV LEFT ACC
@@ -32,4 +44,4 @@ N: MOV LEFT RIGHT
    MOV 0    DOWN
 
 @8
-MOV LEFT DOWN
+MOV LEFT ANY

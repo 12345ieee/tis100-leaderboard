@@ -1,5 +1,5 @@
 @0
-#212/5/22
+
 
 @1
 MOV UP  ACC
@@ -14,7 +14,7 @@ MOV UP DOWN
 
 
 @4
-
+#MOV RIGHT RIGHT
 
 @5
 J: JRO UP
@@ -42,7 +42,9 @@ MOV UP LEFT
 
 
 @9
+#MOV UP  ANY
 MOV UP  ACC
 MOV ACC ANY
 
 @10
+

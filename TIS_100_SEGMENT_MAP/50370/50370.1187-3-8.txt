@@ -1,0 +1,44 @@
+@0
+##CYCLES OPTIMAL
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+#WHITE
+MOV 3 DOWN
+
+@6
+
+
+@7
+
+
+@8
+#X
+MOV 0 RIGHT
+#Y
+MOV ACC RIGHT
+
+#DELAY
+SUB 579
+L: ADD 20
+   JLZ L
+
+#TERMINATE
+MOV -1 RIGHT
+
+@9
+MOV ANY DOWN
+
+@10
+

@@ -1,0 +1,42 @@
+@0
+
+
+@1
+   SUB UP
+
+L: ADD 18
+   MOV ACC RIGHT
+   SUB 17
+   JNZ L
+
+Z: MOV 1   RIGHT
+
+@2
+MOV ACC  DOWN
+MOV LEFT DOWN
+MOV 3    DOWN
+ADD ANY
+MOV -1   DOWN
+
+@3
+MOV 0 LEFT
+
+@4
+
+
+@5
+
+
+@6
+MOV UP DOWN
+
+@7
+
+
+@8
+
+
+@9
+MOV UP DOWN
+
+@10

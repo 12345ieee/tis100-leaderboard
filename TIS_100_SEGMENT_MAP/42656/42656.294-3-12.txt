@@ -1,31 +1,17 @@
 @0
-#   MOV ACC RIGHT
-#S: MOV UP  ACC
-#Z: MOV ACC DOWN
-#   JEZ S
-#   MOV UP  ACC
-#   JEZ Z
-#N: MOV ACC RIGHT
-#   MOV UP  ACC
-#   JNZ N
-
-#O: MOV RIGHT ACC
-#   MOV ACC   DOWN
-#   JNZ O
+# 294/3/12
 
 @1
-   MOV UP    ACC
-   JEZ Z
-
-   MOV 0     RIGHT
-S: MOV ACC   RIGHT
-   MOV UP    ACC
-   JNZ S
-
-   MOV RIGHT DOWN
-N: MOV RIGHT ACC
-Z: MOV ACC   DOWN
-   JNZ N
+MOV UP ACC
+JEZ 0
+MOV 0 RIGHT
+A: MOV ACC RIGHT
+MOV UP ACC
+JNZ A
+MOV RIGHT DOWN
+B: MOV RIGHT ACC
+0: MOV ACC DOWN
+JNZ B
 
 @2
 
@@ -34,19 +20,6 @@ Z: MOV ACC   DOWN
 
 
 @4
-#   MOV UP  ACC
-#   JEZ Z
-
-#   SAV
-#   JRO 2
-#N: MOV ACC DOWN
-#   MOV UP  ACC
-#   JNZ N
-#   SWP
-
-#   MOV ACC DOWN
-#Z: MOV 0   DOWN
-
 MOV UP DOWN
 
 @5
@@ -56,20 +29,6 @@ MOV UP DOWN
 
 
 @7
-#   MOV ANY ACC
-#   JEZ Z
-
-#   SAV
-#   JRO 2
-#N: MOV ACC DOWN
-#   MOV ANY ACC
-#   JNZ N
-#   SWP
-
-#   MOV ACC DOWN
-#Z: MOV 0   DOWN
-
-
 MOV LEFT DOWN
 
 @8

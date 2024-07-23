@@ -5,11 +5,11 @@
    MOV UP   ACC
    JNZ N
    MOV 1    DOWN
+G: NEG
 N: MOV -999 LAST
    MOV ACC  LAST
    MOV ACC  ANY
-   NEG
-   JLZ N
+   JGZ G
 
 @2
 

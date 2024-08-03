@@ -1,0 +1,39 @@
+@0
+
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+MOV 3 DOWN
+MOV 0 DOWN
+
+@6
+MOV 0 DOWN
+MOV 1 DOWN
+
+@7
+#PARETO
+
+@8
+
+
+@9
+MOV ANY,DOWN
+
+@10
+MOV -1 ANY
+MOV UP ANY
+MOV ACC ANY
+SUB 521
+L:ADD 18
+JLZ L

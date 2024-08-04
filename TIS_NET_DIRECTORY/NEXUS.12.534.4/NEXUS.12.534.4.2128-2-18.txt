@@ -1,0 +1,51 @@
+@0
+
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+MOV 0 DOWN
+MOV 1 DOWN
+MOV 0 DOWN
+MOV 2 DOWN
+MOV 3 DOWN
+MOV 2 DOWN
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+S:
+MOV 0 DOWN
+MOV ACC DOWN
+SUB 284
+L:
+ MOV UP DOWN
+ MOV UP DOWN
+ MOV UP NIL
+ ADD 18
+ JLZ L
+MOV -1 DOWN
+
+JGZ S
+ADD 1
+MOV UP NIL
+
+@10
+

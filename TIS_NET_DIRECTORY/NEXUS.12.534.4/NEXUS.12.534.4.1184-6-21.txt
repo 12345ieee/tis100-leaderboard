@@ -1,0 +1,46 @@
+@0
+MOV 1   ANY
+MOV 3   ANY
+
+@1
+MOV 0    ANY
+MOV LEFT ANY
+MOV 2    ANY
+MOV LEFT ANY
+
+@2
+
+
+@3
+
+
+@4
+MOV LAST DOWN
+MOV UP   NIL
+MOV ANY  DOWN
+MOV UP   NIL
+
+@5
+MOV UP ANY
+
+@6
+
+
+@7
+
+
+@8
+   MOV ACC RIGHT
+   SUB 521
+L: ADD 18
+   JLZ L
+   MOV UP  NIL
+   MOV -1  RIGHT
+   MOV 0   RIGHT
+
+@9
+MOV LAST DOWN
+MOV ANY  DOWN
+MOV ANY  DOWN
+
+@10

@@ -1,6 +1,6 @@
-29/4/36/c|biggiemac42||cCN,cCI,cCX
-40/3/34/c|biggiemac42||cNC,cNI,cNX
-168/9/49|Hersmunch||CN,CI,CX
+29/4/36/h|biggiemac42||hCN,hCI,hCX
+40/3/34/h|biggiemac42||hNC,hNI,hNX
+168/9/49|Hersmunch||CN,CI,CX,cCN,cCI,cCX
 171/9/46|jpgrossman||
 172/9/41|Hersmunch||
 174/9/37|Hersmunch||
@@ -11,12 +11,12 @@
 186/7/25|Hersmunch||
 189/7/24|Hersmunch||
 211/6/23|negative_seven||
-212/5/22|ImprobableFish||IC,IN,IX,cIC,cIN,cIX
-293/4/34|Hersmunch||NC
+212/5/22|ImprobableFish||IC,IN,IX,cIC,cIN,cIX,hIC,hIN,hIX
+293/4/34|Hersmunch||NC,cNC
 294/4/31|Hersmunch||
 295/4/30|Hersmunch||
 300/4/28|Hersmunch||
 301/4/26|Hersmunch||
 306/4/25|Hersmunch||
 312/4/24|Hersmunch||
-318/4/23|Hersmunch||NI,NX
+318/4/23|Hersmunch||NI,NX,cNI,cNX

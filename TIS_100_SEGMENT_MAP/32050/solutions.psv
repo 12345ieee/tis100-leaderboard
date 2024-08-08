@@ -1,9 +1,9 @@
-80/9/98/c|biggiemac42||cCN,cCI,cCX
-102/11/110|Hersmunch||CN,CI,CX
+80/9/98/h|biggiemac42||hCN,hCI,hCX
+102/11/110|Hersmunch||CN,CI,CX,cCN,cCI,cCX
 103/10/114|Hersmunch||
 107/11/85|Hersmunch||
 113/11/84/c|Hersmunch||
-116/11/79|Hersmunch||
+116/11/79/c|Hersmunch||
 118/10/109|jpgrossman||
 125/9/78|jpgrossman||
 127/9/77|jpgrossman||
@@ -14,7 +14,7 @@
 164/7/29|Brian142857||
 166/7/28|Brian142857||
 171/6/47|longingforrest||
-175/4/53|Hersmunch||NC,cNC
+175/4/53|Hersmunch||NC,cNC,hNC
 176/4/52|Hersmunch||
 177/4/46|Hersmunch||
 178/4/45|Hersmunch||
@@ -27,5 +27,5 @@
 231/4/26|Hersmunch||
 233/4/22|Brian142857||
 235/4/18|ImprobableFish||
-240/4/15|ImprobableFish||NX,cNX
-313/4/14|ImprobableFish||NI,IC,IN,IX,cNI,cIC,cIN,cIX
+240/4/15|ImprobableFish||NX,cNX,hNX
+313/4/14|ImprobableFish||NI,IC,IN,IX,cNI,cIC,cIN,cIX,hNI,hIC,hIN,hIX

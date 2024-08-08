@@ -1,9 +1,9 @@
-538/10/89|jpgrossman||CN,CI,CX,cCN,cCI,cCX
+538/10/89|jpgrossman||CN,CI,CX,cCN,cCI,cCX,hCN,hCI,hCX
 564/9/104|Brian142857||
 726/9/65|Csaboka||
 1023/8/75|Brian142857||
 1042/8/73|Brian142857||
-1124/4/48/c|jpgrossman||cNC,cNX
+1124/4/48/c|jpgrossman||cNC,cNX,hNC,hNX
 1164/4/56|jpgrossman||NC
 1193/4/53|Brian142857||
 1201/4/49|jpgrossman||NX
@@ -12,8 +12,8 @@
 2114/4/36|Brian142857||
 2126/4/32|Brian142857||
 24578/4/26|Brian142857||
-27094/4/17|Grimmy||
-47230/4/16|Grimmy||
+27094/4/17/c|Grimmy||
+47230/4/16/c|Grimmy||
 73238/4/13|jpgrossman||
 73394/4/12|Hersmunch||
-88682/4/10|Hersmunch||NI,IC,IN,IX,cNI,cIC,cIN,cIX
+88682/4/10|Hersmunch||NI,IC,IN,IX,cNI,cIC,cIN,cIX,hNI,hIC,hIN,hIX

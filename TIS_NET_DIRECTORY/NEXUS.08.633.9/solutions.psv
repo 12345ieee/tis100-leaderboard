@@ -1,4 +1,4 @@
-400/10/104|jpgrossman||CN,CI,CX,cCN,cCI,cCX
+400/10/104|jpgrossman||CN,CI,CX,cCN,cCI,cCX,hCN,hCI,hCX
 420/10/100|Brian142857||
 426/10/87|jpgrossman||
 460/8/80|Brian142857||
@@ -9,14 +9,14 @@
 611/9/55|Hersmunch||
 634/9/52|Hersmunch||
 663/8/50|Hersmunch||
-701/5/58|Hersmunch||NC,cNC
+701/5/58|Hersmunch||NC,cNC,hNC
 705/5/52|jpgrossman||
 709/5/46|Hersmunch||
 715/5/44|Hersmunch||
 720/5/43|Hersmunch||
 740/5/42|Hersmunch||
 742/5/41|Hersmunch||
-745/5/40|Hersmunch||NX,cNX
+745/5/40|Hersmunch||NX,cNX,hNX
 858/5/38|Brian142857||
 966/5/36|Hersmunch||
 1022/5/31|Hersmunch||
@@ -32,4 +32,4 @@
 5479/7/20|Brian142857||
 6531/5/20|Brian142857||
 7588/5/19|Brian142857||
-7706/5/18|Hersmunch||NI,IC,IN,IX,cNI,cIC,cIN,cIX
+7706/5/18|Hersmunch||NI,IC,IN,IX,cNI,cIC,cIN,cIX,hNI,hIC,hIN,hIX

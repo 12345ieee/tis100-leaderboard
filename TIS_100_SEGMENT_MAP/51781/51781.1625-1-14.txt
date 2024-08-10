@@ -1,0 +1,44 @@
+@0
+
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+MOV ACC,DOWN
+SWP
+MOV ACC,DOWN
+SUB 151
+S:MOV 3 DOWN
+MOV 0 DOWN
+MOV 3 DOWN
+MOV 0 DOWN
+ADD 19
+JLZ S
+MOV -1 DOWN
+SWP
+NEG
+ADD 1
+
+@10

@@ -1,0 +1,43 @@
+@0
+
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+   MOV 0   DOWN
+   ADD 17
+   JLZ A
+   MOV ACC DOWN
+A: ADD 17
+   MOV ACC DOWN
+   ADD 716
+B: MOV 3   LAST
+   MOV 0   LAST
+   MOV 3   ANY
+   SUB 94
+   MOV ACC DOWN
+   JGZ B
+
+@10

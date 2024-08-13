@@ -12,20 +12,22 @@
 1: MOV 12 DOWN
    MOV 11 DOWN
    JMP C
-   JMP 7
-C: MOV 4 DOWN
-   MOV 9 DOWN
-   MOV 9 DOWN
 7: MOV 8 DOWN
    MOV 1 DOWN
-   MOV 4 DOWN
+C: MOV 4 DOWN
    MOV 9 DOWN
 
 @3
 
 
 @4
+# T1 7,13,12 999
+# T2 4,5,12,7,999
+# T3 8,15,999
 
+# T1 38
+# T2 1
+# T3 7
 
 @5
 
@@ -38,7 +40,9 @@ MOV UP,DOWN
 
 
 @8
-
+# 2,5,4 999
+# 0,3,4 999
+# 3,6,4,999
 
 @9
 

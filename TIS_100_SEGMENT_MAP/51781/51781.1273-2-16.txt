@@ -1,0 +1,45 @@
+@0
+
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+
+
+@6
+
+
+@7
+
+
+@8
+SUB 15
+S:ADD 2
+MOV 0 RIGHT
+MOV 3 RIGHT
+MOV 0 RIGHT
+JLZ S
+MOV -1 RIGHT
+MOV ACC,RIGHT
+SWP
+ADD 1
+MOV ACC,RIGHT
+SWP
+
+@9
+MOV LAST,DOWN
+MOV LAST,DOWN
+MOV 3 DOWN
+MOV ANY,DOWN
+
+@10

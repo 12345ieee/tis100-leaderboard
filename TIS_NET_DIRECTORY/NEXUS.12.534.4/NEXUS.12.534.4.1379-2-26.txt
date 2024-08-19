@@ -1,0 +1,58 @@
+@0
+
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+
+
+@6
+
+
+@7
+
+
+@8
+   ADD 8
+S: MOV ACC RIGHT
+   SUB 70
+
+L: MOV -4  RIGHT
+   ADD 10
+   JLZ L
+
+   MOV 999 RIGHT
+
+   SUB 4
+   JGZ S
+   NEG
+   SUB 2
+
+@9
+MOV 0    DOWN
+MOV ACC  DOWN
+ADD 1
+JRO LEFT
+MOV 0    DOWN
+MOV 3    DOWN
+MOV 2    DOWN
+MOV 1    DOWN
+JRO LEFT
+MOV 2    DOWN
+MOV 3    DOWN
+MOV 0    DOWN
+MOV 1    DOWN
+JRO LEFT
+MOV -1   DOWN
+
+@10

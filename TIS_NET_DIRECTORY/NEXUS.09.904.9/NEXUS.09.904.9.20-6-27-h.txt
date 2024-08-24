@@ -1,0 +1,54 @@
+@0
+   JRO UP
+T3:MOV LEFT DOWN!
+T1:MOV UP   DOWN
+   JMP 3
+T2:MOV LEFT NIL!
+   MOV UP   NIL
+3: MOV 5    DOWN
+   MOV UP   DOWN
+
+@1
+MOV 4   UP
+MOV ANY NIL
+
+@2
+MOV UP DOWN
+
+@3
+# T1
+#2...
+#5 1 1 0 3 2 3 0 3
+
+# T2
+#4(4)3...
+#0   0 0 5 3 0
+#V . V V 5^^ V
+
+# T3
+#1 4 2...
+#0 4 0 0 4 5 0 2 0
+#V < V V ^ 5 V ^ V
+
+@4
+MOV 3 LAST
+
+MOV 5 ANY
+MOV 1 LAST
+MOV 1 LAST
+MOV 0 LAST
+MOV 3 LAST
+MOV 2 LAST
+MOV 3 LAST
+MOV 0 LAST
+
+@5
+MOV ANY DOWN
+
+@6
+   JLZ L
+   MOV 0 LEFT
+   ADD 1
+   MOV 0 LEFT
+   MOV 0 LEFT
+L: NEG

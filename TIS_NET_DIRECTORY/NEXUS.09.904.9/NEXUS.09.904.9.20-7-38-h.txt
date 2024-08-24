@@ -4,22 +4,12 @@ T3:MOV LEFT  NIL
 T1:MOV 4     DOWN
    MOV 5     DOWN
 T2:MOV LEFT  NIL
-   MOV RIGHT NIL
-   MOV 5     DOWN
+   MOV RIGHT DOWN
    MOV 3     DOWN
 
 @1
 MOV NIL UP
 MOV ANY NIL
-
-# T1 2
-#5 1 1 0 3 2 3 0 3
-# T2 4
-#0 0 0 5 3 0
-# T3 1
-#0 4 0 0 4 5 0 2 0
-
-#  ^     X X
 
 @2
 MOV 0  LAST
@@ -34,6 +24,13 @@ MOV 2  ANY
 @3
 MOV DOWN UP
 MOV ANY  NIL
+
+# T1 2
+#5,1,1,0,3,2,3,0,3
+# T2 4
+# 0 0 0 5 3 0
+# T3 1
+#0 4 0 0 4 5 0 2 0
 
 @4
 MOV 3 LAST
@@ -58,5 +55,5 @@ MOV LAST  DOWN
 
 @6
 NOP
-MOV NIL UP
+MOV 5 UP
 MOV 4   ANY

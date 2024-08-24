@@ -19,6 +19,7 @@ MOV UP DOWN
 # T1
 #2...
 #5 1 1 0 3 2 3 0 3
+#      V       V
 
 # T2
 #4(4)3...
@@ -31,16 +32,14 @@ MOV UP DOWN
 #V < V V ^ 5 V ^ V
 
 @4
-MOV 3 LAST
-
-MOV 5 ANY
-MOV 1 LAST
-MOV 1 LAST
-MOV 0 LAST
-MOV 3 LAST
-MOV 2 LAST
-MOV 3 LAST
-MOV 0 LAST
+   JNZ N
+   MOV 5 ANY
+   MOV 1 LAST
+   MOV 1 LAST
+   ADD 1
+N: MOV 3 LAST
+   MOV 2 LAST
+   MOV 3 LAST
 
 @5
 MOV ANY DOWN

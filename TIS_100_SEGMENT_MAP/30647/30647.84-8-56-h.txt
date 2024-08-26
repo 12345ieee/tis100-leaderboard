@@ -1,0 +1,84 @@
+@0
+   JGZ G
+   MOV -2 LAST
+L: JLZ L
+
+   MOV 2  ANY
+   MOV 9  ACC
+   MOV -2 ANY
+   MOV 2  LAST
+
+G: MOV -1 LAST
+   SUB 2
+
+@1
+   MOV -38  ACC
+   ADD UP
+   JRO ACC
+3: MOV LEFT NIL
+   MOV 39   DOWN
+   MOV LEFT NIL
+   JMP O
+2: MOV LEFT NIL
+   MOV 71   DOWN
+   JMP O
+1: MOV 46   DOWN
+O: MOV UP   DOWN
+   JMP O
+   JMP 2
+
+@2
+   JGZ O
+   JMP S
+O: MOV UP DOWN
+S: ADD 1
+
+@3
+
+
+@4
+   MOV ANY  RIGHT
+   MOV ANY  ACC
+   MOV ACC  RIGHT
+   JGZ G
+   JRO LAST
+
+   NEG
+G: MOV ACC  RIGHT
+   JRO ANY
+
+3: MOV -2   RIGHT
+   MOV -2   RIGHT
+   MOV 2    RIGHT
+   JMP 3
+
+@5
+   NEG
+   NOP
+L: JGZ O
+   MOV -1   ACC
+O: MOV UP   RIGHT
+   JRO LEFT
+   JGZ L
+
+@6
+MOV ANY DOWN
+MOV ANY DOWN
+MOV 0   DOWN
+
+@7
+
+
+@8
+   ADD 1
+N: MOV 6  LAST
+   NEG
+   JLZ N
+
+   MOV -2 ANY
+   MOV -2 LAST
+
+@9
+MOV UP DOWN
+
+@10

@@ -2,14 +2,12 @@
    JRO UP
    MOV 1 RIGHT
    MOV 11 RIGHT
-   NOP
-   NOP
-   NOP
    MOV 11 RIGHT
    MOV 1 DOWN
+   JRO -2
 
 @1
-   MOV LEFT DOWN
+MOV LEFT DOWN
    MOV 3 DOWN
    MOV 5 DOWN
    MOV 3 DOWN
@@ -21,16 +19,14 @@
    MOV 3 DOWN
    MOV 4 DOWN
 
-   # TEST 3
-
 @2
-## CHEAT
+
 
 @3
 
 
 @4
-   JRO UP
+JRO UP
    MOV 3 RIGHT
    MOV 5 RIGHT
    MOV 0 RIGHT
@@ -41,10 +37,8 @@
    MOV 1 RIGHT
    MOV 4 RIGHT
 
-   # TEST 2
-
 @5
-   JRO UP
+JRO UP
    MOV 2 DOWN
    MOV 4 DOWN
    MOV 0 DOWN
@@ -58,16 +52,11 @@
 R: MOV ANY DOWN
    JMP R
 
-   # TEST 1
-
 @6
-# PASSES 3 GIVEN
-# TESTS IN 210
 
-#
 
 @7
-   MOV ACC DOWN
+ MOV ACC DOWN
 B: JRO RIGHT
    SUB 9
    JEZ O
@@ -78,7 +67,7 @@ O: MOV -1 DOWN
 @8
 D: MOV UP ACC
    JEZ O
-G: MOV -1 LEFT
-   SUB 1
+G: SUB 1
+   MOV -1 LEFT
    JNZ G
 O: MOV 1 LEFT

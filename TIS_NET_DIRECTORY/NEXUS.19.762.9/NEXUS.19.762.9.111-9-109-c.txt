@@ -1,0 +1,128 @@
+@0
+   JRO UP
+   MOV 1 RIGHT
+   MOV 13 RIGHT
+   SUB 1 # 3 WORKS
+   ADD 5 # 4 WORKS
+   JMP .
+   MOV 14 RIGHT
+X: JMP X
+.: MOV 10 DOWN
+&: MOV ACC LEFT
+   MOV -105 ACC
+<: ADD 2
+   JLZ <
+   ADD UP
+   JMP &
+
+@1
+   JRO LEFT
+   MOV 13 DOWN
+   MOV 12 DOWN
+   MOV 6 DOWN
+   MOV -5 DOWN
+   MOV -1 DOWN
+   MOV -5 DOWN
+   MOV -5 DOWN
+   MOV -6 DOWN
+   MOV -4 DOWN
+   MOV -7 DOWN
+   MOV -8 DOWN
+   MOV -3 DOWN
+   MOV 12 DOWN
+   MOV 1 DOWN
+
+@2
+## CHEAT
+
+   MOV RIGHT ACC
+   JNZ A
+   MOV -3 RIGHT
+   MOV 99 DOWN
+A: SUB 1
+   MOV 1 RIGHT
+   JGZ A
+   MOV 3 RIGHT
+
+@3
+   MOV RIGHT ACC
+F: SUB 1
+   MOV -1 DOWN
+   JGZ F
+M: MOV 10 DOWN
+   MOV UP LEFT
+E: MOV DOWN ACC
+   JRO LEFT
+   MOV ACC UP
+   JMP E
+   SUB 1
+O: MOV ACC DOWN
+   MOV UP ACC
+   JGZ M
+   JMP O
+
+@4
+   MOV UP DOWN
+   MOV 10 LEFT
+   MOV 864 ACC
+>: NOP
+   NOP
+   NOP
+   SUB 1
+   JGZ >
+   MOV -10 DOWN
+   JRO 0
+
+@5
+   JRO UP
+   MOV 12 DOWN
+   MOV 5 DOWN
+   MOV -4 DOWN
+   MOV -6 DOWN
+   MOV -1 DOWN
+   MOV -8 DOWN
+   MOV -5 DOWN
+   MOV -6 DOWN
+   MOV -6 DOWN
+   MOV -2 DOWN
+   MOV -5 DOWN
+   MOV 1 DOWN
+&: MOV UP DOWN
+   JMP &
+
+@6
+   ADD UP
+>: SUB 1
+   JGZ >
+   MOV 1 RIGHT
+
+@7
+   JRO ANY
+   MOV ACC DOWN
+   MOV ACC DOWN
+   MOV ACC DOWN
+   MOV ACC DOWN
+   MOV ACC DOWN
+   MOV ACC DOWN
+   MOV ACC DOWN
+   MOV ACC DOWN
+   ADD 1
+   JRO LAST
+   MOV -1 DOWN
+
+@8
+   JRO UP
+   MOV 5 LEFT
+   MOV -6 LEFT
+   MOV -4 LEFT
+   MOV -8 LEFT
+   MOV -2 LEFT
+   MOV -1 LEFT
+   MOV -4 LEFT
+   MOV -9 LEFT
+   MOV -4 LEFT
+   MOV -5 LEFT
+   MOV 1 LEFT
+&: MOV UP LEFT
+   MOV UP LEFT
+   JMP &

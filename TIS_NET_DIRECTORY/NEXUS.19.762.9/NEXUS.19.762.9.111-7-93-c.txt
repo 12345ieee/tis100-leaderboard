@@ -1,13 +1,12 @@
 @0
    JMP X
    .: MOV 10 DOWN
-   MOV 4 DOWN
+   MOV 3 DOWN
 &: MOV UP,DOWN
    JMP &
 X: JRO UP
    MOV 1 RIGHT
    MOV 13 RIGHT
-   JRO 0
    JMP . # 3 WORK
    MOV 14 RIGHT
 
@@ -48,8 +47,8 @@ O: MOV ACC DOWN
    JMP O
 
 @4
-   MOV UP DOWN
-   MOV 10 LEFT
+   MOV UP LEFT
+   MOV 10 DOWN
 >: MOV UP,ACC
    ADD 1
    JEZ E

@@ -1,16 +1,15 @@
 @0
-   JRO UP
-   MOV 1 RIGHT
-   MOV 13 RIGHT
-   SUB 1 # 3 WORKS
-   ADD 4 # 4 WORKS
-   JMP .
-   MOV 14 RIGHT
-X: JMP X
-.: MOV 10 DOWN
-MOV ACC,DOWN
+   JMP X
+   .: MOV 10 DOWN
+   MOV 4 DOWN
 &: MOV UP,DOWN
    JMP &
+X: JRO UP
+   MOV 1 RIGHT
+   MOV 13 RIGHT
+   JRO 0
+   JMP . # 3 WORK
+   MOV 14 RIGHT
 
 @1
    JRO LEFT
@@ -59,7 +58,7 @@ S: MOV -1 LEFT
    JGZ S
    MOV 1 LEFT
    JMP >
-E: MOV 3 LEFT!
+E: MOV 3 LEFT
    MOV -10 DOWN
 
 @5

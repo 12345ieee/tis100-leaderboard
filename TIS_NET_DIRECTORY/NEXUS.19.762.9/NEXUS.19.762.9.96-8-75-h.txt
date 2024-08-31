@@ -21,13 +21,12 @@
    SUB RIGHT
    ADD RIGHT
    >:SUB 7
-   JLZ L
    MOV 1 RIGHT
+   JLZ L
    JGZ >
    MOV 9 ACC
    JMP >
-L: NOP
-   MOV 2 RIGHT
+L: MOV 2 RIGHT
    MOV -10 RIGHT
 S: MOV 1 RIGHT
    ADD 1
@@ -42,8 +41,7 @@ S: MOV 1 RIGHT
 
    MOV ANY LEFT
    MOV LEFT DOWN
-   NOP
-   JRO -2
+   JRO -1
 
 @4
    MOV 1 ANY

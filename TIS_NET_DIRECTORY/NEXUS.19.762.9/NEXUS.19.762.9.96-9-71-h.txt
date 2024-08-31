@@ -57,13 +57,12 @@
    JMP &
 
 @6
-   MOV 154 ACC
+   MOV 181 ACC
 >: MOV 1 RIGHT
    SUB 9
    JGZ >
-<: ADD 1
-   JLZ <
    MOV -10 RIGHT
+   JRO 0
 
 @7
    MOV 0 DOWN

@@ -3,16 +3,13 @@
    MOV 1 RIGHT
    MOV 13 RIGHT
    SUB 1 # 3 WORKS
-   ADD 5 # 4 WORKS
+   ADD 4 # 4 WORKS
    JMP .
    MOV 14 RIGHT
 X: JMP X
 .: MOV 10 DOWN
-&: MOV ACC LEFT
-   MOV -105 ACC
-<: ADD 2
-   JLZ <
-   ADD UP
+MOV ACC,DOWN
+&: MOV UP,DOWN
    JMP &
 
 @1
@@ -33,28 +30,19 @@ X: JMP X
    MOV 1 DOWN
 
 @2
-## CHEAT
 
-   MOV RIGHT ACC
-   JNZ A
-   MOV -3 RIGHT
-   MOV 99 DOWN
-A: SUB 1
-   MOV 1 RIGHT
-   JGZ A
-   MOV 3 RIGHT
 
 @3
    MOV RIGHT ACC
+   MOV 10 DOWN
 F: SUB 1
    MOV -1 DOWN
    JGZ F
 M: MOV 10 DOWN
-   MOV UP LEFT
-E: MOV DOWN ACC
-   JRO LEFT
-   MOV ACC UP
-   JMP E
+   JRO RIGHT
+   MOV DOWN UP
+   JRO -2
+   MOV DOWN,ACC
    SUB 1
 O: MOV ACC DOWN
    MOV UP ACC
@@ -64,14 +52,16 @@ O: MOV ACC DOWN
 @4
    MOV UP DOWN
    MOV 10 LEFT
-   MOV 864 ACC
->: NOP
-   NOP
-   NOP
+>: MOV UP,ACC
+   ADD 1
+   JEZ E
+S: MOV 1 LEFT
    SUB 1
-   JGZ >
+   JGZ S
+   MOV 3 LEFT
+   JMP >
+E: MOV 0 LEFT!
    MOV -10 DOWN
-   JRO 0
 
 @5
    JRO UP
@@ -91,10 +81,7 @@ O: MOV ACC DOWN
    JMP &
 
 @6
-   ADD UP
->: SUB 1
-   JGZ >
-   MOV 1 RIGHT
+
 
 @7
    JRO ANY

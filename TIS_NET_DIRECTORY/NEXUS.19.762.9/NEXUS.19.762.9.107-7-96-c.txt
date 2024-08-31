@@ -1,21 +1,21 @@
 @0
    JMP X
-.: MOV 9 DOWN
-   MOV ACC DOWN
+.: MOV 10 DOWN
+   MOV 4 DOWN
 &: MOV UP,DOWN
    JMP &
 X: JRO UP
    MOV 1 RIGHT
-   MOV 11 RIGHT
-   SUB 1
-   ADD 4
-   JMP . # 3 WORK
+   MOV 14 RIGHT
+   MOV 14 RIGHT
+   JMP . # 4 WORK
    MOV 12 RIGHT
 
 @1
    JRO LEFT
    MOV 12 DOWN
    MOV -5 DOWN
+   MOV 11 DOWN
    MOV -1 DOWN
    MOV -5 DOWN
    MOV -5 DOWN
@@ -25,8 +25,8 @@ X: JRO UP
    MOV -8 DOWN
    MOV -3 DOWN
    MOV 1 DOWN
-   MOV 1 DOWN
    MOV 11 DOWN
+   MOV 1 DOWN
 
 @2
 
@@ -63,9 +63,9 @@ E: MOV 3 LEFT
    MOV -10 DOWN
 
 @5
-   JRO UP
-   MOV 1 DOWN
    MOV UP DOWN
+   MOV UP DOWN
+   JRO UP
    MOV -4 DOWN
    MOV -6 DOWN
    MOV -1 DOWN
@@ -98,7 +98,7 @@ E: MOV 3 LEFT
    MOV -1 DOWN
 
 @8
-JRO UP
+   JRO UP
    MOV 6 LEFT
    JRO UP
    MOV -6 LEFT

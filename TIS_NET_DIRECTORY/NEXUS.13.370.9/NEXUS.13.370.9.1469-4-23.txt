@@ -4,13 +4,13 @@
 @1
    MOV UP  ACC
    JEZ Z
-   SUB 269
-   JGZ G
-   MOV -2  ACC
-Z: ADD 1
-G: SAV
+   SUB 270
+Z: SUB 997
+   ADD 998
+   SAV
    MOV UP  ACC
-   JMP E
+   MOV 0   LAST
+   SUB 1
 N: SWP
    MOV ACC ANY
    SWP

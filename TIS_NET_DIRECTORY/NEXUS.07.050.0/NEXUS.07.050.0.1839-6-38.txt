@@ -1,0 +1,69 @@
+@0
+MOV UP RIGHT
+
+@1
+MOV UP   RIGHT
+MOV LEFT RIGHT
+MOV -1   RIGHT
+
+@2
+   MOV UP    ACC
+   MOV RIGHT DOWN
+
+S: MOV ACC   DOWN
+   MOV ACC   DOWN
+   JLZ L
+D: MOV ACC   DOWN
+   MOV ACC   DOWN
+   MOV LEFT  ACC
+   JMP S
+
+L: MOV -999  DOWN
+   MOV -999  DOWN
+
+@3
+MOV UP LEFT
+
+@4
+
+
+@5
+
+
+@6
+K: MOV UP  ACC
+
+D: SUB UP
+   JGZ B
+   ADD UP
+   MOV ACC DOWN
+   MOV ACC DOWN
+   MOV UP  NIL
+   JMP K
+
+B: MOV UP  DOWN
+   MOV UP  DOWN
+   ADD UP
+   JGZ D
+   JEZ D
+
+@7
+
+
+@8
+
+
+@9
+   MOV UP  NIL
+
+S: MOV UP  ACC
+D: SUB UP
+   JLZ S
+   ADD UP
+   JLZ L
+   JMP D
+
+L: ADD 998
+   MOV ACC DOWN
+
+@10

@@ -26,8 +26,8 @@
    JNZ >
    JRO 2
 <: MOV 1 DOWN
-   MOV 0 DOWN
    MOV LEFT ACC
+   MOV 0 DOWN
    MOV ACC DOWN
    JGZ <
    MOV 3 DOWN

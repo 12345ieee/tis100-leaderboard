@@ -1,0 +1,65 @@
+@0
+
+
+@1
+   MOV UP   DOWN
+   MOV UP   ACC
+   SWP
+   MOV UP   DOWN
+   MOV UP   ACC
+L1:SWP
+   MOV ACC  DOWN
+   ADD 1
+   SWP
+   SUB 1
+   JEZ Z
+   MOV -5   DOWN
+   JMP L1
+
+Z: MOV -999 DOWN
+
+@2
+
+
+@3
+
+
+@4
+   MOV UP  ACC
+   SWP
+   MOV 6   ACC
+   SUB UP
+
+-5:SWP
+   MOV ACC RIGHT
+   MOV UP  RIGHT
+   SWP
+   MOV ACC RIGHT
+   JRO UP
+
+@5
+MOV LEFT DOWN
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+   MOV UP DOWN
+   MOV UP DOWN
+   MOV 3  DOWN
+   MOV 3  DOWN
+
+   JRO UP
+
+D5:MOV 3  DOWN
+D4:MOV 3  DOWN
+D3:MOV 3  DOWN
+   MOV -1 DOWN
+
+@10

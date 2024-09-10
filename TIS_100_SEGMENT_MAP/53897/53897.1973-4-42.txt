@@ -1,5 +1,5 @@
 @0
-##4NODE MIN CYCLES
+
 
 @1
 ^: MOV UP RIGHT
@@ -19,12 +19,12 @@
 @2
    MOV LEFT ACC
    MOV ACC LEFT
->: MOV 3 DOWN
+>: MOV 3 ANY
    MOV LEFT DOWN
    SUB 1
-   JEZ <
    MOV 1 DOWN
-   JMP >
+   JNZ >
+   JRO 2
 <: MOV 1 DOWN
    MOV 0 DOWN
    MOV LEFT ACC
@@ -48,9 +48,9 @@
    MOV UP DOWN
    SUB 1
    JRO UP
-   MOV -5 DOWN
+   MOV 0 DOWN
    JMP ^
-   MOV 1 DOWN
+   MOV 2 DOWN
 
 @7
 
@@ -64,7 +64,6 @@
    MOV UP DOWN  #1
    MOV UP DOWN  #2
    MOV -1 DOWN
-   JRO UP
-   ADD 2
+   ADD UP
 
 @10

@@ -44,19 +44,17 @@ E: MOV -12 RIGHT
    JRO LEFT
 
 @6
-   MOV 241 ACC
+   MOV 481 ACC
 >: MOV LEFT NIL
-   SUB 30
+   SUB 60
    JGZ >
-<: ADD 1
+<: ADD 2
    JLZ <
    MOV 6 DOWN
-   MOV 1 DOWN
-   MOV 1 DOWN
-   MOV 3 DOWN
-   MOV 3 DOWN
-   MOV 2 DOWN
-   MOV 1 DOWN
+   MOV ACC DOWN
+   MOV ACC DOWN
+   ADD 1
+   JRO -3
 
 @7
 
@@ -79,7 +77,7 @@ S: MOV  3 RIGHT
    MOV ANY DOWN
 
 @10
-&: MOV 3 LEFT
+   MOV 3 LEFT
    ADD 3
    JRO UP
    MOV ACC LEFT

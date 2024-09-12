@@ -48,7 +48,6 @@ S: MOV ACC  DOWN
    MOV 2 UP
    MOV 24 UP
    MOV 2 UP
-   MOV 4 UP
    MOV DOWN UP
    MOV DOWN UP
    MOV DOWN UP
@@ -101,6 +100,7 @@ E: MOV -12 RIGHT
 
 @7
    MOV 4 UP
+   MOV 4 UP
    MOV 1 UP
    MOV 5 UP
    MOV 4 UP
@@ -111,7 +111,6 @@ E: MOV -12 RIGHT
    MOV 3 UP
    MOV 3 UP
    MOV 12 UP
-   MOV 4 UP
 
 @8
    ADD 11

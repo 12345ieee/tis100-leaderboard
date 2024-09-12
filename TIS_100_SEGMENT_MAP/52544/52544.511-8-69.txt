@@ -28,6 +28,7 @@ G: MOV -4 RIGHT
 E: MOV -11 RIGHT
 
 @5
+   MOV 5 DOWN
    MOV LAST ANY
 
    MOV LEFT ACC
@@ -58,7 +59,7 @@ E: MOV -11 RIGHT
 
 
 @8
-   MOV 8 ACC
+   MOV 7 ACC
 <: SUB 1
    JGZ <
    MOV 9 ACC
@@ -79,8 +80,8 @@ S: MOV 3 RIGHT
 
 @10
    ADD 3
-   MOV 5 LEFT
-   MOV 3 LEFT
+   MOV 5 LAST
+   MOV 3 ANY
    MOV ACC LEFT
    MOV ACC LEFT
 E: MOV ACC LEFT
@@ -88,8 +89,7 @@ E: MOV ACC LEFT
    MOV -1 LEFT
    MOV 0 ACC
    JRO UP
-   ADD 1
+   ADD 3
    MOV 6 LEFT
    MOV 3 LEFT
-   JEZ E
-   MOV 3 LEFT
+   JMP E

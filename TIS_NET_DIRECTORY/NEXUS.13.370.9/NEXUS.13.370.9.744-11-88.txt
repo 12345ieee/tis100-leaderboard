@@ -1,15 +1,13 @@
 @0
+   MOV -3 ACC
    MOV RIGHT DOWN
-   SUB 4
    ADD RIGHT
-   JEZ .
 >: MOV 2 DOWN
    SUB 1
    JGZ >
-.: MOV 1 DOWN
+   MOV 1 DOWN
    MOV 2 DOWN
    MOV -4 DOWN
-   MOV 1 ACC
 
 @1
    SUB UP
@@ -52,23 +50,27 @@
 # 180: -DX STALL 0
 
 @4
-   MOV -263 ACC
+   MOV -94 ACC
    ADD UP
-   JGZ &
-   ADD 179
+   JLZ &
+   SUB 179
 &: JRO UP
-   SUB 5
+   ADD 5
    MOV ACC RIGHT
    JMP &
 
-# IN= 90:(6)* 1 1
-# IN=270:(7)* 2 2
+# IN= 90:(-4)* 1 1
+# IN=270:(-3)* 2 2
 
 @5
-   JNZ .
-   MOV RIGHT DOWN
+   MOV RIGHT ACC
+   MOV ACC DOWN
+   MOV ACC RIGHT
+   SUB ACC
+   JMP &
+   SUB 2
    ADD 1
-.: MOV ACC RIGHT
+   MOV ACC RIGHT
    MOV -3 RIGHT
 &: JRO LEFT
    SUB 2
@@ -76,18 +78,15 @@
    MOV ACC RIGHT
    MOV -4 RIGHT
    JMP &
-   SUB 2
-   ADD 1
 
 @6
    MOV -1 ACC
    ADD UP
    MOV ACC LEFT
-   SAV
-   SUB 5
+   SUB 4
 >: SUB 1
    JGZ >
-   SWP
+   MOV LEFT ACC
    JRO 2
    ADD UP
    MOV -1 RIGHT
@@ -107,33 +106,20 @@
 # JUMPS -3 OR -4
 
 @8
-   MOV -5 ACC
-   ADD UP
+   MOV UP ACC
+   SUB 4
 >: JGZ >
-   ADD 6
-   SWP
-   JEZ >
-   NOP
+   ADD 5
+   MOV -1 RIGHT
    MOV ACC RIGHT
    MOV 0 RIGHT
    MOV 0 RIGHT
    MOV 0 RIGHT
    MOV 0 RIGHT
-   MOV -1 RIGHT
-   NOP
-   MOV 3 RIGHT
 
 @9
    MOV LAST DOWN
    MOV LAST DOWN
-   MOV ANY DOWN
-   MOV ANY DOWN
-   MOV ANY DOWN
-   MOV ANY DOWN
-   MOV LAST DOWN
-   MOV ANY DOWN
-   MOV ANY DOWN
-   MOV ANY DOWN
    MOV ANY DOWN
 
 @10

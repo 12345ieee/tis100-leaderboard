@@ -4,15 +4,15 @@
    ADD RIGHT
    JEZ .
    ADD 9
->: MOV 3 DOWN
+>: MOV 9 DOWN
    SUB 1
    JGZ >
-^: MOV 1 DOWN
-   MOV -3 ACC
+   MOV 7 DOWN
+^: MOV -3 ACC
    MOV RIGHT DOWN
    ADD RIGHT
    JMP >
-.: MOV -1 DOWN
+.: MOV 1 DOWN
    JMP ^
 
 @1
@@ -58,23 +58,23 @@
    ADD UP
    JLZ &
    SUB 179
-   JMP &
-   MOV -8 RIGHT
 &: JRO UP
+   MOV -3 RIGHT
+   MOV -3 RIGHT
+   MOV -3 RIGHT
+   MOV -3 RIGHT
+   MOV -3 RIGHT
+   MOV -7 RIGHT
    ADD 5
    MOV ACC RIGHT
    MOV ACC RIGHT
    JLZ &
 
-# IN= 90:(-4)* 1 1
-# IN=270:(-3)* 2 2
-
 @5
    JMP *
    MOV DOWN RIGHT
    MOV -3 RIGHT
-   JRO DOWN
-   ADD 10
+   ADD 5
    SUB 2
 *: ADD 1
    MOV ACC RIGHT
@@ -116,17 +116,6 @@
 
 @8
    MOV 8 UP
-   MOV -2 UP
-   MOV 6 UP
-   MOV -2 UP
-   MOV 5 UP
-   MOV -2 UP
-   MOV 4 UP
-   MOV -2 UP
-   MOV 3 UP
-   MOV -2 UP
-   MOV 2 UP
-   MOV 1 UP
 
 @9
    MOV LAST DOWN

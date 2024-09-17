@@ -20,7 +20,7 @@
 @2
     MOV LEFT ACC
     JRO 2
--2: MOV ACC DOWN
+    MOV ACC DOWN
     MOV ACC DOWN
 R:  JRO DOWN
 1:  MOV 2 LEFT
@@ -29,7 +29,6 @@ R:  JRO DOWN
 
 
 @4
-   MOV LAST ACC
    MOV ACC  DOWN
    MOV LAST DOWN
    ADD ACC
@@ -40,6 +39,7 @@ R: MOV 3   DOWN
    SUB 2
    JNZ R
    MOV ANY DOWN
+   MOV LAST ACC
 
 @5
    JRO RIGHT

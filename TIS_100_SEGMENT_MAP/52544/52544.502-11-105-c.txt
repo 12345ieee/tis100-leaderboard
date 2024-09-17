@@ -78,12 +78,7 @@ E: MOV -4 RIGHT
    JRO ANY
 
 @6
-   MOV 9 ACC
->: MOV -5 LEFT
-   SUB 1
-   JGZ >
-   MOV -8 DOWN
-   MOV -5 DOWN
+MOV DOWN LEFT
 
 @7
    MOV 4 UP
@@ -114,15 +109,18 @@ S: MOV 3 RIGHT
    JRO UP
 
 @9
-   MOV ANY DOWN
+   MOV ANY,DOWN
 
 @10
    MOV 3 LEFT
    MOV 11 LEFT
-   NEG
-   ADD 3
+E: ADD 3
    MOV ACC LEFT
    MOV ACC LEFT
    MOV ACC LEFT
    MOV 0 LEFT
-   JRO UP
+   JEZ E
+   MOV 37 ACC
+L: SUB 4
+   MOV -5 UP
+   JGZ L

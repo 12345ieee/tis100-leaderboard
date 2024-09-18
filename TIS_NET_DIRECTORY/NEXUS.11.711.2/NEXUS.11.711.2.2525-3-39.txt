@@ -1,7 +1,5 @@
 @0
-## MIN NODES
 
-# SEPT 2017
 
 @1
 
@@ -13,16 +11,11 @@
 
 
 @4
-#  1 -> WRITE DIFF
-# -1 -> WRITE SAME
-# 99 -> END LINE
 
-# NEW LINE OFFSET
-# IS GIVEN BY NODE
-# AT RIGHT
 
 @5
 P: MOV RIGHT ACC
+   JRO 2
 M: MOV 1 DOWN
    SUB 1
    JGZ M
@@ -60,12 +53,10 @@ N: ADD 1
 @9
 S: MOV 0 DOWN
    MOV ACC DOWN
+W: MOV 3 DOWN
    JRO UP
-   MOV 3 DOWN
-W: JRO UP
    MOV 0 DOWN
    JRO UP
-   MOV 3 DOWN
    JMP W
 P: MOV -1 DOWN
    NEG
@@ -74,4 +65,3 @@ P: MOV -1 DOWN
    JMP P
 
 @10
-

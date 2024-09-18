@@ -20,13 +20,13 @@ M: SUB 1
    MOV 1 DOWN
    JGZ M
 E: MOV RIGHT ACC
-   JGZ G
+   JLZ N
+G: MOV 4 DOWN
+   MOV ACC DOWN
+   JMP P
 N: ADD 1
    MOV -1 DOWN
    JLZ N
-   JEZ P
-G: MOV 4 DOWN
-   MOV ACC DOWN
 
 @6
    MOV ACC LEFT
@@ -60,7 +60,7 @@ W: MOV 3 DOWN
    JRO UP
    JMP W
 P: MOV -1 DOWN
+   SUB UP
    NEG
-   ADD UP
 
 @10

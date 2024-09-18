@@ -14,8 +14,7 @@
 
 
 @5
-P: MOV -1 ACC
-   ADD RIGHT
+P: MOV RIGHT ACC
    JEZ E
 M: MOV 1 DOWN
    SUB 1
@@ -30,11 +29,10 @@ G: MOV 4 DOWN
    MOV ACC DOWN
 
 @6
-   ADD 1
    MOV ACC LEFT
    SAV
    ADD ACC
-   SUB 31
+   SUB 29
    MOV ACC LEFT
    SWP
    MOV ACC LEFT
@@ -45,6 +43,7 @@ G: MOV 4 DOWN
    SWP
    MOV ACC LEFT
    MOV 18 LEFT
+   ADD 1
 
 @7
 

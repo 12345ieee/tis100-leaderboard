@@ -24,7 +24,7 @@ N: ADD 1
    MOV -1 DOWN
    JLZ N
    JEZ P
-   MOV 99 DOWN
+G: MOV 4 DOWN
    MOV ACC DOWN
 
 @6
@@ -61,7 +61,5 @@ W: MOV 3 DOWN
 P: MOV -1 DOWN
    NEG
    ADD UP
-   JMP S
-   JMP P
 
 @10

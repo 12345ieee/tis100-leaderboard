@@ -1,0 +1,50 @@
+@0
+
+
+@1
+K: MOV -16 ACC
+   ADD UP
+   MOV ACC,RIGHT
+   JLZ D
+   MOV -1 RIGHT
+   JEZ L
+S: SUB 16
+   JLZ D
+   MOV -1 RIGHT
+   JGZ S
+L: MOV 1 RIGHT
+   JMP K
+D: ADD 8
+   JLZ L
+   MOV 2 RIGHT
+
+@2
+   MOV LEFT ACC
+   ADD 14
+   ADD 4
+   JRO LEFT
+   SUB 2
+   MOV ACC,DOWN
+
+@3
+
+
+@4
+
+
+@5
+
+
+@6
+MOV UP DOWN
+
+@7
+
+
+@8
+
+
+@9
+MOV UP DOWN
+
+@10

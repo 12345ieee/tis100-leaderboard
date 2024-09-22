@@ -1,0 +1,57 @@
+@0
+
+
+@1
+1: MOV UP RIGHT
+
+@2
+1: MOV UP ACC
+2: MOV ACC DOWN
+3: SUB LEFT
+4: JGZ 7
+5: MOV 0 DOWN
+6: JMP 9
+7: MOV ACC DOWN
+8: NEG
+9: MOV ACC DOWN
+
+@3
+
+
+@4
+
+
+@5
+
+
+@6
+# X = B
+# Y = B - A
+# IF Y <= 0:
+#   X -= 0 (B)
+#   OUT(X)
+#   X -= Y (A)
+#   OUT(X)
+# ELSE:
+#   X -= Y (A)
+#   OUT(X)
+#   X += Y (B)
+#   OUT(X)
+# OUT(0)
+1: MOV UP DOWN
+
+@7
+
+
+@8
+
+
+@9
+1: MOV UP ACC
+2: SUB UP
+3: MOV ACC DOWN
+4: SUB UP
+5: MOV ACC DOWN
+6: MOV 0 DOWN
+
+@10

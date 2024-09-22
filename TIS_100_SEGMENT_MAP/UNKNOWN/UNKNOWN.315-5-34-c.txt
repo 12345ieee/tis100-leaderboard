@@ -2,18 +2,18 @@
 
 
 @1
-S: MOV -25 ACC
+S: MOV -50 ACC
    ADD UP
-   JLZ 0
-   SUB 25
-   JLZ 1
+   JLZ L
    SUB 25
    JLZ 2
    MOV 3 DOWN
    JMP S
-0: MOV 0 DOWN
+L: ADD 25
+   JLZ 0
+   MOV 1 DOWN
    JMP S
-1: MOV 1 DOWN
+0: MOV 0 DOWN
    JMP S
 2: MOV 2 DOWN
 

@@ -1,0 +1,38 @@
+@0
+
+
+@1
+   MOV -2    DOWN
+   MOV UP    ACC
+
+L: SUB RIGHT
+   JLZ O
+   JMP L
+
+O: ADD RIGHT
+   MOV ACC   DOWN
+
+@2
+MOV ANY ACC
+MOV ACC LEFT
+MOV ACC ANY
+
+@3
+MOV LEFT LEFT
+
+@4
+MOV ANY RIGHT
+
+@5
+MOV LEFT DOWN
+
+@6
+
+
+@7
+MOV 1     ACC
+ADD RIGHT
+MOV ACC   ANY
+
+@8
+MOV UP ANY

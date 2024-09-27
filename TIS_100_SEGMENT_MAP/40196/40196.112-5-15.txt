@@ -13,7 +13,7 @@ MOV UP ACC
 JEZ E
 
 @2
-MOV 1 ANY
+
 
 @3
 
@@ -24,7 +24,7 @@ MOV 0 ANY
 @5
 MOV LEFT NIL
 NOP
-MOV UP DOWN
+MOV 1 DOWN
 
 @6
 

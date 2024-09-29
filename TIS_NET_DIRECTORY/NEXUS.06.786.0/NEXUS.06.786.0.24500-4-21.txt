@@ -5,20 +5,20 @@
    MOV UP RIGHT
 
 @2
-S: MOV UP ACC
+   MOV UP ACC
    MOV ACC DOWN
    SUB LEFT
    JGZ G
 L: ADD 2
-   MOV -1 DOWN
+   MOV 1 DOWN
    JLZ L
-   ADD 998
-   MOV ACC DOWN
+   JEZ S
+   MOV -1 DOWN
    JMP S
 G: SUB 2
-   MOV 1 DOWN
+   MOV -1 DOWN
    JGZ G
-   MOV 998 DOWN
+S: MOV 999 DOWN
 
 @3
 
@@ -39,10 +39,10 @@ G: SUB 2
 
 
 @9
-   MOV UP ACC
-S: SUB UP
-   JGZ S
-   ADD 998
-   MOV ACC DOWN
+   MOV -999 ACC
+S: ADD UP
+   JGZ G
+   JMP S
+G: MOV ACC DOWN
 
 @10

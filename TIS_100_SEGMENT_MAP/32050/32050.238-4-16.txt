@@ -1,0 +1,50 @@
+@0
+
+
+@1
+    MOV UP ACC
+    MOV ACC LAST
+    MOV ACC ANY
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+    MOV UP ACC
+    SUB UP
+    MOV ACC RIGHT
+
+@6
+    MOV LEFT ACC
+    JGZ NN
+N:
+
+    NEG
+
+NN:
+    MOV ACC DOWN
+
+@7
+
+
+@8
+
+
+@9
+NC:
+   MOV 0 DOWN
+S:
+   MOV -10 ACC
+   ADD UP
+   JLZ NC
+C:
+   MOV 1 DOWN
+   JMP S
+
+@10

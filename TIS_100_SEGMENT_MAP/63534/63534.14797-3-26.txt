@@ -2,7 +2,7 @@
 MOV UP RIGHT
 D:SUB 1
 JGZ D
-ADD 200
+ADD 197
 
 @1
 

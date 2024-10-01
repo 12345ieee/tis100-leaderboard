@@ -4,7 +4,7 @@
 D: SUB 5
    JGZ D
 
-   ADD 953
+   ADD 908
 
 @1
 
@@ -13,7 +13,14 @@ D: SUB 5
 
 
 @3
-
+#MOV 7 UP
+#MOV 6 UP
+#MOV 5 UP
+#MOV 4 UP
+#MOV 3 UP
+#MOV 2 UP
+#MOV 1 UP
+#MOV 0 UP
 
 @4
 Z: MOV UP   DOWN
@@ -22,15 +29,15 @@ S: MOV UP   ACC
    JGZ S
    MOV 0    UP
    MOV DOWN NIL
+   JMP R
 
-R: MOV DOWN ACC
-   JEZ Z
+L: MOV UP   ACC
+   MOV DOWN UP
 G: MOV ACC  UP
    SUB DOWN
-   JGZ R
-   MOV UP   ACC
-   MOV DOWN UP
-   JMP G
+   JLZ L
+R: MOV DOWN ACC
+   JNZ G
 
 @5
 

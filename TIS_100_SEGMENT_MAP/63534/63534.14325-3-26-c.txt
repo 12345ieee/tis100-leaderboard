@@ -1,0 +1,53 @@
+@0
+   MOV UP  RIGHT
+
+D: SUB 5
+   JGZ D
+
+   ADD 953
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+Z: MOV UP   DOWN
+S: MOV UP   ACC
+   MOV ACC  DOWN
+   JGZ S
+   MOV 0    UP
+   MOV DOWN NIL
+
+R: MOV DOWN ACC
+   JEZ Z
+G: MOV ACC  UP
+   SUB DOWN
+   JGZ R
+   MOV UP   ACC
+   MOV DOWN UP
+   JMP G
+
+@5
+
+
+@6
+
+
+@7
+G: MOV ACC  LEFT
+   MOV UP   ACC
+   JGZ G
+
+S: MOV LEFT ACC
+   MOV ACC  UP
+   MOV ACC  UP
+   JGZ S
+
+   MOV UP   DOWN
+
+@8

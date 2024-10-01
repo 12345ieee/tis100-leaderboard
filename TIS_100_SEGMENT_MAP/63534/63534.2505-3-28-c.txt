@@ -1,0 +1,50 @@
+@0
+D:MOV UP ACC
+MOV ACC RIGHT
+JGZ D
+ADD 190
+S:SUB 1
+JGZ S
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+S: MOV UP ACC
+   MOV ACC DOWN
+   JGZ S
+   MOV 0 UP
+   MOV DOWN NIL
+R: MOV DOWN ACC
+   JEZ Z
+G: MOV ACC UP
+   SUB DOWN
+   JGZ R
+   MOV UP ACC
+   MOV DOWN UP
+   JMP G
+Z: MOV UP DOWN
+
+@5
+
+
+@6
+
+
+@7
+G: MOV ACC LEFT
+   MOV UP ACC
+   JGZ G
+S: MOV LEFT ACC
+   MOV ACC UP
+   MOV ACC UP
+   JGZ S
+   MOV UP DOWN
+
+@8

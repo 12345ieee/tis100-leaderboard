@@ -1,0 +1,49 @@
+@0
+
+
+@1
+MOV UP,ACC
+MOV ACC RIGHT
+MOV ACC DOWN
+
+@2
+MOV LEFT DOWN
+
+@3
+
+
+@4
+
+
+@5
+MOV UP DOWN
+
+@6
+   SUB 9
+   SUB UP
+   JGZ 1
+   ADD 19
+   JGZ 0
+1: MOV 1 DOWN
+   JMP S
+0: MOV 0 DOWN
+S: MOV UP ACC
+
+@7
+
+
+@8
+S: MOV UP ACC
+   SUB 9
+   SUB UP
+   JGZ 1
+   ADD 19
+   JGZ 0
+1: MOV 1 RIGHT
+   JMP S
+0: MOV 0 RIGHT
+
+@9
+MOV ANY DOWN
+
+@10

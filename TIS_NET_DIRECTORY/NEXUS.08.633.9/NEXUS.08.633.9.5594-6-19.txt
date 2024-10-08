@@ -3,27 +3,24 @@
 
 @1
    MOV UP DOWN
-   MOV DOWN DOWN
 
 @2
 
 
 @3
-   MOV -2 ACC
+   MOV ANY ACC
    ADD 1
-   JRO RIGHT
-   MOV ACC RIGHT
+   MOV ACC ANY
 
 @4
-   MOV UP ACC
-S: MOV -1 LEFT
+   MOV ANY ACC
+S: MOV LEFT LEFT
    SUB 10
    JGZ S
    JEZ S
    ADD 10
    MOV ACC DOWN
-   MOV 1 LEFT
-   MOV LEFT ANY
+   NOP
 
 @5
 
@@ -32,12 +29,14 @@ S: MOV -1 LEFT
 
 
 @7
-   MOV RIGHT DOWN
+   MOV -2 UP
+   MOV -3 UP
+   MOV UP UP
+   MOV UP DOWN
 
 @8
    MOV UP RIGHT
    MOV UP DOWN
-   MOV UP LEFT
 
 @9
    MOV LEFT DOWN

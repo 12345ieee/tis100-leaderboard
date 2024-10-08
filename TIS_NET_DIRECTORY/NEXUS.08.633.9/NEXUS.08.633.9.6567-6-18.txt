@@ -15,11 +15,11 @@
 
 @4
    MOV ANY ACC
-S: MOV LEFT LEFT
-   SUB 10
-   JGZ S
-   JEZ S
-   ADD 10
+S: SUB 10
+   MOV LEFT LEFT
+   JLZ L
+   JMP S
+L: ADD 10
    MOV ACC DOWN
 
 @5

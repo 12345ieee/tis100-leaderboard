@@ -7,7 +7,6 @@ MOV UP RIGHT
    JGZ G
 
 L: MOV ACC DOWN
-   SUB 8
    JMP O
 
 G: SUB 14
@@ -40,13 +39,12 @@ O: MOV ACC DOWN
 G: SUB 1
    JGZ G
    MOV  1   LEFT
-   JMP E
 
-S: MOV UP   LAST
-   MOV 99   LAST
-E: MOV UP   ANY
-   MOV  0   LEFT
-   MOV DOWN NIL
+S: MOV 99   LAST
+   MOV UP   ANY
+   MOV 99   LEFT
+   MOV DOWN LEFT
+   MOV UP   LAST
    JMP S
 
 @5
@@ -56,7 +54,7 @@ E: MOV UP   ANY
 
 
 @7
-MOV 0    UP
+MOV -8   UP
 
 MOV LEFT ACC
 MOV ACC  LEFT

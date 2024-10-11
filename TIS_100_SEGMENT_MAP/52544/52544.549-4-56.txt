@@ -2,12 +2,12 @@
 
 
 @1
-   MOV 8   ACC
+   MOV 8  ACC
    MOV UP  DOWN
    MOV UP  DOWN
    SUB UP
    MOV ACC DOWN
-   SUB 11
+   ADD -11
    MOV ACC DOWN
 N: MOV -2  ACC
    ADD UP
@@ -25,7 +25,7 @@ G: MOV -6  DOWN
 
 
 @4
-MOV 1   DOWN
+MOV 10  DOWN
 MOV UP  DOWN #>X>
 MOV UP  ACC  #>Y
 MOV ACC DOWN #Y>
@@ -34,7 +34,7 @@ SWP
 MOV UP  ACC
 MOV ACC DOWN #XN>
 SWP
-MOV 5   DOWN
+MOV 1   DOWN
 ADD 1
 MOV ACC DOWN #Y>
 SWP
@@ -47,20 +47,10 @@ JRO UP
 
 
 @7
-#3= 1  =7 -6
-#4= 0 =6  -7
-#5=-1 =5  -8
 
-#4 SUB UP
-
-#-7 ADD UP
 
 @8
 J: JRO UP
-   MOV UP  ACC
-   MOV ACC RIGHT#X
-   MOV UP  RIGHT#Y
-   JRO UP
    MOV ACC RIGHT#X
    MOV UP  RIGHT#Y
    JMP O
@@ -69,7 +59,9 @@ J: JRO UP
 N: MOV 1   RIGHT
    MOV UP  NIL
    MOV UP  NIL
-   MOV ACC RIGHT#X
+   JMP R
+S: MOV UP  ACC
+R: MOV ACC RIGHT#X
 O: MOV UP  RIGHT#Y
 
 @9
@@ -87,7 +79,6 @@ MOV 3    DOWN
 MOV -1   DOWN
 MOV LEFT DOWN
 MOV LEFT DOWN
-MOV 3    DOWN
+MOV 3    LAST
 
 @10
-

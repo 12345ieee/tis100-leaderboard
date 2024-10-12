@@ -1,0 +1,46 @@
+@0
+
+
+@1
+MOV -1 ACC
+ADD ANY
+F:MOV LAST ANY
+SUB 1
+JGZ F
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+MOV UP ACC
+MOV ACC ANY
+MOV ACC ANY
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+MOV UP RIGHT
+
+@10
+   MOV 0 DOWN
+   MOV ACC DOWN
+   SUB 899
+N: ADD 30
+   MOV LEFT DOWN
+   JLZ N
+   MOV -999 DOWN
+
+@11

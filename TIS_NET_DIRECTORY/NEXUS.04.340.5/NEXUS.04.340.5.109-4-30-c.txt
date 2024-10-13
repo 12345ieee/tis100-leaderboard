@@ -1,0 +1,57 @@
+@0
+
+
+@1
+   ADD 5
+   SUB UP
+   MOV ACC RIGHT
+E: ADD UP
+   SUB 11
+   NEG
+   MOV ACC RIGHT
+   SUB ACC
+   SUB UP
+   JEZ E
+   ADD 5
+   MOV ACC RIGHT
+   JMP E
+
+@2
+JRO LEFT
+ MOV UP,NIL
+ MOV UP,NIL
+ MOV UP,NIL
+ MOV UP,NIL
+ MOV UP DOWN
+JRO LEFT
+ MOV UP DOWN
+ MOV UP DOWN
+ MOV UP DOWN
+ MOV UP DOWN
+ MOV UP DOWN
+ MOV 0 DOWN
+B: MOV UP,ACC
+   JNZ B
+
+@3
+
+
+@4
+
+
+@5
+
+
+@6
+MOV UP DOWN
+
+@7
+
+
+@8
+
+
+@9
+MOV UP,DOWN
+
+@10

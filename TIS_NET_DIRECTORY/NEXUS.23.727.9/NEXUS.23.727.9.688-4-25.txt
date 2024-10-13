@@ -1,0 +1,46 @@
+@0
+   MOV UP DOWN
+
+@1
+
+
+@2
+
+
+@3
+   ADD 8
+G: MOV LAST DOWN
+   SUB 1
+L: JGZ G
+   MOV RIGHT ACC
+   SAV
+   JRO 2
+S: SUB 1
+   MOV DOWN ANY
+   JGZ S
+   MOV UP RIGHT
+   SWP
+   MOV RIGHT DOWN
+   JMP L
+
+@4
+S: MOV UP ACC
+   MOV UP LEFT
+   JEZ E
+   MOV LEFT ACC
+   MOV ACC LEFT
+   MOV ACC DOWN
+   JMP S
+E: MOV LEFT NIL
+   MOV UP LEFT
+
+@5
+
+
+@6
+
+
+@7
+   MOV UP DOWN
+
+@8

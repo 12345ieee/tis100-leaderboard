@@ -37,10 +37,10 @@ S: MOV 3    ACC #1
 Z: MOV RIGHT ACC
    JEZ R
    MOV 0     DOWN
-   JMP SW
+SW:SWP
+   JMP S
 R: SWP
    MOV ACC   DOWN
-SW:SWP
 
 @3
 S: MOV -4   ACC #4
@@ -80,15 +80,7 @@ SW:SWP
 S: MOV -4  ACC #6
    ADD UP
    JLZ L
-   JEZ Z
    MOV UP  DOWN
-   JMP S
-Z: MOV UP  ACC
-   JNZ SW
-   MOV 0   LEFT
-R: SWP
-   MOV ACC LEFT
-SW:SWP
    JMP S
 L: MOV ACC LEFT
    MOV UP  LEFT
@@ -129,8 +121,8 @@ SW:SWP
 @8
    MOV UP  ACC #7
    JNZ SW
-   NOP
-   NOP
+#   NOP
+#   NOP
    SWP
    MOV 99  LEFT
    MOV ACC LEFT

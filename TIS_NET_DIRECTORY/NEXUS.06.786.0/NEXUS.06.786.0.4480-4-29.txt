@@ -1,0 +1,56 @@
+@0
+
+
+@1
+MOV UP RIGHT
+
+@2
+   MOV -998 ACC
+   ADD UP
+   ADD LEFT
+   JGZ G
+   ADD 996
+   MOV 0 DOWN
+   JRO 2
+G: MOV 498 DOWN
+   MOV ACC DOWN
+
+@3
+
+
+@4
+
+
+@5
+   MOV UP DOWN
+   MOV UP ACC
+G: SUB 48
+   JLZ L
+   MOV 24 DOWN
+  JGZ G
+  JEZ E
+L:ADD 48
+S: SUB 2
+   MOV 1 DOWN
+   JGZ S
+E: ADD 1
+   MOV ACC DOWN
+   MOV 999 DOWN
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+   MOV -999 ACC
+S: ADD UP
+   JGZ G
+   JMP S
+G: MOV ACC DOWN
+
+@10

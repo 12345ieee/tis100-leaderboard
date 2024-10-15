@@ -1,0 +1,53 @@
+@0
+
+
+@1
+S: MOV UP    ACC
+   JEZ E
+   MOV ACC   DOWN
+   SUB 1
+   JGZ S
+   MOV RIGHT DOWN
+   JMP S
+E: MOV 12    DOWN
+   MOV RIGHT DOWN
+   MOV 13    DOWN
+
+@2
+MOV UP LEFT
+
+@3
+
+
+@4
+
+
+@5
+MOV ANY DOWN
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+S: JRO UP
+   JMP 1
+   JMP 2
+   JMP 3
+4: MOV ACC DOWN
+   JMP S
+3: SWP
+   MOV ACC UP
+   SWP
+   ADD UP
+   JMP S
+1: SWP
+   MOV UP ACC
+2: SWP
+
+@10

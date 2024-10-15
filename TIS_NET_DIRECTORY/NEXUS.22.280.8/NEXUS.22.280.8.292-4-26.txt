@@ -9,9 +9,9 @@ S: MOV UP    ACC
    JGZ S
    MOV RIGHT DOWN
    JMP S
-E: MOV 12    DOWN
-   MOV RIGHT DOWN
-   MOV 13    DOWN
+E: MOV -2    LAST
+   MOV RIGHT ANY
+   MOV -1    DOWN
 
 @2
 MOV UP LEFT
@@ -35,6 +35,8 @@ MOV ANY DOWN
 
 
 @9
+   MOV UP ACC
+2: SWP
 S: JRO UP
    JMP 1
    JMP 2
@@ -47,7 +49,5 @@ S: JRO UP
    ADD UP
    JMP S
 1: SWP
-   MOV UP ACC
-2: SWP
 
 @10

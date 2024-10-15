@@ -130,7 +130,6 @@ SW:SWP
 @8
    MOV UP  ACC #7
    JNZ SW
-   NOP
    SWP
    MOV 99  LEFT
    MOV ACC LEFT

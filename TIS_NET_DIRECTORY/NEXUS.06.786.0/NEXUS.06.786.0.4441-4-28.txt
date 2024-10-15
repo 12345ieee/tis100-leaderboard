@@ -49,8 +49,7 @@ E: ADD 1
 @9
    MOV -999 ACC
 S: ADD UP
-   JGZ G
-   JMP S
+   JLZ S
 G: MOV ACC DOWN
 
 @10

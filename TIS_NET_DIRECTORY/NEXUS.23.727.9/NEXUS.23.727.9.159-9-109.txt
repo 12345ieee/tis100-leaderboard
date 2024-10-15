@@ -1,0 +1,139 @@
+@0
+S: MOV UP ACC
+   MOV UP RIGHT
+   JEZ W
+
+R: MOV 0  RIGHT
+   JMP S
+
+W: MOV UP RIGHT
+
+@1
+S: MOV -2   ACC #2
+   ADD LEFT
+   MOV ACC  DOWN
+   JEZ Z
+
+   MOV LEFT DOWN
+   JMP S
+
+Z: MOV LEFT ACC
+   JEZ R
+   MOV 0    DOWN
+   JMP SW
+R: SWP
+   MOV ACC  DOWN
+SW:SWP
+
+@2
+S: MOV 3    ACC #1
+   ADD RIGHT
+   MOV ACC   DOWN
+   JEZ Z
+
+   MOV RIGHT DOWN
+   JMP S
+
+Z: MOV RIGHT ACC
+   JEZ R
+   MOV 0     DOWN
+   JMP SW
+R: SWP
+   MOV ACC   DOWN
+SW:SWP
+
+@3
+S: MOV -4   ACC #4
+   ADD RIGHT
+   MOV ACC   LEFT
+   JEZ Z
+
+   MOV RIGHT LEFT
+   JMP S
+
+Z: MOV RIGHT ACC
+   JEZ R
+   MOV 0     LEFT
+   JMP SW
+R: SWP
+   MOV ACC   LEFT
+SW:SWP
+
+@4
+S: MOV 6    ACC #0
+   ADD RIGHT
+   MOV ACC   LEFT
+   JEZ Z
+
+   MOV RIGHT LEFT
+   JMP S
+
+Z: MOV RIGHT ACC
+   JEZ R
+   MOV 0     LEFT
+   JMP SW
+R: SWP
+   MOV ACC   LEFT
+SW:SWP
+
+@5
+S: MOV -4  ACC #6
+   ADD UP
+   JLZ L
+   JEZ Z
+   MOV UP  DOWN
+   JMP S
+Z: MOV UP  ACC
+   JNZ SW
+   MOV 0   LEFT
+R: SWP
+   MOV ACC LEFT
+SW:SWP
+   JMP S
+L: MOV ACC LEFT
+   MOV UP  LEFT
+
+@6
+S: MOV -4  ACC #5
+   ADD UP
+   MOV ACC RIGHT
+   JEZ Z
+
+   MOV UP  RIGHT
+   JMP S
+
+Z: MOV UP  ACC
+   JEZ R
+   MOV 0   RIGHT
+   JMP SW
+R: SWP
+   MOV ACC RIGHT
+SW:SWP
+
+@7
+S: MOV ANY  ACC #3
+   ADD 2
+   JEZ Z
+N: MOV LAST ACC
+   JEZ S
+   MOV ACC  DOWN
+
+   MOV ANY  ACC #3
+   ADD 2
+   JNZ N
+Z: MOV LEFT ACC
+   JNZ SW
+R: SWP
+   MOV ACC  DOWN
+SW:SWP
+
+@8
+   MOV UP  ACC #7
+   JNZ SW
+   NOP
+   NOP
+   NOP
+   SWP
+   MOV 99  LEFT
+   MOV ACC LEFT
+SW:SWP

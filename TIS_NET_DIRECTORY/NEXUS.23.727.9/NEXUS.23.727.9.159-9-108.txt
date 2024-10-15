@@ -132,7 +132,6 @@ SW:SWP
    JNZ SW
    NOP
    NOP
-   NOP
    SWP
    MOV 99  LEFT
    MOV ACC LEFT

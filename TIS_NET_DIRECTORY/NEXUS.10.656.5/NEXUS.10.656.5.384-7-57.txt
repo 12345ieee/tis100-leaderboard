@@ -1,10 +1,6 @@
 @0
 ## JP WHO
 
-   MOV 10 ACC
-   MOV ACC DOWN
-G: JGZ G
-
 @1
 MOV UP  ACC
 MOV ACC DOWN
@@ -56,7 +52,10 @@ G: MOV RIGHT ACC
    JGZ G
 
 @6
-   MOV UP UP
+   MOV 10 ACC
+   MOV ACC UP
+G: MOV UP UP
+   JGZ G
 
 # MVP NODE :3
 

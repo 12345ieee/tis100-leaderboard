@@ -2,19 +2,16 @@
 
 
 @1
-   ADD 5
-   SUB UP
-   MOV ACC RIGHT
-E: ADD UP
-   SUB 11
-   NEG
-   MOV ACC RIGHT
-   SUB ACC
    SUB UP
    JEZ E
    ADD 5
    MOV ACC RIGHT
-   JMP E
+   NEG
+E: SUB UP
+   ADD 11
+   MOV ACC RIGHT
+
+   SUB ACC
 
 @2
 JRO LEFT

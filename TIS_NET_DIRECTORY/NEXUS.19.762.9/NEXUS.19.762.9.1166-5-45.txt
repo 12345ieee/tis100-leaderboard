@@ -40,11 +40,10 @@ S: MOV ACC LEFT
 
 
 @6
-   ADD 5
-   MOV 0 RIGHT
+   ADD 9
    MOV 0 RIGHT
 E: JEZ E
-   SUB 6
+   SUB 10
 
 @7
    MOV -1 LEFT

@@ -6,14 +6,14 @@ MOV UP RIGHT
 MOV 0 RIGHT
 
 @2
-   MOV 152 DOWN
+   MOV 154 DOWN
    MOV UP ACC
    SUB 313
 S: SUB 2
-   MOV DOWN DOWN
-   JGZ S
+   NOP
+   JGZ H
    ADD LEFT
-   JGZ S
+H: JGZ S
 
 @3
 

@@ -1,0 +1,42 @@
+@0
+
+
+@1
+MOV UP RIGHT
+MOV 0 RIGHT
+
+@2
+   MOV 154 DOWN
+   MOV UP ACC
+   SUB 313
+S: SUB 2
+   NOP
+   NOP
+   JGZ S
+   ADD LEFT
+   JGZ S
+
+@3
+
+
+@4
+
+
+@5
+MOV ANY ACC
+ADD 1
+MOV ACC ANY
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+MOV UP ANY
+
+@10

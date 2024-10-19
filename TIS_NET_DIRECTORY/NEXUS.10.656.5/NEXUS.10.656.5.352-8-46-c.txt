@@ -1,0 +1,72 @@
+@0
+   MOV 38    ACC
+
+G: SUB 1
+   MOV RIGHT DOWN
+   JGZ G
+
+   MOV 999   DOWN
+   JRO -1
+
+@1
+MOV UP  ACC
+MOV ACC RIGHT
+MOV ACC RIGHT
+MOV ACC LEFT
+
+@2
+   MOV LEFT NIL
+   MOV 0    ACC
+
+L: ADD LEFT
+G: SAV
+   SUB LEFT
+   JLZ L
+   MOV LEFT  ACC
+   JGZ G
+
+   SWP
+   MOV ACC   DOWN
+
+@3
+Z: MOV UP  ACC
+   SWP
+   JEZ Z
+   MOV ACC RIGHT
+
+@4
+Z: MOV LEFT ACC
+   SWP
+   JEZ Z
+   MOV ACC  RIGHT
+
+@5
+Z: MOV LEFT ACC
+   SWP
+   JEZ Z
+   MOV ACC  DOWN
+
+@6
+
+
+@7
+   MOV UP   ACC
+   SUB RIGHT
+   MOV ACC  DOWN
+
+   MOV UP   ACC
+
+G: MOV -1   RIGHT
+   SUB RIGHT
+   MOV ACC  DOWN
+   MOV UP   ACC
+   JGZ G
+
+O: MOV -1   DOWN
+   MOV -99  RIGHT
+
+@8
+MOV UP   ACC
+
+MOV ACC  LEFT
+JRO LEFT

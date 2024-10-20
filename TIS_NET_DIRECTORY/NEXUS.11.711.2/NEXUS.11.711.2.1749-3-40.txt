@@ -10,7 +10,7 @@
    MOV ACC DOWN
    ADD 74
    JLZ A
-   ADD 120!
+   ADD 120
 
 B: MOV ACC DOWN
    SUB 194
@@ -31,11 +31,11 @@ A: ADD 136
 
 
 @5
-E: MOV UP ACC
-B: MOV -2 DOWN
-   ADD 15
+E: MOV -3 DOWN
+   MOV UP ACC
+B: ADD 15
+   MOV -2 DOWN
    JLZ B
-   MOV -3 DOWN
 C: SUB 1
    MOV -5 DOWN
    JGZ C
@@ -68,6 +68,7 @@ A: SUB 16
    MOV  3  DOWN
 A: MOV  3  DOWN
    JRO UP
+
    ADD 1
    MOV  -1 DOWN
 

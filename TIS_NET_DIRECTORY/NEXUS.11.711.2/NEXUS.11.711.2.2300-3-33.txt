@@ -1,0 +1,65 @@
+@0
+## NC RECORD
+
+# HIDING SECRETS
+# I WONDER WHAT
+# MAGIC I USED
+
+@1
+   MOV ACC DOWN
+   SUB 152
+   JLZ A
+   ADD 152!
+B: MOV ACC DOWN
+   MOV ACC DOWN
+   SUB 19
+   JMP B
+A: ADD 171
+   MOV ACC DOWN
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+MOV UP ACC
+JEZ E
+A: MOV 1 DOWN
+SUB 19
+JGZ A
+MOV UP ACC
+E: SUB 261
+B: MOV -1 DOWN
+ADD 9
+JLZ B
+C: MOV 1 DOWN
+SUB 1
+JGZ C
+MOV 4 DOWN
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+   MOV 0 DOWN
+   MOV ACC DOWN
+   ADD 1
+A: MOV 3 DOWN
+   JRO UP
+   MOV 0 DOWN
+   JRO UP
+   JMP A
+   MOV -1 DOWN
+
+@10

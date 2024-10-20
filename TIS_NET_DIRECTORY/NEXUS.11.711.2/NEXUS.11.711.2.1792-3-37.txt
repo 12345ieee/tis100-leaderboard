@@ -35,13 +35,13 @@ B: MOV -2 DOWN
    JLZ B
    MOV -1 DOWN
 C: SUB 1
-   MOV  2 DOWN
+   MOV -4 DOWN
    JGZ C
    MOV  6 DOWN
    MOV UP ACC
    JEZ E
 A: SUB 16
-   MOV  2 DOWN
+   MOV -4 DOWN
    JGZ A
    MOV UP ACC
 
@@ -58,16 +58,16 @@ A: SUB 16
    MOV 0   DOWN
    MOV ACC DOWN
    ADD 1
-   JRO 2
 
+   JMP A
+   NOP
+   MOV  0  DOWN
+   MOV  0  DOWN
+   JRO UP
    MOV  3  DOWN
 A: MOV  3  DOWN
    JRO UP
-   MOV  0  DOWN
-   MOV  0  DOWN
-   JRO UP
-   NOP
-   JMP A
+
 
    MOV  -1 DOWN
 

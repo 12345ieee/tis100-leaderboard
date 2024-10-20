@@ -6,15 +6,13 @@
 # MAGIC I USED
 
 @1
-   SUB 152
+   SUB 240
    JLZ A
-   ADD 152!
+   ADD 240
 B: MOV ACC DOWN
-   MOV ACC DOWN
-   SUB 19
+   SUB 30
    JMP B
-A: ADD 171
-   MOV ACC DOWN
+A: ADD 270
    MOV ACC DOWN
 
 @2
@@ -27,21 +25,21 @@ A: ADD 171
 
 
 @5
-E: SUB 252
+A: MOV 1 DOWN
+   SUB 28
+   JGZ A
    MOV -1 DOWN
-B: ADD  9
+B: MOV -1 DOWN
+   ADD 2
    MOV -1 DOWN
    JLZ B
-C: MOV  1 DOWN
-   SUB  1
-   JGZ C
-   MOV  4 DOWN
-   MOV UP ACC
-   JEZ E
-A: SUB  19
-   MOV  1 DOWN
-   JGZ A
-   MOV UP ACC
+   MOV 4 ACC
+G: MOV 1 DOWN
+   SUB 1
+   MOV 1 DOWN
+   JGZ G
+   MOV 9 DOWN
+D: MOV UP ACC
 
 @6
 
@@ -55,7 +53,7 @@ A: SUB  19
 @9
    MOV 0 DOWN
    MOV ACC DOWN
-   ADD 1
+   ADD UP
 A: MOV 3 DOWN
    JRO UP
    MOV 0 DOWN

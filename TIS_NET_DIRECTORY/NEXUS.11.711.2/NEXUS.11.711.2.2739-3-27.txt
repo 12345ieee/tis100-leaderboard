@@ -1,0 +1,62 @@
+@0
+# I RECORD
+
+# HIDING SECRETS
+# I WONDER WHAT
+# MAGIC I USED
+
+@1
+MOV 928 DOWN
+MOV ACC DOWN
+MOV 928 DOWN
+ADD 124
+MOV ACC DOWN
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+A: SUB 116
+   MOV   1 DOWN
+   JGZ A
+
+B: ADD 4
+   MOV  -1 DOWN
+   JLZ B
+
+   MOV ACC DOWN
+   MOV UP  ACC
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+   MOV  0  ANY
+   MOV ACC DOWN
+   JRO UP
+   SUB 9
+   JLZ L
+   SUB 1
+L: SUB 8
+   NEG
+
+A: MOV  3  DOWN
+   JRO UP
+   MOV  0  DOWN
+   JRO UP
+   JMP A
+   MOV -1  LAST
+
+@10

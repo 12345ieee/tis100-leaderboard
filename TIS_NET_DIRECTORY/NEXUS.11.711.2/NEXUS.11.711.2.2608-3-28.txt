@@ -1,21 +1,23 @@
 @0
-## NI RECORD
+## NX RECORD
 
 # HIDING SECRETS
 # I WONDER WHAT
 # MAGIC I USED
 
 @1
-   MOV ACC DOWN
    SUB 248
    JLZ A
    ADD 248
+
 B: MOV 232 DOWN
    MOV ACC DOWN
    SUB 31
    JMP B
+
 A: ADD 279
    MOV 203 DOWN
+   MOV ACC DOWN
 
 @2
 
@@ -27,15 +29,17 @@ A: ADD 279
 
 
 @5
-D: MOV UP ACC
-A: MOV 1 DOWN
-   SUB 29
+A: SUB 29
+   MOV  1 DOWN
    JGZ A
-B: MOV -1 DOWN
-   ADD 1
+
+B: ADD 1
+   MOV -1 DOWN
    JLZ B
    JEZ D
-   MOV 9 DOWN
+   MOV  9 DOWN
+
+D: MOV UP ACC
 
 @6
 
@@ -47,14 +51,16 @@ B: MOV -1 DOWN
 
 
 @9
-   MOV 0 DOWN
+   MOV  0  DOWN
    MOV ACC DOWN
    ADD UP
-A: MOV 3 DOWN
+
+A: MOV  3  DOWN
    JRO UP
-   MOV 0 DOWN
+   MOV  0  DOWN
    JRO UP
    JMP A
-   MOV -1 DOWN
+
+   MOV -1  DOWN
 
 @10

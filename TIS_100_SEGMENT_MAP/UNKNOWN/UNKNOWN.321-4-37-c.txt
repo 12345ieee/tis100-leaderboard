@@ -1,0 +1,58 @@
+@0
+
+
+@1
+S: MOV -50 ACC
+   ADD UP
+   JLZ L
+   SUB 25
+   JLZ 2
+   MOV 3 DOWN
+   JMP S
+L: ADD 25
+   JLZ 0
+   MOV 1 DOWN
+   JMP S
+2: MOV 2 DOWN
+   JMP S
+0: MOV 0 DOWN
+
+@2
+
+
+@3
+
+
+@4
+   MOV 38 ACC
+D: MOV UP DOWN
+   SUB 1
+   JGZ D
+   MOV -1 DOWN
+
+@5
+
+
+@6
+   MOV UP  ACC
+   MOV ACC DOWN
+   MOV ACC RIGHT
+   MOV ACC RIGHT
+
+@7
+   MOV LEFT NIL
+   SWP
+E: MOV LEFT ACC
+   SWP
+   ADD 1
+   SWP
+   SUB LEFT
+   JEZ E
+   ADD LEFT
+   SWP
+   MOV ACC DOWN
+   SWP
+   MOV ACC DOWN
+   MOV 1 ACC
+
+@8

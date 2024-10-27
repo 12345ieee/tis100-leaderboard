@@ -13,9 +13,9 @@ L: ADD 25
    JLZ 0
    MOV 1 DOWN
    JMP S
-0: MOV 0 DOWN
-   JMP S
 2: MOV 2 DOWN
+   JMP S
+0: MOV 0 DOWN
 
 @2
 
@@ -52,6 +52,6 @@ E: MOV LEFT ACC
    MOV 1 ACC
    SWP
    MOV ACC DOWN
-   MOV LEFT NIL
+   MOV LEFT NIL!
 
 @8

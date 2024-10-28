@@ -8,8 +8,7 @@ R: MOV 0   LEFT
 W: MOV ANY RIGHT
 
 @1
-S: MOV -2   ACC #2
-   ADD LEFT
+S: MOV LEFT ACC #0
    MOV ACC  DOWN
    JEZ Z
 
@@ -42,7 +41,7 @@ R: SWP
    MOV ACC   DOWN
 
 @3
-S: MOV -4   ACC #4
+S: MOV -2   ACC #4
    ADD RIGHT
    MOV ACC   LEFT
    JEZ Z
@@ -59,7 +58,7 @@ R: SWP
 SW:SWP
 
 @4
-S: MOV 6    ACC #0
+S: MOV 4    ACC #2
    ADD RIGHT
    MOV ACC   LEFT
    JEZ Z
@@ -76,7 +75,7 @@ R: SWP
 SW:SWP
 
 @5
-S: MOV -4  ACC #6
+S: MOV -6  ACC #6
    ADD UP
    JLZ L
    MOV UP  DOWN
@@ -120,8 +119,6 @@ SW:SWP
 @8
    MOV UP  ACC #7
    JNZ SW
-#   NOP
-#   NOP
    SWP
    MOV 99  LEFT
    MOV ACC LEFT

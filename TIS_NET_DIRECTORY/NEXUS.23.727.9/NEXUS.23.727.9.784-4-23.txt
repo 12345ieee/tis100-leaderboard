@@ -8,8 +8,8 @@ MOV UP DOWN
 
 
 @3
-   SUB RIGHT
    MOV -1 DOWN
+   SUB RIGHT
 G: MOV LAST DOWN
    ADD 1
    JLZ G

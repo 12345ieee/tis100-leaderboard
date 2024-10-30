@@ -4,12 +4,13 @@ S: SWP
    MOV UP ACC
    JEZ 0
    MOV ACC RIGHT
-   SUB 4
-   JEZ 4
-   MOV 1 ACC
-4: ADD 1
-   MOV ACC RIGHT
+   NEG
+   ADD 999
+   ADD 3
+   SUB 997
+   MOV ACC LEFT
    SWP
+   MOV LEFT DOWN
    SUB 1
    JGZ S
 0: MOV -99 DOWN
@@ -26,7 +27,6 @@ S: SWP
    JRO 3
 3: MOV 1 DOWN
    SUB 1
-   MOV LEFT DOWN
    MOV ACC DOWN
 
 @2
@@ -38,7 +38,7 @@ MOV UP RIGHT
 @4
    ADD UP
 S: MOV ACC DOWN
-   MOV UP DOWN
+   MOV LEFT DOWN
    ADD UP
    MOV ACC DOWN
    SWP
@@ -49,8 +49,8 @@ S: MOV ACC DOWN
    MOV 1 DOWN
    JMP S
 0: SUB ACC
-   SAV
    MOV -2 DOWN
+   SAV
 
 @5
 

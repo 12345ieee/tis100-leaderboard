@@ -1,0 +1,40 @@
+@0
+
+
+@1
+S: MOV UP ACC
+   MOV ACC DOWN
+   JGZ S
+   MOV 999 DOWN
+
+@2
+
+
+@3
+
+
+@4
+   MOV -999 ACC
+   MOV -2 DOWN
+L: ADD UP
+   JLZ L
+   MOV ACC DOWN
+
+@5
+
+
+@6
+
+
+@7
+
+
+@8
+   MOV ANY ANY
+
+@9
+   MOV LEFT ACC
+   ADD 1
+   MOV ACC ANY
+
+@10

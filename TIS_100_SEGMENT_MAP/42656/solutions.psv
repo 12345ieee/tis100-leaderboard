@@ -5,18 +5,18 @@
 166/9/81/c|Amitai/LongingForRest||cCN,cCI,cCX
 169/7/59/h|Amitai/LongingForRest||
 190/7/49|jpgrossman||CN,CI,CX
-191/7/50/a|jpgrossman||aCN,aCI,aCX
+191/7/50/a|jpgrossman||aCN,aCI,aCX,acCN,acCI,acCX
 199/5/29|jpgrossman||
 221/4/37/c|LongingForRest||
 223/5/24|Hersmunch||
 225/4/35/c|LongingForRest||
 226/4/34|ImprobableFish||
-228/4/51/a|jpgrossman||aNC
+228/4/51/a|jpgrossman||aNC,acNC
 230/4/33|ImprobableFish||
 231/8/47/a|Hersmunch||
 232/4/24/c|transcendental guy||
 233/4/27|Hersmunch||
-233/4/47/a|jpgrossman||aNX
+233/4/47/a|jpgrossman||aNX,acNX
 234/5/23|Hersmunch||
 252/3/26|LowLevel-||NC,cNC,hNC
 256/4/20|LongingForRest||
@@ -39,6 +39,6 @@
 485/6/31/a|Hersmunch||
 485/7/30/a|Hersmunch||
 495/5/30/a|Hersmunch||
-626/4/34/a|Hersmunch||aNI
+626/4/34/a|Hersmunch||aNI,acNI
 653/7/29/a|Hersmunch||
-685/5/26/a|jpgrossman||aIC,aIN,aIX
+685/5/26/a|jpgrossman||aIC,aIN,aIX,acIC,acIN,acIX

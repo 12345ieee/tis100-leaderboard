@@ -1,0 +1,61 @@
+@0
+
+
+@1
+   MOV UP  ACC
+   JEZ Z
+   SUB 270
+Z: MOV 1   DOWN
+   SUB 997
+   ADD 998
+   MOV ACC LAST
+
+   MOV UP  ACC
+   SUB 2
+
+N: SUB 1
+   MOV -2  ANY
+   JNZ N
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+MOV UP  ACC
+
+MOV ACC DOWN
+MOV 0   RIGHT
+JRO UP
+
+MOV UP  ACC
+
+MOV 0   DOWN
+MOV ACC RIGHT
+JRO UP
+
+NOP
+
+@6
+MOV ACC DOWN
+ADD LEFT
+
+@7
+
+
+@8
+MOV ACC RIGHT
+ADD UP
+
+@9
+MOV LEFT DOWN
+MOV UP   DOWN
+MOV 3    DOWN
+MOV -1   DOWN
+
+@10

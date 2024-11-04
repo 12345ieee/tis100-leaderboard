@@ -1,0 +1,36 @@
+@0
+
+
+@1
+MOV UP RIGHT
+
+@2
+   MOV UP   ACC
+   SWP
+   MOV LEFT ACC
+
+N: SUB 1
+   SWP
+Z: MOV ACC  DOWN
+   JNZ N
+
+   MOV 0    DOWN
+
+@3
+
+
+@4
+
+
+@5
+ADD UP
+MOV ACC DOWN
+MOV ANY ACC
+
+@6
+
+
+@7
+MOV UP ANY
+
+@8

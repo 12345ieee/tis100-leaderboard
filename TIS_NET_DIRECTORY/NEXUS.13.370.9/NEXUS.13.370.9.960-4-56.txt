@@ -1,0 +1,90 @@
+@0
+
+
+@1
+   MOV -1  ACC
+   MOV UP  LAST
+   ADD UP
+   MOV ACC ANY
+   MOV ACC DOWN
+   MOV UP  DOWN
+
+   MOV UP  ACC
+   SUB 3
+G: SUB 1
+   MOV -2  DOWN
+   JGZ G
+   MOV 1   DOWN
+
+@2
+
+
+
+
+
+#  90 -> -1
+# 270 ->  1
+
+@3
+
+
+@4
+
+
+@5
+G: MOV UP  RIGHT
+   JLZ Z
+   MOV 0   LAST
+Z: MOV UP  ANY
+   MOV UP  ACC
+   ADD 907
+   SUB 998
+   MOV RIGHT NIL
+   MOV ACC RIGHT
+   MOV -3  RIGHT
+   JRO UP
+   MOV ACC RIGHT
+   MOV UP  ACC
+   SUB 90
+   MOV ACC RIGHT
+
+@6
+   MOV ACC  DOWN
+   ADD LEFT
+   SAV
+   MOV 8    ACC
+   SUB LEFT
+   JGZ G
+   MOV 1    DOWN
+   SUB 1
+G: MOV ACC  DOWN
+   SWP
+   MOV ACC  ANY
+   MOV 10   DOWN
+   MOV LEFT DOWN
+   JRO LEFT
+   SUB LEFT
+
+@7
+
+
+@8
+
+
+@9
+ADD LAST
+MOV -1  DOWN
+MOV ANY DOWN
+MOV ACC DOWN
+JRO UP
+MOV 3   DOWN
+MOV 3   DOWN
+MOV 3   DOWN
+MOV 3   DOWN
+MOV 3   DOWN
+MOV 3   DOWN
+MOV 3   DOWN
+JRO UP
+MOV 3   DOWN
+
+@10

@@ -2,57 +2,52 @@
 MOV 1 ACC
 ADD UP
 MOV ACC DOWN
-MOV 7 ACC
+
+MOV 9 ACC
 ADD UP
 MOV ACC DOWN
 JRO -3
 
 @1
-
+##FIRST ACC RECORD
 
 @2
 
 
 @3
-# T1
-# G 15  E 7  L,16
-# R     NR   R
 
-# T2
-# G,18 E,6  L,15
-# R    NR   R
-
-# T3
-# G,   E,7  L,
-# R    NR    R
 
 @4
 S: JRO UP
-   MOV 5 DOWN
+
+=: MOV 5 DOWN
    JMP S
-   MOV 9 DOWN
+
+>: MOV 9 DOWN
    JMP S
+
+<: MOV 1 DOWN
+   JMP S
+
    JMP <
    JMP <
    JMP =
-   JMP >
->: MOV 9 DOWN
-   JMP S
-=: MOV 5 DOWN
-   JMP S
-<: MOV 1 DOWN
+   MOV 9 DOWN
 
 @5
    MOV UP,RIGHT
 S: JRO UP
+
     MOV 1  RIGHT
     MOV 0 RIGHT
     MOV UP RIGHT
     JMP S
+
     MOV 4 RIGHT
     MOV 0 RIGHT
     MOV UP,RIGHT
     JMP S
+
     MOV 6 RIGHT
     MOV 1 RIGHT
 
@@ -79,10 +74,12 @@ S:  MOV LEFT RIGHT
    MOV 0 DOWN
    MOV LEFT RIGHT
    JMP S
+
    MOV 0 RIGHT
    MOV 1 DOWN
    MOV LEFT RIGHT
    JMP S
+
    MOV 0 RIGHT
    MOV 0 DOWN
    MOV LEFT RIGHT

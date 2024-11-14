@@ -2,7 +2,7 @@
 
 
 @1
-   MOV UP ACC
+   MOV UP  ACC
    MOV ACC DOWN
    ADD ACC
    ADD ACC
@@ -12,7 +12,7 @@
 L: MOV ACC DOWN
    SUB 64
    JGZ L
-E: MOV 962 DOWN
+E: MOV 968 DOWN
 
 @2
 
@@ -21,12 +21,12 @@ E: MOV 962 DOWN
 
 
 @4
-   MOV UP DOWN
+   MOV UP   DOWN
    MOV -999 ACC
 T: ADD 37
    ADD UP
    JLZ T
-   MOV ACC DOWN
+   MOV ACC  DOWN
 
 @5
 
@@ -43,14 +43,14 @@ L: SUB 8
    JGZ L
    ADD 8
    JRO ACC
-1: JMP Z  # +0
-2: SUB 2  # +1
-3: SUB 3  # +3
-4: SUB 4  # +6
-5: SUB 5  # +10
-6: SUB 6  # +15
-7: SUB 7  # +21
-8: ADD 28 # +28
+1: SUB 1
+2: SUB 2
+3: SUB 3
+4: JMP Z
+5: SUB 5
+6: SUB 6
+7: SUB 7
+8: ADD 22
 Z: ADD UP
    MOV ACC DOWN
 

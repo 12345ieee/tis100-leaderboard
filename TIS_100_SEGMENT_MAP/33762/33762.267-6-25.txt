@@ -1,0 +1,57 @@
+@0
+MOV UP RIGHT
+
+@1
+MOV UP   ACC
+ADD ACC
+
+ADD LEFT
+MOV ACC  RIGHT
+
+@2
+  MOV UP    ACC
+  JEZ Z
+  MOV -3    ACC
+
+Z:SUB RIGHT
+  SUB LEFT
+  MOV ACC   DOWN
+
+@3
+  MOV UP  ACC
+  JEZ O
+  MOV 4   ACC
+
+O:MOV ACC LEFT
+
+@4
+
+
+@5
+
+
+@6
+MOV UP ACC
+MOV ACC DOWN
+MOV ACC DOWN
+
+@7
+
+
+@8
+
+
+@9
+S:
+SUB UP
+JGZ G
+
+MOV UP ACC
+MOV 0 DOWN
+JMP S
+
+G:
+MOV ACC DOWN
+MOV UP ACC
+
+@10

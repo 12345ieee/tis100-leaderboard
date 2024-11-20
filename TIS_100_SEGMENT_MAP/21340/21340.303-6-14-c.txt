@@ -1,0 +1,36 @@
+@0
+MOV UP DOWN
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+MOV UP DOWN
+
+@5
+MOV UP RIGHT
+
+@6
+MOV LEFT RIGHT
+MOV 0 ANY
+MOV 1 ANY
+
+@7
+   MOV ANY ACC
+   JGZ G
+   JLZ G
+
+   MOV LEFT ANY
+
+G: MOV LAST ANY
+   MOV 0 ANY
+
+@8
+MOV LEFT ANY
+NOP

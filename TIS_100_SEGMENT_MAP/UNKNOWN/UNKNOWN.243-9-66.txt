@@ -16,10 +16,12 @@ S: MOV -25 ACC
 
 @1
    MOV 19 ACC
+
 G: MOV UP LEFT
    MOV UP RIGHT
    SUB 1
    JGZ G
+
    MOV -1 DOWN!
 
 @2
@@ -45,15 +47,16 @@ MOV ACC RIGHT
 
 @4
    MOV ANY  DOWN
+   JMP E
 
 Z: MOV -2   DOWN
-N: MOV LAST ACC
+E: MOV LAST ACC
    SUB ANY
    JEZ Z
 
-   MOV 1    DOWN
+N: MOV 1    DOWN
    MOV ACC  DOWN
-   JMP N
+   JMP E
 
 @5
 MOV UP  ACC
@@ -62,10 +65,7 @@ MOV ACC LEFT
 
 @6
    MOV UP  ACC
-   MOV UP  NIL
-   MOV ACC RIGHT
-   MOV ACC DOWN
-   MOV UP  NIL
+   JMP E
 
    MOV -1  RIGHT
    MOV ACC DOWN
@@ -73,7 +73,7 @@ J: JRO UP
 
    MOV 1   RIGHT
    SUB UP
-   MOV ACC DOWN
+E: MOV ACC DOWN
    MOV ACC RIGHT
    JMP J
 

@@ -15,14 +15,14 @@ L: ADD 25
 0: MOV 0 DOWN
 
 @1
-   MOV 38 ACC!
+   MOV 38 ACC
 
 G: MOV UP ANY
    SUB 1
    JGZ G
 
    MOV -1 DOWN
-   MOV -1 DOWN
+   JRO -1
 
 @2
 S: MOV -50 ACC

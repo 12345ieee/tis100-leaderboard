@@ -47,8 +47,9 @@ MOV UP DOWN
 
 
 @10
-ADD UP #C
 MOV 0 DOWN
+ADD UP #C
+
 S: SAV
    SUB UP
    JEZ EZ

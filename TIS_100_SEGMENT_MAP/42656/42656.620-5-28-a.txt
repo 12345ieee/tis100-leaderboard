@@ -40,8 +40,8 @@ MOV ACC DOWN
 
 @7
 L: MOV UP  ACC
-   JGZ G
    JEZ L
+   JGZ G
    SUB ACC
 G: MOV ACC DOWN
 

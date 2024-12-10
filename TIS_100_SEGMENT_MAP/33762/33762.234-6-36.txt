@@ -49,12 +49,11 @@ MOV UP DOWN
 
 @9
 LO: MOV UP DOWN
-    MOV ANY ACC
+    MOV UP ACC
     JEZ LO
     MOV 3 DOWN
     MOV UP NIL
-    MOV UP ACC
-    JEZ LO
+    JRO 2
 HI: MOV UP DOWN
     MOV UP ACC
     JNZ HI

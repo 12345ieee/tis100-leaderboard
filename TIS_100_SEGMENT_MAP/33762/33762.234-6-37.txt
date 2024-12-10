@@ -23,15 +23,14 @@ I: MOV UP   ACC
     MOV LEFT ACC
 
 @3
-S: MOV UP  ACC
-   MOV 0   LAST
-   JNZ S
-   MOV UP  ACC
-   JNZ 4
-0: MOV 0   ANY
-   MOV UP  ACC
+   MOV UP NIL
+4: MOV UP ACC
    JEZ 0
-4: MOV 4   ANY
+   MOV 4 LEFT
+S: MOV UP ACC
+0: MOV 0 LEFT
+   JNZ S
+   JMP 4
 
 @4
 

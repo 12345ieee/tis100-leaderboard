@@ -28,8 +28,6 @@ L: JRO LEFT
    MOV ACC DOWN
 
 @3
-
-
 # BASED ON
 # 1439/7/73
 # BY CHRJEB
@@ -45,7 +43,6 @@ L: MOV -1 RIGHT
    SWP
 M: ADD RIGHT
    JLZ L
-   JEZ L
 E: MOV 1 RIGHT
    MOV ACC DOWN
    SWP

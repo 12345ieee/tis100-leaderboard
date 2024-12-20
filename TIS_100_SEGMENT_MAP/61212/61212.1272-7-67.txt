@@ -2,18 +2,17 @@
 
 
 @1
-   MOV -5 ACC
+   MOV 11 ACC
    SWP
    MOV ACC LAST
    MOV UP ACC
-   JRO 2
-L: MOV -1 RIGHT
+G: SUB RIGHT
+   JLZ E
+   MOV -1 RIGHT
    SWP
    ADD 16
    SWP
-   SUB RIGHT
-   JGZ L
-   JEZ L
+   JMP G
 E: MOV 1 RIGHT
    SWP
    MOV ACC ANY

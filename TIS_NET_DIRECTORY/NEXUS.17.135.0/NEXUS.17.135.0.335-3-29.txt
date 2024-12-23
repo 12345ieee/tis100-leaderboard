@@ -8,7 +8,7 @@ G: MOV ACC,DOWN
    MOV UP,ACC
    MOV ACC,DOWN
    JGZ G
-   MOV -200 DOWN
+   MOV -190 DOWN
 
 @2
 
@@ -20,7 +20,7 @@ S: MOV UP,DOWN
    JLZ L
    ADD UP
    JGZ S
-   MOV -500 DOWN
+   MOV -764 DOWN
    MOV ACC DOWN
    ADD ACC
    ADD ACC
@@ -38,9 +38,8 @@ S: MOV UP,DOWN
    MOV UP NIL
    JGZ G
    ADD UP
-   ADD 696
-G: ADD 304
-   ADD UP
+   ADD 950
+G: ADD UP
    MOV ACC DOWN
 
 @6

@@ -36,17 +36,17 @@ G: ADD UP
 
 
 @5
-   MOV UP ACC
-   NEG
-   SUB 10
+   MOV -10 ACC
+   SUB UP
    SUB UP
    SUB UP
    SUB UP
    MOV UP NIL
-   JLZ L
+   JGZ G
+   ADD UP
+   JRO 2
 G: SUB 946
-L: ADD UP
-   JLZ L
+2: ADD UP
    MOV ACC DOWN
 
 @6

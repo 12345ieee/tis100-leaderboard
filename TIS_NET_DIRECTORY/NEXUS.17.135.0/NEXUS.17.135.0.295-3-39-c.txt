@@ -1,0 +1,55 @@
+@0
+
+
+@1
+   MOV UP  DOWN
+   MOV UP  ACC
+   MOV ACC DOWN
+   MOV ACC LAST
+   MOV ACC LAST
+   MOV UP  ACC
+S: MOV ACC DOWN
+   MOV ACC DOWN
+   MOV ACC DOWN
+   MOV UP  ACC
+   JGZ S
+   MOV -764 LAST
+   MOV  0   DOWN
+   MOV -190 ANY
+
+@2
+
+
+@3
+   MOV UP  ACC
+   MOV ACC DOWN
+C: MOV UP DOWN
+S: SUB UP
+   JGZ G
+   MOV UP ACC
+   JMP C
+G: ADD UP
+   JGZ C
+   MOV ACC  DOWN
+   ADD ACC
+   ADD ACC
+   MOV ACC  DOWN
+
+@4
+
+
+@5
+   MOV UP ACC
+   NEG
+   SUB UP
+   SUB 10
+   SUB UP
+   SUB UP
+   MOV LAST NIL
+   JGZ G
+   ADD UP
+   ADD 950
+G: ADD ANY
+   MOV ACC DOWN
+
+@6

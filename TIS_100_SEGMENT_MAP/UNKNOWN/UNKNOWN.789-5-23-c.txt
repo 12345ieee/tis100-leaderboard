@@ -1,0 +1,46 @@
+@0
+
+
+@1
+Z: MOV -2 DOWN
+   MOV UP,ACC
+   JLZ Z
+
+S: MOV DOWN NIL
+   SUB 25
+   JGZ S
+
+@2
+
+
+@3
+
+
+@4
+ MOV ANY ACC
+ ADD 1
+ MOV ACC ANY
+ MOV ACC DOWN
+
+@5
+ MOV DOWN DOWN
+
+@6
+ MOV UP ANY
+
+@7
+S: SWP
+  ADD 1
+  SWP
+
+  MOV ANY ACC
+  MOV ACC UP
+  SUB LEFT
+  JEZ S
+
+  MOV 1 ACC
+  SWP
+  MOV ACC,DOWN
+  MOV UP,DOWN
+
+@8

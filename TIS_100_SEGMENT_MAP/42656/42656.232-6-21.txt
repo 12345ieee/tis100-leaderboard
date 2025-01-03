@@ -1,0 +1,41 @@
+@0
+MOV ANY ACC
+SUB 1
+MOV ACC ANY
+
+@1
+   MOV UP ACC
+   MOV 7 LEFT
+   JMP Z
+N: MOV ACC RIGHT
+   MOV UP  ACC
+Z: JNZ N
+   MOV -99  LEFT
+   JRO LEFT
+
+@2
+
+
+@3
+MOV UP ANY
+
+@4
+MOV LEFT RIGHT
+
+@5
+   JRO LEFT
+   MOV UP DOWN
+   MOV UP DOWN
+   MOV UP DOWN
+   MOV UP DOWN
+   MOV UP DOWN
+
+   MOV 0 DOWN
+
+@6
+
+
+@7
+MOV UP DOWN
+
+@8

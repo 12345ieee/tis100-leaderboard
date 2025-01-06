@@ -1,5 +1,4 @@
 @0
-S: SWP
    SUB 1#C
    SWP
    MOV UP  ACC
@@ -14,6 +13,7 @@ S: SWP
    ADD 45
 L: SUB 1#C
    JGZ L
+S: SWP
 
 @1
 

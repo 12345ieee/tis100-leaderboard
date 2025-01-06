@@ -7,9 +7,9 @@
    SWP
    ADD 9
    JRO ACC
-   ADD 38
+   ADD 36
    ADD 32
-   ADD 27
+   ADD 26
    ADD 45
 L: SUB 1#C
    JGZ L

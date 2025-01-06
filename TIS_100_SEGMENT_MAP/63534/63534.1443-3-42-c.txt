@@ -1,0 +1,66 @@
+@0
+S: SWP
+   SUB 1#C
+   SWP
+   MOV UP  ACC
+   MOV ACC RIGHT
+   JGZ S
+   SWP
+   ADD 9
+   JRO ACC
+   ADD 38
+   ADD 32
+   ADD 27
+   ADD 45
+L: SUB 1#C
+   JGZ L
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+D: MOV ANY ACC
+   MOV ACC DOWN
+   JGZ S
+   MOV 0 DOWN
+   JMP Z
+
+S: MOV ANY ACC
+   MOV ACC DOWN
+   MOV ACC DOWN
+   JGZ S
+
+L: MOV ACC UP
+Z: MOV DOWN ACC
+   JGZ L
+
+@5
+
+
+@6
+
+
+@7
+MOV 0 LEFT
+MOV UP ACC
+JNZ L
+JMP O
+E2:MOV ANY ACC
+   MOV UP   LEFT
+L: MOV ACC  LEFT
+   SUB UP
+   JLZ E2
+E: MOV UP   ACC
+   JNZ L
+O: MOV ANY  DOWN
+O2:MOV ANY  ACC
+N: MOV ACC  ANY
+   JNZ O2
+
+@8

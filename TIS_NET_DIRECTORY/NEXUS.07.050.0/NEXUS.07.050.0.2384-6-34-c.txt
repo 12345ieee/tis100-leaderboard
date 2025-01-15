@@ -1,0 +1,72 @@
+@0
+MOV UP RIGHT
+
+@1
+MOV UP RIGHT
+MOV LEFT RIGHT
+MOV -999 RIGHT
+
+@2
+L: MOV UP    ACC
+   MOV RIGHT DOWN
+
+S: MOV ACC   DOWN
+   MOV ACC   DOWN
+   JLZ L
+   MOV ACC   DOWN
+   MOV LEFT  ACC
+   JMP S
+
+@3
+MOV UP LEFT
+
+@4
+#MOV 0 ACC
+#B:ADD ANY
+#SUB LEFT
+#SAV
+#JLZ L
+#MOV 0 ACC
+#L:ADD LEFT
+#MOV ACC DOWN
+#MOV ACC DOWN
+#SWP
+#JGZ B
+
+@5
+
+
+@6
+S: MOV 0 ACC
+B: ADD UP
+   SUB UP
+   SAV
+   JLZ L
+   MOV 0 ACC
+L: ADD UP
+   MOV ACC DOWN
+   MOV ACC DOWN
+   JLZ S
+   SWP
+   JGZ B
+
+@7
+
+
+@8
+
+
+@9
+   MOV UP  NIL
+
+S: MOV UP  ACC
+   SAV
+D: SUB UP
+   JLZ S
+   ADD UP
+   JGZ D
+
+L: SWP
+   MOV ACC DOWN
+
+@10

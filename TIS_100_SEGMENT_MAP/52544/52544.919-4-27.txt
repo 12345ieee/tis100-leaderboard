@@ -2,14 +2,13 @@
 
 
 @1
-MOV UP    ACC
-MOV UP    DOWN
-JRO 2
+   MOV UP    ACC
+   MOV UP    DOWN
+S: SWP
+   JRO DOWN
 
-MOV ACC   DOWN
-SWP
-
-JRO DOWN
+ MOV ACC   DOWN
+ JMP S
 
 @2
 
@@ -19,11 +18,11 @@ JRO DOWN
 
 @4
    MOV UP   ACC
-   SWP
    MOV -99  UP
+   SWP
    SUB UP
 
-N: MOV -2   UP
+N: MOV 1   UP
    JLZ L
    MOV ACC  DOWN
 L: MOV UP   DOWN
@@ -51,10 +50,9 @@ MOV UP RIGHT
    MOV LEFT DOWN
    MOV LEFT ACC
 
-G: MOV 3  DOWN
+G: MOV 3    DOWN
    SUB 1
    JGZ G
-
    MOV -1 DOWN
 
 @10

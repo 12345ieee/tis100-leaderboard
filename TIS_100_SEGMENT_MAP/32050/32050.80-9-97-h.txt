@@ -85,7 +85,6 @@
    MOV -8 LEFT
    MOV -2 LEFT
    MOV -1 LEFT
-   MOV -3 LEFT
 
 @7
 

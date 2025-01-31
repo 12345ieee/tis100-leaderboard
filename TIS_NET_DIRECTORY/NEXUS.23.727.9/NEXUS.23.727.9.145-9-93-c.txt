@@ -48,7 +48,6 @@ R: MOV 99    DOWN
    SWP
    MOV ACC   DOWN
    MOV 3   ACC #4
-   ADD RIGHT
    JEZ Z
 N: MOV ACC   LEFT
    MOV RIGHT LEFT

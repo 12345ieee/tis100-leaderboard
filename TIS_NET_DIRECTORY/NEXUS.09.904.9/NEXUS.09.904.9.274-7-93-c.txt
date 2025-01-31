@@ -72,7 +72,6 @@ J: JRO UP
 O: SUB UP
    JGZ G
    MOV UP  RIGHT
-   JEZ Z
 L: MOV 2   UP
    JMP S
 G: ADD UP

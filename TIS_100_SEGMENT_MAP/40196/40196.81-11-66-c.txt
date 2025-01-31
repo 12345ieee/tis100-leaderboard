@@ -10,7 +10,6 @@ A: JRO UP
    MOV DOWN ACC
    ADD 1
    MOV ACC  LEFT
-   JMP A
 
 B: MOV DOWN NIL
 

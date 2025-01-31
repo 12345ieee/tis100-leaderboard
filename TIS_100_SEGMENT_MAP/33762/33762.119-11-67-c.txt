@@ -34,7 +34,6 @@ U:  JEZ 0
     JEZ 0
     MOV UP NIL
     MOV 3 DOWN
-    MOV UP NIL
     JMP 1
 0:  MOV UP ACC
     JEZ U

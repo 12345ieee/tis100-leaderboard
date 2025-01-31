@@ -36,7 +36,6 @@ Z: MOV UP  ACC
 @4
 Z: MOV LEFT ACC
    SWP
-   JEZ Z
    MOV ACC  RIGHT
 
 @5

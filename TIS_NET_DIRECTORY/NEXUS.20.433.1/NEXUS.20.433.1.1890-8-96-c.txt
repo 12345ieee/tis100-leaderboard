@@ -89,7 +89,6 @@ E: MOV ACC UP
    ADD 1
 F: MOV ACC UP
    MOV 2 DOWN
-   JMP S
    MOV UP NIL
 
 @6

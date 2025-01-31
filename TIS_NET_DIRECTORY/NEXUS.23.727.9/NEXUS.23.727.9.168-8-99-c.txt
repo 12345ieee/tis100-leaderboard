@@ -6,7 +6,6 @@ R: MOV UP   ACC
    JNZ RN
 R0:MOV LEFT ACC
    MOV ACC  RIGHT
-   MOV ACC  LEFT
    JMP S
 W: MOV UP   ACC
    MOV ACC  RIGHT
@@ -60,10 +59,6 @@ S: MOV -1    ACC
 
 Z: MOV RIGHT ACC
    MOV 0     LEFT
-   JMP SW
-R: SWP
-   MOV ACC   LEFT
-SW:SWP
 
 @4
 S: MOV 2    ACC

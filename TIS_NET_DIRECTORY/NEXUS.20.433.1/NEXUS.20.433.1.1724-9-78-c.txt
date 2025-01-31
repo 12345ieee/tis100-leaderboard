@@ -83,7 +83,6 @@ E: MOV ACC UP
    SUB 1
 F: MOV ACC UP
    MOV 2 DOWN
-   JMP M
    MOV UP NIL
 
 @6

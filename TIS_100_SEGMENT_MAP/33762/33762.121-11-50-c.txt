@@ -9,10 +9,6 @@ S: MOV UP DOWN
 
 @1
    MOV UP ACC
-   JEZ 0
-   MOV UP NIL
-   MOV 2 DOWN
-   JMP 1
 0: MOV UP ACC
    JEZ U
 
@@ -24,12 +20,6 @@ U:  JEZ 0
 @2
     MOV UP NIL
     MOV UP NIL
-    MOV UP NIL
-    MOV UP ACC
-    JEZ 0
-    MOV UP NIL
-    MOV 3 DOWN
-    JMP 1
 0:  MOV UP ACC
     JEZ U
 HI: MOV 3 DOWN

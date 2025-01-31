@@ -44,7 +44,6 @@ MOV ANY  DOWN
 
 @4
    MOV UP ACC
-   JLZ N
    JEZ E
 G: SUB 13
    JLZ L

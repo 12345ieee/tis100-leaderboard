@@ -50,7 +50,6 @@ G: SUB 13
    JLZ L
 S: SUB 13
    MOV -13 RIGHT
-   JGZ S
 L: NEG
    SUB 13
 N: MOV ACC RIGHT

@@ -45,7 +45,6 @@ B: MOV UP  DOWN
    MOV UP  DOWN
    ADD UP
    JGZ D
-   JEZ D
 
 @7
 

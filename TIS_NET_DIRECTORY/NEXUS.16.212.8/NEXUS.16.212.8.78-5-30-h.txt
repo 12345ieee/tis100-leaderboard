@@ -19,7 +19,6 @@ T3: MOV 4 DOWN
     MOV 4 DOWN
  TA:MOV 11 DOWN
     MOV 6 DOWN
-    JRO 0
 
 @3
 

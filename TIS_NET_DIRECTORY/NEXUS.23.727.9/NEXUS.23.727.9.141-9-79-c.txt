@@ -8,12 +8,6 @@ R: MOV 0   LEFT
 W: MOV ANY RIGHT
 
 @1
-S: MOV LEFT ACC #0
-   JNZ N
-
-
-
-N: MOV ACC  DOWN
    MOV LEFT DOWN
 
 @2

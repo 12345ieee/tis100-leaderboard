@@ -7,15 +7,16 @@
    #SAV
    SUB UP
 
-   MOV ACC DOWN
+   #MOV ACC DOWN
 
    JLZ L
 
-G: MOV 0   ACC
+G: MOV 0   DOWN
+ JRO 2
 
 L: MOV ACC DOWN
    #SWP
-   #MOV ACC DOWN
+   MOV ACC DOWN
 
 @2
 
@@ -27,29 +28,30 @@ L: MOV ACC DOWN
 
 
 @5
-S: MOV UP    RIGHT
-   MOV UP    ACC
-   MOV UP    RIGHT
+   MOV UP RIGHT
+   MOV UP RIGHT
+   MOV UP ACC
    JMP E
-L: MOV 1     RIGHT
+L: MOV 1 RIGHT
    ADD 1
 E: JEZ Z
    MOV RIGHT NIL
    JLZ L
-G: MOV 3     RIGHT
+   MOV 5 RIGHT
    SUB 1
    JMP E
 
-O: MOV 7     RIGHT
+O: MOV 4 RIGHT
 Z: JRO RIGHT
 
 @6
    SUB LEFT
    ADD 1
    ADD LEFT
+   JEZ Z
 
-L: MOV -1   LEFT
-   ADD 17
+L: ADD 17
+   MOV -1   LEFT
    MOV ACC  DOWN
    MOV LEFT DOWN
    SUB 16
@@ -57,7 +59,7 @@ L: MOV -1   LEFT
 
 Z: MOV -99  LEFT
    MOV 17   DOWN
-   MOV 6    DOWN
+   MOV 3    DOWN
 
 @7
 
@@ -71,10 +73,7 @@ MOV UP  DOWN
 JRO UP
 
 MOV 0   DOWN
-JRO 6
-MOV 3   DOWN
-JRO 99
-MOV 0   DOWN
+JRO 3
 
 ADD 2
 
@@ -83,4 +82,3 @@ MOV 3   DOWN
 MOV -1  DOWN
 
 @10
-

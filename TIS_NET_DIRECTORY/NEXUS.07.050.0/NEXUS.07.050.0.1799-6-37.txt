@@ -9,15 +9,14 @@ MOV -1   RIGHT
 @2
    MOV UP    ACC
    MOV RIGHT DOWN
-   JMP S
 
+S: MOV ACC   DOWN
+   MOV ACC   DOWN
+   JLZ L
 D: MOV ACC   DOWN
    MOV ACC   DOWN
    MOV LEFT  ACC
-S: MOV ACC   DOWN
-   MOV ACC   DOWN
-   JGZ D
-   JEZ D
+   JMP S
 
 L: MOV -999  DOWN
    MOV -999  DOWN
@@ -35,17 +34,18 @@ MOV UP LEFT
 K: MOV UP  ACC
 
 D: SUB UP
-   JGZ B
-   ADD UP
-   MOV ACC DOWN
-   MOV ACC DOWN
-   MOV UP  NIL
-   JMP K
+   JLZ C
 
 B: MOV UP  DOWN
    MOV UP  DOWN
    ADD UP
-   JGZ D
+   JLZ K
+   JMP D
+
+C: ADD UP
+   MOV ACC DOWN
+   JRO UP
+   MOV ACC DOWN
 
 @7
 
@@ -60,7 +60,8 @@ S: MOV UP  ACC
 D: SUB UP
    JLZ S
    ADD UP
-   JGZ D
+   JLZ L
+   JMP D
 
 L: ADD 998
    MOV ACC DOWN

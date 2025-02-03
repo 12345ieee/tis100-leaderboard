@@ -72,6 +72,7 @@ J: JRO UP
 O: SUB UP
    JGZ G
    MOV UP  RIGHT
+   #JEZ Z
 L: MOV 2   UP
    JMP S
 G: ADD UP
@@ -91,10 +92,9 @@ S: MOV LEFT  ACC
    JEZ Z
 G: MOV RIGHT DOWN
    JMP S
-L: MOV UP    DOWN
+L: MOV UP    ACC
 Z: MOV RIGHT NIL
-   JNZ S
-   MOV 0     DOWN
+   MOV ACC   DOWN
 
 @6
 #4
@@ -105,8 +105,8 @@ O: SUB UP
    JGZ G
    MOV UP  LEFT
    JEZ Z
-L: MOV 5   ACC
-   JMP Z
+L: MOV 5   LEFT
+   JMP S
 G: ADD UP
    MOV ACC LEFT
    MOV 4   ACC

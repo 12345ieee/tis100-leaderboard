@@ -1,14 +1,16 @@
 @0
    MOV UP   ACC
-   MOV UP   DOWN
-   MOV 0    LEFT
+   SAV
+   MOV UP   ACC
+   MOV ACC  DOWN
+   MOV 0 LEFT
+G: SUB 1
    MOV DOWN LEFT
-   JRO DOWN
-
+   JGZ G
+   SWP
    JNZ O
-I: MOV -10  DOWN
+I: MOV -7  DOWN
    MOV UP   DOWN
-
 N: MOV LEFT ACC
 O: MOV ACC  DOWN
    JGZ N
@@ -39,8 +41,7 @@ S: SUB 1
    JGZ S
 
    MOV ANY ANY
-   MOV ANY ANY
-   JRO -2
+   JRO -1
 
 @5
 #   MOV 57  ACC
@@ -60,13 +61,10 @@ N2:MOV UP   ACC
    JGZ N
 
    SUB UP
-   JRO 2
-G: MOV -1   UP
+G: MOV LEFT UP
    ADD 1
-   MOV LEFT UP
    JLZ G
-Z: MOV 1    UP
-
+Z:
    MOV LEFT ACC
    JRO UP
    MOV ACC  DOWN

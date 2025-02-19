@@ -18,7 +18,6 @@
    MOV UP ACC
    MOV ACC RIGHT
 L: MOV UP  ANY
-   JLZ L
    SUB 23
    JLZ L
 .: MOV 4 DOWN

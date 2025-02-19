@@ -79,13 +79,12 @@ S: MOV -2 RIGHT
    JRO ANY
 
 @6
-   MOV DOWN ACC
-   MOV 0 LAST
+   MOV -9 ACC
 <: MOV -5 LEFT
    ADD 1
    JLZ <
-   MOV 3 ANY
-   NOP
+   MOV 3 DOWN
+   MOV 0 DOWN
 
 @7
 
@@ -117,5 +116,4 @@ S: MOV 3 ANY
    MOV 3 LAST
    MOV 3 LAST
    MOV 3 LAST
-   MOV -9 ANY
    MOV UP ANY

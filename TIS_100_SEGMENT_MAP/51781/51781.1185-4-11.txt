@@ -1,0 +1,38 @@
+@0
+
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+MOV 3 DOWN
+MOV 0 DOWN
+
+@6
+
+
+@7
+MOV 559 RIGHT
+MOV 599 RIGHT
+
+@8
+MOV 0 RIGHT
+MOV ACC RIGHT
+SUB LEFT
+L:ADD 20
+JLZ L
+MOV -1 RIGHT
+
+@9
+MOV ANY DOWN
+
+@10

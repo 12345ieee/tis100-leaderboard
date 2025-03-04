@@ -5,7 +5,7 @@
    MOV ACC DOWN
    SUB 3
   JLZ L
-   ADD 4
+   ADD 9
    MOV LAST NIL
    MOV LAST NIL
    JRO RIGHT
@@ -25,7 +25,7 @@ L: ADD 2
   JLZ L
 
 @2
-MOV -2  LEFT
+MOV DOWN LEFT
 MOV -44 LEFT
 
 MOV -59 LEFT
@@ -57,7 +57,6 @@ E: MOV -6   ANY
  MOV ANY DOWN
 
 @6
- MOV 3 LAST
  MOV 3 ANY
 
 @7

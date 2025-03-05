@@ -1,9 +1,8 @@
 @0
-MOV 1 ACC
+ADD 1
 ADD UP
 MOV ACC DOWN
-MOV 7 ACC
-JRO -3
+MOV 8 ACC
 
 @1
 
@@ -15,17 +14,21 @@ JRO -3
 
 
 @4
-S:JRO UP
-E:MOV 3 DOWN
-JMP S
-G:MOV 1 DOWN
-JMP S
-JMP L
-JMP L
-JMP E
-JMP G
-JMP G
-L:MOV 6 DOWN
+S: JRO UP
+
+=: MOV 3 DOWN
+   JMP S
+
+>: MOV 1 DOWN
+   JMP S
+
+<: MOV 6 DOWN
+   JMP S
+
+   JMP <
+   JMP <
+   JMP =
+   MOV 1 DOWN
 
 @5
 MOV UP ACC

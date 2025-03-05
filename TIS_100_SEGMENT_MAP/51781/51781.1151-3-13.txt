@@ -1,5 +1,5 @@
 @0
-##CYCLES OPTIMAL
+
 
 @1
 
@@ -14,15 +14,14 @@
 
 
 @5
-#Y
 MOV ACC DOWN
-
 SUB 279
 
 L:
- MOV 0 ANY
+ MOV 0 DOWN
  ADD 20
  JLZ L
+ MOV -1 DOWN
 
 @6
 
@@ -31,19 +30,15 @@ L:
 
 
 @8
-#X
-MOV ACC ANY
+MOV ACC RIGHT
 
 NEG
-SUB 279
+SUB 299
 
 L:
- MOV 3 ANY
- ADD 20
- JLZ L
-
-MOV 3 ANY
-MOV -1 ANY
+MOV 3 RIGHT
+ADD 20
+JLZ L
 
 @9
 MOV ANY DOWN

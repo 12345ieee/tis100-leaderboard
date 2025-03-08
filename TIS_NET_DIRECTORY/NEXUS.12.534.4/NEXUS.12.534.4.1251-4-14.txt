@@ -8,7 +8,7 @@
 
 
 @3
-
+## YES 14
 
 @4
 MOV 1 ANY
@@ -34,8 +34,8 @@ MOV LEFT DOWN
 L: ADD 18
    JLZ L
 
-   MOV UP  RIGHT
-   MOV -1  RIGHT
+   MOV UP  LAST
+   MOV -1  ANY
 
 @9
 MOV ANY DOWN

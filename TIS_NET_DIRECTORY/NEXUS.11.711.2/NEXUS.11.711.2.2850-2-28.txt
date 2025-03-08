@@ -1,0 +1,61 @@
+@0
+## AHHHHHHHHHHHHHH
+# AHHHHHHHHHHHHHHH
+# AHHHHHHHHHHHHHHH
+# AHHHHHHHHHHHHHHH
+# OKI I SLEEP NOW
+
+@1
+# 2850/2/28
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+ JMP A
+E: MOV 464 ACC
+A: MOV 1 DOWN
+   SUB 58
+  JGZ A
+B: ADD 2
+   MOV -1 DOWN
+  JLZ B
+  JEZ E
+   MOV 999 DOWN
+   SWP
+   ADD DOWN
+   SAV
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+   NEG
+   MOV 0 DOWN
+   MOV ACC DOWN
+   SUB 8
+  JGZ G
+   SUB 9
+   MOV 62 LAST
+  JRO 3
+G: SUB 10
+A: MOV 0 ANY
+  JRO ANY
+   MOV 3 DOWN
+  JRO ANY
+  JMP A
+   MOV -1 DOWN
+
+@10

@@ -1,0 +1,48 @@
+@0
+
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+
+
+@6
+
+
+@7
+
+
+@8
+MOV 1 RIGHT
+ADD 67
+JLZ B
+
+MOV 0 RIGHT
+MOV 3 RIGHT
+B:MOV 2 RIGHT
+MOV 3 LAST
+JGZ A
+MOV 0 ANY
+A:SUB 68
+
+@9
+ADD 17
+JLZ L
+MOV -1 LAST
+MOV 0 ANY
+MOV ACC DOWN
+SUB 257
+L: MOV LEFT DOWN
+MOV LEFT DOWN
+
+@10

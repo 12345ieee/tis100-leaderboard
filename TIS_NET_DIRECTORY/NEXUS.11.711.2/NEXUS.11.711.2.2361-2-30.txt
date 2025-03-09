@@ -14,18 +14,18 @@
 
 
 @5
-A: SUB 56
+A: SUB 14
 E: MOV  1  DOWN
   JGZ A
-B: ADD 2
+  JEZ Z
+B: MOV -1  DOWN
+   ADD 1
    MOV -1  DOWN
   JLZ B
-  JNZ N
    MOV -1  DOWN
-   MOV 336 ACC
-   MOV 1   DOWN
+   MOV 98  ACC
   JMP E
-N: MOV 999 DOWN
+Z: MOV 999 DOWN
    SWP
    ADD DOWN
    SAV
@@ -41,19 +41,19 @@ N: MOV 999 DOWN
 
 @9
    NEG
-   MOV 0   DOWN
+   MOV  0  DOWN
    MOV ACC DOWN
    SUB 8
   JGZ G
-   MOV 60  LAST
+   MOV 15  LAST
    SUB 9
   JMP B
 G: SUB 10
-A: MOV  0 ANY
+A: MOV  0  ANY
 B: JRO ANY
-   MOV  3 DOWN
+   MOV  3  DOWN
    JRO ANY
   JMP A
-   MOV -1 DOWN
+   MOV -1  DOWN
 
 @10

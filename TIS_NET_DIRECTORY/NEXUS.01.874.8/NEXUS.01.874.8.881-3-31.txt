@@ -11,7 +11,7 @@ JRO 2
 L: MOV ACC DOWN
 SUB 64
 JGZ L
-E: MOV 963 DOWN
+E: MOV 973 DOWN
 
 @2
 
@@ -42,14 +42,14 @@ L: SUB 8
    JGZ L
    ADD 8
    JRO ACC
-1: JMP Z  # +0
+1: SUB 1  # +0
 2: SUB 2  # +1
 3: SUB 3  # +3
 4: SUB 4  # +6
-5: SUB 5  # +10
+5: JMP Z  # +10
 6: SUB 6  # +15
 7: SUB 7  # +21
-8: ADD 28 # +28
+8: ADD 18 # +28
 Z: ADD UP
    MOV ACC DOWN
 

@@ -27,7 +27,6 @@ U:  JEZ 0
     MOV UP NIL
     MOV UP NIL
     MOV UP ACC
-    JEZ 0
 0:  MOV UP ACC
     JEZ U
 HI: MOV 3 DOWN

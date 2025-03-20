@@ -10,7 +10,7 @@ Z:MOV 274 DOWN
 
 @1
 A: JRO UP
-   JMP B
+   JMP B!
    MOV 5    LEFT
    MOV DOWN NIL
    MOV DOWN NIL
@@ -54,18 +54,17 @@ A: SUB 12
 @5
    MOV UP RIGHT
    MOV UP NIL
-   JRO 2
-A: MOV 0  DOWN
-   MOV UP ACC
-   JNZ A
-B: MOV UP ACC
-   JMP 0
+   JRO 7
 1: MOV 1  ANY
 C: MOV UP ACC
    JEZ 1
 0: MOV 0  ANY
    JEZ C
-   JMP A
+A: MOV 0  DOWN
+   MOV UP ACC
+   JNZ A
+B: MOV UP ACC
+   JMP 0
 
 @6
 A: MOV DOWN NIL

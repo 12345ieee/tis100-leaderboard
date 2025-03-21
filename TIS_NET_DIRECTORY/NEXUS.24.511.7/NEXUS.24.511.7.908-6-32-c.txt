@@ -23,7 +23,7 @@ ADD UP
 MOV ACC LEFT
 
 @4
-#908/6/33
+#908/6/32/C
 
 @5
 MOV UP ACC
@@ -36,7 +36,7 @@ JMP C
 B: MOV -2 DOWN
 ADD UP
 C: JGZ A
-JEZ A
+#JEZ A
 
 @6
 

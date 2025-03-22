@@ -1,0 +1,84 @@
+@0
+#MOV 1 RIGHT
+#MOV 1 RIGHT
+#MOV 1 RIGHT
+#MOV 1 RIGHT
+#MOV 1 RIGHT
+#MOV 1 RIGHT
+#MOV 1 RIGHT
+#MOV 1 RIGHT
+#MOV -1 RIGHT
+
+#2 < LEN <= 8
+
+@1
+   MOV UP  RIGHT
+S: MOV UP  ACC
+   NOP
+   SWP
+   ADD 10  #N
+   SWP
+   MOV ACC RIGHT
+   JGZ S
+
+   SWP
+   ADD 10  #M
+
+G: SUB 2   #L
+   JGZ G
+
+@2
+
+
+@3
+#2->17
+#3->22
+#4->27/28
+#5->33
+#6->38/39
+#7->44
+#8->49/50
+
+#N*11/2 + 6
+
+@4
+
+
+@5
+   MOV ACC   RIGHT
+   MOV UP    ACC
+   MOV ACC   DOWN
+S: MOV ACC   RIGHT
+   MOV UP    ACC
+   MOV ACC   DOWN
+   MOV ACC   DOWN
+   JGZ S
+G: MOV ACC   UP
+   MOV RIGHT ACC
+   JGZ G
+
+O: MOV UP    ACC
+   MOV ACC   DOWN
+   JGZ O
+
+@6
+
+
+@7
+S: MOV UP  ACC
+   JLZ L
+   NEG
+   SAV
+   ADD UP
+   JLZ S
+   SUB UP
+   JRO -3
+O: MOV ACC DOWN
+L: SWP
+   SAV
+   ADD UP
+   JGZ O
+   JEZ O
+E: MOV -1  DOWN
+
+@8

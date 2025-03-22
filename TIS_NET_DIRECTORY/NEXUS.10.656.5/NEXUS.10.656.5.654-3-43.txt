@@ -5,8 +5,8 @@
    MOV UP  RIGHT
    NOP
 S: MOV UP  ACC
-   MOV ACC RIGHT
    NOP
+   MOV ACC RIGHT
    SWP
    ADD 10  #N
    SWP

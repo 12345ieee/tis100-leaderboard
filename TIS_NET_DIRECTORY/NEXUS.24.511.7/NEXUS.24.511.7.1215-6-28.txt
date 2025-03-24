@@ -33,17 +33,15 @@ MOV ACC LEFT
 
 
 @5
-Z: ADD UP
+L: ADD UP
+   MOV  -1 DOWN
    SUB UP
    JLZ L
 
-   SUB 999
-   MOV   1  DOWN
-   JEZ Z
+   SUB 998
+   MOV ACC DOWN
 
-   MOV DOWN NIL
-   MOV   0  ACC
-L: MOV ACC  DOWN
+   MOV   0 ACC
 
 @6
 
@@ -55,11 +53,12 @@ L: MOV ACC  DOWN
 
 
 @9
+MOV -1   ACC
+
 ADD 1
 JRO UP
 
-MOV ACC ANY
-MOV 0   ACC
+MOV ACC DOWN
 
 @10
 

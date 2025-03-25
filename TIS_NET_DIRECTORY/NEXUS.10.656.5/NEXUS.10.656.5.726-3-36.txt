@@ -4,14 +4,13 @@
 @1
 S: MOV UP  ACC
    MOV ACC RIGHT
-   NOP
+   MOV ACC RIGHT
    SWP
    ADD 10  #N
    SWP
    JGZ S
-
-   SWP  #M
-   ADD 4
+   SWP
+  SUB 2
 G: SUB 2   #L
    JGZ G
 
@@ -25,37 +24,36 @@ G: SUB 2   #L
 
 
 @5
-S: MOV ACC RIGHT
-   MOV UP ACC
+S:MOV ACC RIGHT
+   MOV UP   DOWN
+   MOV UP   ACC
    MOV ACC DOWN
-   MOV ACC DOWN
-
    JGZ S
-G: MOV ACC UP
+G: MOV ACC   UP
    MOV RIGHT ACC
    JGZ G
-
-O: MOV UP ACC
-   MOV ACC DOWN
+O: MOV UP    ACC
+   MOV ACC   DOWN
    JGZ O
 
 @6
 
 
 @7
-   MOV -999 ACC
-D: SAV
+   MOV -100 ACC
+L: SAV
    ADD UP
    JGZ S
-   MOV 0,ACC
+   SUB ACC
 S: SUB UP
-   JLZ D
-F: SWP
+   JLZ L
+
+E: SWP
    SAV
    ADD UP
-   JLZ L
-   MOV ACC,DOWN
-   JMP F
-L: MOV -1 DOWN
+   JLZ O
+   MOV ACC  DOWN
+   JMP E
+O: MOV -1   DOWN
 
 @8

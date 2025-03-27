@@ -30,19 +30,19 @@ MOV UP DOWN
 
 
 @8
-   SWP
    SUB LAST
    JLZ L
    MOV 0    ACC
 L: ADD ANY
 
+   SWP
    JRO UP
 
-   NEG
-   MOV ACC  RIGHT
-   SWP
    MOV ACC  DOWN
    SUB LAST
+   SWP
+   NEG
+   MOV ACC  RIGHT
 
 @9
 MOV LEFT DOWN

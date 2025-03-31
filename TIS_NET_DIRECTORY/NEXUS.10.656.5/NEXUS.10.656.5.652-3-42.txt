@@ -8,11 +8,11 @@
 G: SUB 2   #L
    JGZ G
 S: MOV UP  ACC
-   NOP
    MOV ACC RIGHT
    SWP
    ADD 10  #N
    SWP
+   NOP
    JGZ S
    MOV -1 RIGHT!
 

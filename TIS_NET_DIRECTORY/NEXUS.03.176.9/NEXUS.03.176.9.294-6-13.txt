@@ -11,10 +11,9 @@ MOV UP LEFT
 @3
 S: MOV UP ACC
    MOV UP DOWN
-   JLZ L
+   JLZ S
 
    MOV ACC DOWN
-L: NOP
 
 @4
 

@@ -21,7 +21,6 @@ SUB UP
 MOV ACC DOWN
 
 @6
-MOV UP LEFT
 
 @7
 

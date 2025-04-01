@@ -28,8 +28,8 @@ G: MOV 1   ANY
 L: MOV ANY ACC
    MOV ACC ANY
    JGZ L
-   JEZ L
-   JMP O
+   JNZ O
+   JMP L
 GZ:MOV 2   DOWN
 N: SUB 1
    JGZ GZ
@@ -61,4 +61,3 @@ E: SUB 1
 N: MOV LEFT ACC
 
 @8
-

@@ -60,8 +60,8 @@ O: MOV ACC  DOWN
 
 
 @7
-   MOV 0   ACC
 
+   MOV 0   ACC
    JRO UP
    ADD 2
    JRO -2
@@ -71,8 +71,8 @@ O: MOV ACC  DOWN
    MOV ACC DOWN
 
 @8
-   MOV 0     ACC
 
+   MOV 0     ACC
    JRO ANY
    ADD 2
    JRO -2
@@ -82,9 +82,9 @@ O: MOV ACC  DOWN
    MOV ACC   DOWN
 
 @9
-   MOV UP ACC
 
-   ADD 10
+MOV 10 ACC
+ADD UP
    JLZ LZ
 G: MOV 3    LEFT
    JRO 3
@@ -93,4 +93,3 @@ LZ:MOV 4    LEFT
    MOV ACC  DOWN
 
 @10
-

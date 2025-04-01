@@ -3,10 +3,11 @@
 
 @1
 MOV UP ACC
-MOV ACC DOWN
-MOV ACC DOWN
+MOV ACC LAST
+MOV ACC ANY
 
 @2
+
 
 @3
 
@@ -15,12 +16,13 @@ MOV ACC DOWN
 
 
 @5
-MOV UP ACC
-SWP
 SUB UP
 MOV ACC DOWN
+MOV UP ACC
+SWP
 
 @6
+
 
 @7
 
@@ -42,6 +44,5 @@ G: MOV 1 DOWN
    JGZ G
 A:
   MOV 0 DOWN
-B:
 
 @10

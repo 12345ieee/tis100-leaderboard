@@ -26,8 +26,8 @@ A: ADD 279
 
 @5
 D: MOV UP ACC
-A: MOV 1 DOWN
-   SUB 29
+A:    SUB 29
+MOV 1 DOWN
    JGZ A
 B: MOV -1 DOWN
    ADD 1

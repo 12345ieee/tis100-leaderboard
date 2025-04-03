@@ -25,8 +25,8 @@ A: ADD 270
 
 
 @5
-A: MOV 1 DOWN
-   SUB 28
+A:    SUB 28
+MOV 1 DOWN
    JGZ A
 B: MOV -1 DOWN
    ADD 2

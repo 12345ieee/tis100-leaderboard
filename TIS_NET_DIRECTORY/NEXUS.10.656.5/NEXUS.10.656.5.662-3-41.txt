@@ -14,11 +14,11 @@
 @1
    MOV UP  RIGHT
 S: MOV UP  ACC
-   NOP
    SWP
    ADD 10  #N
    SWP
    MOV ACC RIGHT
+NOP
    JGZ S
 
    SWP

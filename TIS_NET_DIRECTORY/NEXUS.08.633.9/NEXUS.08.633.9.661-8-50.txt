@@ -10,9 +10,9 @@ L: SUB 200
    JGZ L
    ADD 99
    JLZ LZ
-G: MOV 5   LEFT
    SUB 19
    MOV ACC RIGHT
+G: MOV 5   LEFT
    JRO -999
 LZ:    ADD 81
    MOV ACC RIGHT

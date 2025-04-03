@@ -77,8 +77,7 @@ L: MOV 2   UP
    JMP S
 G: ADD UP
    MOV ACC RIGHT
-   MOV 1   ACC
-Z: MOV ACC UP
+Z: MOV 1 UP
 
 @5
 S: MOV LEFT  ACC

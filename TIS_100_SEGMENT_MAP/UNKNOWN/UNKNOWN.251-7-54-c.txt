@@ -49,8 +49,8 @@ MOV ACC DOWN
 
 @6
    MOV 38 ACC
-D: MOV UP DOWN
-   SUB 1
+D:    SUB 1
+MOV UP DOWN
    JGZ D
    MOV -1 UP
 

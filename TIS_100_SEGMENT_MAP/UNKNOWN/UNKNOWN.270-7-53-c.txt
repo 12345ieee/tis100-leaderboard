@@ -2,8 +2,8 @@
 MOV RIGHT DOWN
 
 @1
-S: MOV -50 ACC
-   MOV UP LEFT
+S:    MOV UP LEFT
+MOV -50 ACC
    ADD UP
    JLZ L
    SUB 25

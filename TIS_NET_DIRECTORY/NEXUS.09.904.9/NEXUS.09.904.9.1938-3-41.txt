@@ -20,8 +20,8 @@ S: MOV UP    ACC
 
 @2
    MOV -4  ACC
-L: MOV -1  UP
-   MOV ACC LAST
+L:    MOV ACC LAST
+MOV -1 UP
    MOV UP  LAST
 Z: MOV 99  UP
    MOV 100 UP

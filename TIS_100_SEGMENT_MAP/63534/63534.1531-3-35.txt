@@ -7,7 +7,7 @@ S: MOV UP  ACC
    JGZ S
 
    SWP
-   SUB 105#C
+   SUB 106#C
    #MOV 113 ACC
 L: SUB 1#C
    JGZ L
@@ -74,4 +74,3 @@ O2:MOV ANY  ACC
    JNZ O2
 
 @8
-

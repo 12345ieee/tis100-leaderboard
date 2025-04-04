@@ -24,7 +24,7 @@ G: MOV DOWN  ACC
    JGZ G
 
 @4
-   MOV -6   LEFT
+   MOV -5   LEFT
 
 Z: MOV LEFT NIL
    MOV LAST LEFT

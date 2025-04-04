@@ -2,7 +2,7 @@
 S: MOV UP  ACC
    MOV ACC RIGHT
    SWP
-   ADD 21
+   ADD 20
    SWP
    JGZ S
 

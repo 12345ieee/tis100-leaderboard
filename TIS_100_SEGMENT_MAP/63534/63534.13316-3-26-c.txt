@@ -1,10 +1,10 @@
 @0
    MOV UP  RIGHT
 
-D: SUB 5
+D: SUB 1
    JGZ D
 
-   ADD 908
+   ADD 177
 
 @1
 

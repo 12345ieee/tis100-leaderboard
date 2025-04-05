@@ -8,11 +8,11 @@ S: MOV UP  ACC
    SWP
    ADD 9
    JRO ACC
-   ADD 217
-   ADD 193
-   ADD 151
-   ADD 297
-L: SUB 6#C
+   ADD 39
+   ADD 33
+   ADD 23
+   ADD 49
+L: SUB 1#C
    JGZ L
 
 @1
@@ -77,4 +77,3 @@ O2:MOV ANY  ACC
    JNZ O2
 
 @8
-

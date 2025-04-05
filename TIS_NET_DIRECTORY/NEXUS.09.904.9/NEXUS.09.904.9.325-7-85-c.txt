@@ -73,8 +73,8 @@ O: SUB UP
    #JEZ Z
 L: MOV 2   UP
    JMP S
-G: ADD UP
-   MOV ACC RIGHT
+G:    MOV ACC RIGHT
+ADD UP
 Z: MOV 1 UP
 
 @5

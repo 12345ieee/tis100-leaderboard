@@ -8,7 +8,7 @@ S: MOV UP  ACC
    SWP
    ADD 9
    JRO ACC
-   ADD 39
+   ADD 38
    ADD 33
    ADD 23
    ADD 49

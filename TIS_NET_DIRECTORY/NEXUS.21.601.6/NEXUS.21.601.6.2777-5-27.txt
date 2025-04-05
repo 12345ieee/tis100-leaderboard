@@ -10,7 +10,7 @@ G: MOV -4    DOWN
    SUB 1
    JGZ G
 
-Z: MOV -6    DOWN
+Z: MOV -1    DOWN
 
    SWP
 E: SAV
@@ -53,4 +53,3 @@ MOV UP RIGHT
 MOV ANY DOWN
 
 @8
-

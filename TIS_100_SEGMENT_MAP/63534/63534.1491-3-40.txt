@@ -8,10 +8,10 @@ S: MOV UP  ACC
    SWP
    ADD 9
    JRO ACC
-   ADD 39
+   ADD 38
    ADD 33
-   ADD 27
-   ADD 49
+   ADD 23
+   ADD 53
 L: SUB 1#C
    JGZ L
 
@@ -77,4 +77,3 @@ O2:MOV ANY  ACC
    JNZ O2
 
 @8
-

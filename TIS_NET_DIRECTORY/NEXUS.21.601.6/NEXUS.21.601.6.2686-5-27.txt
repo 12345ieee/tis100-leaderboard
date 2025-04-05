@@ -10,9 +10,9 @@ G: MOV -4    DOWN
    SUB 1
    JGZ G
 
-Z: MOV -1    DOWN
-
+Z: 
    SWP
+MOV -1 DOWN
 E: SAV
    JRO RIGHT
    MOV 1     DOWN

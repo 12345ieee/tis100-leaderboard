@@ -59,8 +59,8 @@ MOV -1 ACC
    MOV LEFT ACC
    JRO 3
 
-L: MOV -1   LEFT
-   SUB 20
+L:    SUB 20
+MOV -1 LEFT
    JGZ L
 
    ADD 9

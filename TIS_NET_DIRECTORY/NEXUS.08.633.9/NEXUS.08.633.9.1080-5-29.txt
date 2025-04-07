@@ -2,8 +2,8 @@
 
 
 @1
-   MOV UP  ACC
-   SUB 99
+MOV -99 ACC
+ADD UP
    JRO 3
 
 L: SUB 100

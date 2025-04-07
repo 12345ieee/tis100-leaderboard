@@ -19,8 +19,8 @@ L: ADD 25
 2: MOV 2 DOWN
 
 @2
-S: MOV -50 ACC
-   ADD LEFT
+S: MOV LEFT ACC
+ADD -50
    JLZ L
    SUB 25
    JLZ 2

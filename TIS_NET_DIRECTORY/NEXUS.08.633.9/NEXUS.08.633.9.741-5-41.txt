@@ -2,8 +2,8 @@
 
 
 @1
-   MOV UP  ACC
-   SUB 199
+MOV -199 ACC
+ADD UP
    JRO 3
 L: SUB 200
    MOV 1   DOWN

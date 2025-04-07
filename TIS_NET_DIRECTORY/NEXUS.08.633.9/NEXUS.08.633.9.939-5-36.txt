@@ -2,8 +2,8 @@
 
 
 @1
-   MOV UP  ACC
-   SUB 99
+MOV -99 ACC
+ADD UP
    JRO 3
 
 L: SUB 100
@@ -44,8 +44,8 @@ MOV RIGHT DOWN
 @8
 
    MOV UP    RIGHT
-MOV -1 ACC
    MOV UP    LEFT
+MOV -1 ACC
 
    ADD 1
    JRO RIGHT

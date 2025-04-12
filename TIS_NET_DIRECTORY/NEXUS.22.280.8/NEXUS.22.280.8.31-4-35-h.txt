@@ -32,7 +32,6 @@
 @5
    MOV UP DOWN
    MOV 0 DOWN
-   MOV 0 DOWN
    MOV 64 DOWN
    MOV 20 DOWN
    MOV 33 DOWN
@@ -67,8 +66,8 @@
    MOV 71 DOWN
 L: MOV LEFT DOWN
    JMP L
+   MOV 0 DOWN
 U: MOV UP DOWN
    JMP U
 
 @10
-

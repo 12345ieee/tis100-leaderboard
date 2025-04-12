@@ -1,17 +1,16 @@
 @0
-   MOV 35    ACC
-G: SUB 1
+   ADD 211
+
+G: SUB 6
    MOV RIGHT DOWN
    JGZ G
+   JNZ N
 
-   MOV RIGHT ACC
-W: MOV ACC   DOWN
-   JLZ L
-O: MOV RIGHT DOWN
+Z: MOV -1    DOWN
+N: JEZ Z
 
-L: MOV 0     DOWN
-   ADD 1
-   JMP W
+   SUB 200
+   NOP
 
 @1
 MOV UP  ACC

@@ -4,7 +4,7 @@
 D: SUB 1
    JGZ D
 
-   ADD 168
+   ADD 153
 
 @1
 

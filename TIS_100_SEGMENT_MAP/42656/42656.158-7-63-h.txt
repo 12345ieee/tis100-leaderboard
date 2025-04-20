@@ -7,8 +7,8 @@
    MOV ACC RIGHT
    ADD 21
    MOV ACC DOWN
+B:
    MOV UP  DOWN
-B: MOV UP  DOWN
    MOV UP  DOWN
    MOV UP  DOWN
    MOV UP  DOWN
@@ -16,22 +16,24 @@ B: MOV UP  DOWN
 
 @2
    JRO LEFT
-1: MOV 11   DOWN
+1: MOV 1 DOWN
+   MOV 10   DOWN
    MOV 2    DOWN
    MOV 5    DOWN
    MOV 99   DOWN
    MOV 2    DOWN
+   JMP 8
+   MOV 5 DOWN
 8: ADD 1
    MOV ACC  DOWN
    JGZ 8
-   MOV 1 DOWN
    JRO 0
 
 @3
 
 
 @4
-MOV UP RIGHT
+MOV ANY RIGHT
 
 @5
 MOV RIGHT ACC
@@ -49,34 +51,34 @@ MOV UP    DOWN
 MOV LEFT  DOWN
 
 @6
-   JRO ANY
-1: MOV 5    LEFT
-   MOV 4    LEFT
+   MOV ANY LEFT
+   JRO LAST
+1: MOV 4    LEFT
    MOV 1    LEFT
    MOV 1    LEFT
    MOV 2    LEFT
    MOV 3    LEFT
    MOV 4    LEFT
    MOV 3    LEFT
-A: MOV 99   LEFT
+A: MOV 5    LEFT
    JMP A
-12:MOV 1 LEFT
-13:MOV LAST LEFT
+11:
+12:MOV LAST LEFT
    JRO -1
 
 @7
 MOV UP DOWN
 
 @8
-   MOV 5   LAST
    MOV 2   LAST
    MOV 2   LAST
    MOV 5   LAST
    MOV 4   LAST
    MOV 3   LAST
-   MOV 12  ANY!
    MOV 2   UP
+   MOV 10  ANY
    MOV 3   UP
    MOV 2   LAST
    MOV 99  LAST
    MOV 4   LAST
+   MOV 5   LAST

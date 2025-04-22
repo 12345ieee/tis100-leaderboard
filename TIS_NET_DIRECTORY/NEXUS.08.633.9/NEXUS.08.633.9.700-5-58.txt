@@ -12,9 +12,9 @@ G: SUB 200
    ADD 99
    JLZ L
    SUB 19
-   MOV 3    DOWN
+   MOV 2    DOWN
    JRO 999
-L: MOV 5    DOWN
+L: MOV 4    DOWN
    ADD 81
    MOV ACC  DOWN
 
@@ -27,17 +27,15 @@ L: MOV 5    DOWN
 @4
    MOV ACC LAST
    JRO UP
-   MOV 2   ACC
-   JMP J
+   JMP S
    MOV 1 ACC
    JMP O
    MOV 0   ACC
    JMP O
-
+S: MOV 0 ACC
    ADD 2
 J: JRO UP
    JRO -2
-1: MOV 0   ACC
    ADD 1
 O: MOV UP  ANY
 

@@ -39,30 +39,19 @@ E:  MOV ACC DOWN
 
 
 @4
-# USED SIM TO FIND
-# OPTIMAL X & Y:
-# X + 2Y = 998
-# 800 <= X < 999
-#   0 <= Y < 100
 
-# TWO SOLUTIONS:
-# X = 880, Y = 59
-# X = 976, Y = 11
-
-# 400 CASES TESTED
-# FOR 4 COMBOS OF
-# JGZ+JMP/JLZ+JEZ
 
 @5
-   JRO ANY
+   MOV UP NIL
+   MOV 999 DOWN
 
 S: MOV UP  DOWN
    MOV UP  ACC
-   MOV -4  DOWN
-   MOV -4  DOWN
-   MOV -4  DOWN
-   MOV -4  DOWN
-   MOV 99  DOWN
+   MOV -99 DOWN
+   MOV -99 DOWN
+   MOV -99 DOWN
+   MOV -99 DOWN
+   MOV  1  DOWN
    MOV ACC DOWN
    JMP S
 
@@ -76,20 +65,19 @@ S: MOV UP  DOWN
 
 
 @9
-    ADD 512!
-B:  ADD LAST
-    MOV ACC ANY
-    MOV ANY ACC
 L:  JGZ GZ
 LZ: ADD 256
     ADD ACC
     SUB 1
     JRO UP
-    JGZ GZ    #
-    JMP LZ    #
+    JRO 4
 GZ: SUB 256
     ADD ACC
     JRO UP
 O:  JGZ B
+    ADD 512
+B:  ADD LAST
+    MOV ACC ANY
+    MOV ANY ACC
 
 @10

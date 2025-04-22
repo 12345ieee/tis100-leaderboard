@@ -11,10 +11,9 @@ L: SUB 200
    ADD 99
    JLZ LZ
 G: MOV 501  DOWN
-   SUB 19
+   SUB 100
    JRO 999
 LZ:MOV 500   DOWN
-   ADD 81
    MOV ACC  DOWN
 
 @2
@@ -27,7 +26,7 @@ LZ:MOV 500   DOWN
    MOV -500   ACC
 L: ADD UP
    JLZ L
- MOV UP DOWN
+   MOV UP DOWN
    MOV ACC   DOWN
 
 @5
@@ -49,10 +48,10 @@ L: ADD RIGHT
    MOV ACC   DOWN
 
 @9
-   MOV LEFT ACC
+   MOV 81 ACC
+   ADD LEFT
    JGZ L
    JRO 4
-
 L: SUB 20
    MOV 2   LEFT
    JGZ L

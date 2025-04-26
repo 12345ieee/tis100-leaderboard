@@ -6,9 +6,8 @@
 A: SUB RIGHT
    JLZ L
    MOV -2  RIGHT
-   JGZ A
+   JMP A
 
-Z: SUB RIGHT
 L: MOV  1  RIGHT
    JMP N
 

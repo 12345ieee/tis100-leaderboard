@@ -1,0 +1,88 @@
+@0
+ MOV RIGHT LAST
+ MOV -1 ACC
+ SUB RIGHT
+ ADD ACC
+ MOV ACC   ANY
+
+@1
+   MOV -1 ACC
+   MOV UP LAST
+   SUB UP
+   ADD ACC
+   MOV ACC ANY
+
+@2
+ MOV UP DOWN
+
+@3
+# 0 -> -5
+# 1 -> -3
+# 2 -> -1
+# 3 ->  3
+# 4 ->  1
+
+@4
+4: MOV 1 DOWN
+  JMP S
+3: MOV 3 DOWN
+  JMP S
+2: MOV -1 DOWN
+  JMP S
+1: MOV -3 DOWN
+  JMP S
+0: MOV -5 DOWN
+
+S: MOV UP DOWN
+  JRO ANY
+
+@5
+   MOV 7 ACC
+G: MOV DOWN DOWN
+   SUB 1
+   JGZ G
+  MOV 31 RIGHT
+  MOV -999 LEFT
+
+@6
+ MOV ANY DOWN
+
+@7
+# WASTED CYCLES
+#    T1  9
+#    T2  XX
+#    T3  10
+
+@8
+4: MOV 1 LAST
+  JMP S
+3: MOV 3 ANY
+  JMP S
+2: MOV -1 ANY
+  JMP S
+1: MOV -3 ANY
+  JMP S
+0: MOV -5 ANY
+
+S: MOV UP LAST
+  JRO UP
+
+@9
+0: MOV RIGHT ACC
+  JGZ S
+1: SWP
+   MOV RIGHT ACC
+2: SWP
+
+S: JRO LEFT
+4: MOV ACC DOWN
+  JMP S
+
+3: SWP
+   MOV ACC UP
+   SWP
+   ADD UP
+  JMP S
+
+@10
+ MOV UP LEFT

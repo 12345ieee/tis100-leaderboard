@@ -6,19 +6,17 @@
  MOV RIGHT DOWN
 
 @1
-  JRO UP
-S: MOV -1 ACC
-   MOV UP ANY
+   MOV -1 ACC
+   MOV UP LAST
    SUB UP
    ADD ACC
-   MOV ACC LEFT
+   MOV ACC LAST
 
    MOV -1 ACC
    MOV UP ANY
    SUB UP
    ADD ACC
-   MOV ACC LEFT
-  JMP S
+   MOV ACC LAST
 
 @2
  MOV UP DOWN
@@ -58,7 +56,7 @@ G: MOV DOWN DOWN
 @7
 # WASTED CYCLES
 #    T1  9
-#    T2  8
+#    T2  XX
 #    T3  10
 
 @8

@@ -23,7 +23,7 @@ G: MOV UP LEFT
    JGZ G
 
    MOV -1 DOWN
-   MOV -1 DOWN
+   JRO -1
 
 @2
 S: MOV -50 ACC

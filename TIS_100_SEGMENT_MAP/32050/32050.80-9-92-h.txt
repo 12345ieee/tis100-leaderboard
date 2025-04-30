@@ -20,7 +20,6 @@
    MOV 2 DOWN
    MOV 36 LEFT
    MOV -2 DOWN
-   MOV -7 DOWN
 
 @2
    JRO ANY
@@ -35,7 +34,7 @@
    MOV -1 DOWN
    MOV -3 DOWN
    MOV -2 DOWN
-   JRO 0
+   NOP
    MOV 6 DOWN
    MOV 1 DOWN
 

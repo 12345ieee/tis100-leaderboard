@@ -36,7 +36,7 @@ JNZ C
 JMP B
 
 @3
-#255/5/55
+#251/5/55
 
 @4
 
@@ -80,8 +80,8 @@ JMP D
 A: MOV 0 DOWN
 C: SWP
 D: SAV
-ADD UP
+F: ADD UP
 JNZ A
 
 B: MOV 1 DOWN
-JMP C
+JMP F

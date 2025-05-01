@@ -1,0 +1,92 @@
+@0
+   MOV -50 ACC
+   ADD RIGHT
+   JLZ L
+   SUB 25
+   JLZ 2
+   MOV 3 DOWN
+   JMP S
+L: ADD 25
+   JLZ 0
+   MOV 1 DOWN
+   JMP S
+0: MOV 0 DOWN
+   JMP S
+2: MOV 2 DOWN
+S: MOV RIGHT DOWN
+
+@1
+S: MOV -50 ACC
+   MOV UP LEFT
+   ADD UP
+   JLZ L
+   SUB 25
+   JLZ 2
+   MOV 3 LEFT
+   JMP S
+L: ADD 25
+   JLZ 0
+   MOV 1 LEFT
+   JMP S
+0: MOV 0 LEFT
+   JMP S
+2: MOV 2 LEFT
+
+@2
+# TIME LOSE
+
+# TEST 1
+# 24 -> 210
+
+# TEST 2
+# 16 -> 216
+
+# TEST 3
+# 14 -> 215
+
+@3
+   MOV 38 ACC
+
+G: MOV UP RIGHT
+   SUB 1
+MOV UP RIGHT
+SUB 1
+   JGZ G
+
+   MOV -1 RIGHT
+
+@4
+MOV LEFT ACC
+MOV ACC  RIGHT
+MOV ACC  DOWN
+
+@5
+S: MOV LEFT ACC
+   MOV ACC DOWN
+   SAV
+   SUB LEFT
+   JNZ N
+
+E: MOV -1 DOWN
+   SWP
+   SAV
+   SUB LEFT
+   JEZ E
+
+N: MOV 1 DOWN
+
+@6
+MOV UP DOWN
+
+@7
+   MOV UP RIGHT
+   JEZ E
+   MOV 1 ACC
+
+E: ADD 1
+S: JRO UP
+   MOV ACC DOWN
+   MOV RIGHT DOWN
+
+@8
+MOV LEFT LEFT

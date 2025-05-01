@@ -5,21 +5,21 @@
 E: JEZ E
 
 @1
-   ADD 20
+   ADD 21
 C: SUB 1
    JGZ C
-   JMP S
-N: MOV 0 LEFT
-G: SUB 1
-   MOV DOWN LEFT
-   JGZ G
 S: MOV LEFT ACC
 0: MOV ACC DOWN
    JGZ S
    MOV UP ACC
    MOV ACC DOWN
-   JNZ N
-   JMP 0
+   JEZ 0
+N: MOV 0 LEFT
+SUB 1
+G: SUB 1
+   MOV DOWN LEFT
+   JGZ G
+   JMP S
 
 @2
 

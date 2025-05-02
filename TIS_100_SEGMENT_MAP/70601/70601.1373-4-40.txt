@@ -6,11 +6,12 @@
    SUB UP       #L
    MOV UP  DOWN #C
 
+   JMP J
 L: ADD 7
    MOV -7  DOWN
-   JLZ L
+J: JLZ L
 
-   SUB 8
+   SUB 9
    MOV ACC DOWN
    MOV  1  DOWN
 
@@ -25,7 +26,6 @@ L: ADD 7
 
 @5
 MOV UP  ACC
-MOV ACC RIGHT
 MOV ACC RIGHT
 MOV ACC RIGHT
 MOV ACC RIGHT

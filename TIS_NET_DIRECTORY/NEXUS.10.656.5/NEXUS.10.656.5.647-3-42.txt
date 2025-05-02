@@ -5,7 +5,6 @@
    MOV -10 ACC
    SWP
 
-SUB 2
 G: SUB 2   #L
    JGZ G
 S: MOV UP  ACC
@@ -13,9 +12,9 @@ S: MOV UP  ACC
    SWP
    ADD 10  #N
    SWP
-   NOP
+   JLZ M
    JGZ S
-   MOV -1 RIGHT!
+M: MOV -1 RIGHT!
 
 @2
 

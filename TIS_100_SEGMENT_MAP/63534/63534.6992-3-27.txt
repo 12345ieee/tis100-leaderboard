@@ -1,0 +1,61 @@
+@0
+S: MOV UP  RIGHT
+
+D: SUB 1
+   JGZ D
+
+   MOV UP  RIGHT
+   ADD 187
+
+@1
+
+
+@2
+
+
+@3
+#MOV 7 UP
+#MOV 6 UP
+#MOV 5 UP
+#MOV 4 UP
+#MOV 3 UP
+#MOV 2 UP
+#MOV 1 UP
+#MOV 0 UP
+
+@4
+Z: MOV UP   DOWN
+S: MOV UP   ACC
+   MOV ACC  DOWN
+   JGZ S
+   MOV 0    UP
+   MOV DOWN NIL
+   JMP R
+
+L: MOV UP   ACC
+   MOV DOWN UP
+G: MOV ACC  UP
+   SUB DOWN
+   JLZ L
+R: MOV DOWN ACC
+   JNZ G
+
+@5
+
+
+@6
+
+
+@7
+G: MOV ACC  LEFT
+   MOV UP   ACC
+   JGZ G
+
+S: MOV LEFT ACC
+   MOV ACC  UP
+   MOV ACC  UP
+   JGZ S
+
+   MOV UP   DOWN
+
+@8

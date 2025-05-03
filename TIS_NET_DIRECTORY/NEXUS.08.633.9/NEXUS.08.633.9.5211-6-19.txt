@@ -15,8 +15,8 @@
 @4
    MOV -9 ACC
    ADD ANY
-   JLZ L
-   JEZ L
+   JGZ S
+   JMP L
 S: SUB 10
    MOV LEFT LEFT
    JGZ S

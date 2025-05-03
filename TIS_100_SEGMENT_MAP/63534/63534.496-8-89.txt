@@ -40,8 +40,8 @@ S: SAV
    JLZ L
 G: MOV LAST ACC
    JNZ N
-   SWP
    MOV ACC RIGHT
+   SWP
    MOV ACC RIGHT
 
 @4

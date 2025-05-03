@@ -44,8 +44,8 @@ S: SAV
    JLZ L
 G: MOV UP ACC
    JNZ N
-   SWP
    MOV ACC RIGHT
+   SWP
    MOV ACC RIGHT
    MOV UP  NIL
 

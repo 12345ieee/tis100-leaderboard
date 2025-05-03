@@ -68,7 +68,7 @@ LZ: ADD 256
     SUB 1
     JRO UP
     JLZ Z
-    JMP O
+    JMP B
 GZ: SUB 256
     ADD ACC
     JRO UP

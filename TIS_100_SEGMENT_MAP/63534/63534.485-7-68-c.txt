@@ -6,7 +6,6 @@ L: MOV UP  ACC
    MOV ACC DOWN
    JNZ L
 
-
 @1
 G: MOV LEFT ACC
    JEZ Z
@@ -26,7 +25,6 @@ S: SAV
 
 
 @3
-
 L: MOV ANY ACC
    SWP
 N: MOV ACC RIGHT
@@ -74,11 +72,11 @@ S: SAV
 
 
 @7
-   MOV 5 ACC
-G: SUB 1
-   MOV RIGHT LEFT
-   MOV 0 LEFT
-   JGZ G
+Z: MOV 1 LEFT
+   MOV 1 LEFT
+   MOV RIGHT ACC
+   JEZ Z
+   MOV ACC DOWN
 
    MOV RIGHT DOWN
    JRO -1
@@ -86,7 +84,7 @@ G: SUB 1
 @8
 L: MOV UP ACC
 Z: SWP
-N: MOV ACC ANY
+N: MOV ACC LEFT
    SWP
 S: SAV
 

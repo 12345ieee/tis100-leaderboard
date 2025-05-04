@@ -94,8 +94,8 @@ S: SAV
    SUB RIGHT
    JLZ L
 G: MOV RIGHT ACC
-   JNZ N
-   JMP Z
+   JEZ Z
+   JMP N
 
 @8
 L: MOV UP ACC

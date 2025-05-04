@@ -51,8 +51,8 @@ N: MOV UP   ACC
 
 L: MOV ACC  UP
    MOV DOWN ACC
-JNZ L
    JNZ L
+   NOP
 
 @5
 

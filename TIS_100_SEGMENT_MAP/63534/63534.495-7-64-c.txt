@@ -24,8 +24,8 @@ G: MOV LEFT ACC
    SUB ANY
    JLZ L
 G: MOV LAST ACC
-   JEZ Z
-   JMP N
+   JNZ N
+   JMP Z
 
 L: MOV ANY ACC
 Z: SWP

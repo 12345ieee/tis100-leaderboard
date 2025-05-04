@@ -5,7 +5,7 @@ MOV UP RIGHT
 D: SUB 1
    JGZ D
 
-   ADD 186
+   ADD 183
 
 @1
 

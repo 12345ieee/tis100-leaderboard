@@ -1,5 +1,5 @@
 @0
-   MOV -38 ACC
+   MOV -37 ACC
    MOV UP DOWN
 
 L: SWP

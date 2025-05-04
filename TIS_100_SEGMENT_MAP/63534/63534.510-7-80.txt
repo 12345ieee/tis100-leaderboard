@@ -1,0 +1,107 @@
+@0
+   MOV -38 ACC
+   MOV UP DOWN
+
+L: SWP
+   MOV UP  ACC
+O: MOV ACC DOWN
+   MOV ACC DOWN
+   SWP
+   ADD 1
+   JLZ L
+
+   MOV 1 ACC
+   JMP O
+
+@1
+L: MOV LEFT ACC
+Z: SWP
+N: MOV ACC DOWN
+   MOV ACC DOWN
+   SWP
+S: SAV
+
+   SUB LEFT
+   JLZ L
+G: MOV LEFT ACC
+   JEZ Z
+   JMP N
+
+@2
+
+
+@3
+L: MOV UP ACC
+Z: SWP
+N: MOV ACC LAST
+   MOV ACC ANY
+   SWP
+S: SAV
+
+   SUB UP
+   JLZ L
+G: MOV UP ACC
+   JEZ Z
+   JMP N
+
+@4
+L: MOV LEFT ACC
+Z: SWP
+N: MOV ACC LAST
+   MOV ACC ANY
+   SWP
+S: SAV
+
+   SUB LEFT
+   JLZ L
+G: MOV LEFT ACC
+   JEZ Z
+   JMP N
+
+@5
+   SUB UP
+   JLZ L
+G: MOV UP ACC
+   JEZ Z
+   JMP N
+
+L: MOV UP ACC
+Z: SWP
+N: MOV ACC LAST
+   MOV ACC ANY
+   SWP
+S: SAV
+
+@6
+
+
+@7
+E: MOV RIGHT ACC
+   JEZ E
+   MOV RIGHT NIL
+   JMP S
+
+L: MOV RIGHT ACC
+Z: SWP
+N: MOV ACC DOWN
+   SWP
+S: SAV
+   SUB RIGHT
+   JLZ L
+G: MOV RIGHT ACC
+   JEZ Z
+   JMP N
+
+@8
+L: MOV UP ACC
+Z: SWP
+N: MOV ACC LAST
+   MOV ACC ANY
+   SWP
+S: SAV
+
+   SUB UP
+   JLZ L
+G: MOV UP ACC
+   JEZ Z
+   JMP N

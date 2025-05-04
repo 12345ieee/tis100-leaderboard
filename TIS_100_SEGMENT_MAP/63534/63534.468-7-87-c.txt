@@ -10,7 +10,7 @@ O: MOV ACC DOWN
    SUB 1
    JGZ L
 
-   MOV 0 ACC
+   MOV 1 ACC
    JMP O
 
 @1
@@ -35,7 +35,6 @@ S:
 @3
 L: MOV UP ACC
    SWP
-   JEZ E
 N: MOV ACC RIGHT
    MOV ACC RIGHT
    SWP
@@ -45,7 +44,7 @@ S: SAV
 G: MOV UP ACC
    JNZ N
    SWP
-E: MOV ACC RIGHT
+   MOV ACC RIGHT
    MOV ACC RIGHT
    MOV UP  NIL
 

@@ -13,8 +13,8 @@
    MOV ACC ANY
 
 @4
-   MOV -9 ACC
-   ADD ANY
+   MOV ANY ACC
+   SUB 9
    JGZ S
    JMP L
 S: SUB 10

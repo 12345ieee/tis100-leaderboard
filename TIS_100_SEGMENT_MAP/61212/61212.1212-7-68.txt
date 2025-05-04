@@ -6,14 +6,14 @@
    SWP
    MOV ACC LAST
    MOV UP ACC
-G: SUB RIGHT
-   JLZ E
-JEZ E
-   MOV -1 RIGHT
+S: SUB RIGHT
+   JGZ G
+   JMP E
+G: MOV -1 RIGHT
    SWP
    ADD 16
    SWP
-   JMP G
+   JMP S
 E: MOV 1 RIGHT
    SWP
    MOV ACC ANY

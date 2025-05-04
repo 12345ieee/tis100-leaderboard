@@ -1,10 +1,10 @@
 @0
-S: MOV UP  RIGHT
+MOV UP RIGHT
+   MOV UP  RIGHT
 
 D: SUB 1
    JGZ D
 
-   MOV UP  RIGHT
    ADD 187
 
 @1

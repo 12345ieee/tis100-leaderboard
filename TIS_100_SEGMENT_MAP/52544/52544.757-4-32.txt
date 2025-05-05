@@ -4,8 +4,8 @@
 @1
    MOV UP   DOWN
    MOV UP   ACC
-   MOV -5   DOWN
    SWP
+   MOV -5   DOWN
    MOV UP   DOWN
    MOV UP   ACC
 N: MOV -2   DOWN
@@ -52,10 +52,9 @@ MOV UP RIGHT
    MOV LEFT DOWN
    MOV LEFT ACC
 
-MOV 3 DOWN
-SUB 1
    MOV 3 DOWN
-   SUB 1
+   MOV 3 DOWN
+   SUB 2
 L: MOV 3    DOWN
    SUB 1
    JGZ L

@@ -4,11 +4,11 @@
 @1
    MOV UP  ACC
    SUB 199
-   JRO 3
+   JLZ A
 L: SUB 200
    MOV -1   DOWN
    JGZ L
-   ADD 99
+A: ADD 99
    JLZ LZ
 G: MOV 1   DOWN
    SUB 19

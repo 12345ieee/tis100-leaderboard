@@ -3,17 +3,16 @@
 
 @1
    MOV UP  RIGHT
-   NOP
 S: MOV UP  ACC
    NOP
    MOV ACC RIGHT
    SWP
-   SUB 27 #N
+   SUB 26 #N
    SWP
    JGZ S
    MOV -1 RIGHT
    SWP
-
+   SUB 5
 G: ADD 5   #L
    JLZ G
 

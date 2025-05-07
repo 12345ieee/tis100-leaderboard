@@ -1,0 +1,64 @@
+@0
+
+
+@1
+   SUB 240
+   JLZ A
+   ADD 240
+B: MOV ACC DOWN
+   SUB 30
+   JMP B
+A: ADD 270
+   MOV ACC DOWN
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+A:    SUB 28
+MOV 1 DOWN
+   JGZ A
+B: MOV -1 DOWN
+   ADD 2
+   MOV -1 DOWN
+   JLZ B
+   MOV -1 DOWN
+   MOV 4 ACC
+G: MOV 1 DOWN
+   SUB 1
+   MOV 1 DOWN
+   JGZ G
+   MOV 9 DOWN
+D: MOV UP ACC
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+   MOV 0 DOWN
+   MOV ACC DOWN
+   ADD UP
+   MOV 3 DOWN
+   JRO UP
+   MOV 0 DOWN
+   JRO UP
+A: MOV 3 DOWN
+   JRO UP
+   MOV 0 DOWN
+   JRO UP
+   JMP A
+   MOV -1 DOWN
+
+@10

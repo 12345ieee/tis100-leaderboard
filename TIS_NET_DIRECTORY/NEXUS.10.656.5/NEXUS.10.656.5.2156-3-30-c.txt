@@ -4,8 +4,8 @@
 @1
 MOV UP ACC
 MOV ACC RIGHT
-SUB 63
-G:ADD 1
+SUB 92
+G:ADD 2
 JLZ G
 
 @2
@@ -34,7 +34,7 @@ O: MOV UP    ACC
 
 
 @7
-   MOV -100 ACC
+   MOV -84 ACC
 L: SAV
    ADD UP
    JGZ S

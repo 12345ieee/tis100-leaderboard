@@ -6,13 +6,13 @@ S: MOV UP  ACC
    MOV ACC RIGHT
    #MOV ACC RIGHT
    SWP
-   ADD 31  #N
+   ADD 41 #N
    SWP
    JGZ S
 
    SWP
 
-G: SUB 6   #L
+G: SUB 8   #L
    JGZ G
 
 @2

@@ -12,65 +12,60 @@ MOV UP RIGHT
 JRO UP
 
 @1
-   NEG
-G: SUB 1
-   JEZ Z
-   JGZ N
-   ADD 11
-   SWP
+   ADD 10
+   MOV 9 LEFT
    JMP S
 
 Z: MOV UP   ACC
    MOV ACC  ANY
-   SWP
+S: SWP
    SUB LAST
    MOV ACC  LAST
-S: JEZ Z
+   JEZ Z
 N: JGZ G
+   NEG
+G: SUB 1
+   JEZ Z
+   JGZ N
 
 @2
 
 
 @3
-   ADD 6
-N: SUB 1
-   JNZ N
-   JMP S
-L: MOV DOWN UP
-   ADD 1
-S: JLZ L
-   MOV UP   ACC
-   MOV ACC  DOWN
-   JGZ E
-   JMP E
+MOV UP UP
 G: SUB 1
    MOV UP   DOWN
 E: JGZ G
    JMP S
+L: MOV DOWN LAST
+   ADD 1
+S: JLZ L
+   MOV ANY   ACC
+   MOV ACC  DOWN
+   JGZ E
+   JMP E
 
 @4
 
 
 @5
-#HERSMUNCH
-#926/4/50
+
 
 @6
 
 
 @7
+MOV LEFT ACC
+JRO ACC
 S: MOV LEFT ACC
-
 N: JEZ Z
    JGZ G
    NEG
 G: SUB 1
    JNZ N
-
 Z: MOV LEFT ACC
    MOV ACC  DOWN
-   MOV ACC  LEFT
+O: MOV ACC  LEFT
    JMP S
 
 @8
-

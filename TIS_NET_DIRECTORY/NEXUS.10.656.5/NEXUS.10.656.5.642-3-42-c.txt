@@ -4,15 +4,15 @@
 @1
    MOV UP  RIGHT
 S: SWP
-   ADD 58 #N
+   ADD 122 #N
    SWP
    MOV UP  ACC
    MOV ACC RIGHT
    JGZ S
    MOV -1 RIGHT
    SWP
-   ADD 37
-G: SUB 11   #L
+   ADD 40
+G: SUB 22   #L
    JGZ G
 
 @2

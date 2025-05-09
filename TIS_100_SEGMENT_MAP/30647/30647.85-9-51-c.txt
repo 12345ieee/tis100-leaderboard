@@ -1,14 +1,21 @@
 @0
-
+# NO INFO FOR YOU
+#
+#
+#
+#
 
 @1
- MOV UP  DOWN
- MOV UP  RIGHT
+
+
+
+
+ MOV UP  ANY
 
 @2
  MOV UP   DOWN
- MOV UP   RIGHT
- MOV LEFT ACC
+ MOV UP   ACC
+ MOV LEFT RIGHT
  MOV ACC RIGHT
  MOV ACC RIGHT
 
@@ -54,7 +61,6 @@ R: MOV UP   LEFT
 JMP R
 
 @7
-
 S: MOV UP ACC
    SAV
    SUB UP

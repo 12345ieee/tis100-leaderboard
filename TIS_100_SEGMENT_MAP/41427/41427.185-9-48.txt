@@ -35,10 +35,8 @@ N: MOV UP  ACC
 
 @6
    MOV LEFT DOWN
-S: MOV UP  ACC
-   JEZ E
-   SUB DOWN
-   JGZ G
+S: MOV UP   ACC
+   JNZ N
 L: MOV 0    DOWN
    MOV ANY  ACC
    JEZ E

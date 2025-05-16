@@ -73,7 +73,7 @@ A: JRO UP
    MOV 1 RIGHT
    MOV 1 RIGHT
    MOV 1 RIGHT
-   JMP A
+J: JMP A
    NOP
    NOP
    NOP
@@ -82,8 +82,7 @@ A: JRO UP
    NOP
    NOP
    NOP
-   NOP
-   NOP
+   JMP J
 
 @9
 MOV ANY DOWN

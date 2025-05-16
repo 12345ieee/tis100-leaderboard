@@ -5,14 +5,13 @@ S: MOV UP DOWN
    JMP S
 
 @1
-   MOV UP ACC
+1: MOV UP ACC
+U: JEZ 0
+   JMP 1
 0: MOV UP ACC
    JEZ U
 
 HI: MOV 2 DOWN
-1:  MOV UP ACC
-U:  JEZ 0
-    JMP 1
 
 @2
     MOV UP NIL

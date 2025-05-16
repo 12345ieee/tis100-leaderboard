@@ -112,8 +112,7 @@ O: MOV LEFT DOWN
    ADD 10
    JGZ 0
 1: MOV 1    DOWN
-   MOV UP   DOWN
-   JMP S
+   JMP O
 G: SUB 9
    JGZ 1
 0: MOV 0    DOWN

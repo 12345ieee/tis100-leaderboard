@@ -27,8 +27,7 @@ M: MOV UP  DOWN
    MOV 5 DOWN
 8: ADD 1
    MOV ACC  DOWN
-   JGZ 8
-   JRO 0
+   JMP 8
 
 @3
 

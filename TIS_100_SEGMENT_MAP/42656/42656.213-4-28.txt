@@ -6,8 +6,7 @@ S: MOV UP   ACC
    MOV ACC  DOWN
    JNZ S
 
-   MOV DOWN NIL
-
+   JRO DOWN
 N: MOV ACC  RIGHT
    MOV UP   ACC
    JNZ N
@@ -21,19 +20,19 @@ E: MOV NIL DOWN
 
 
 @4
-   MOV UP    ACC
+S: MOV UP    ACC
    JNZ N
 
 E: MOV RIGHT UP
    MOV UP    RIGHT
+   JMP S
 
-   MOV UP ACC
-   JEZ E
 N: MOV ACC   DOWN
 
 @5
-   MOV 0 LEFT
-   MOV DOWN DOWN
+   MOV 2 LEFT
+   MOV DOWN UP
+   MOV 0 DOWN
    MOV LEFT NIL
 
 N: MOV UP   ACC

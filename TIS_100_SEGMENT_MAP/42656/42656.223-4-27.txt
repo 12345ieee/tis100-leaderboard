@@ -12,7 +12,7 @@ N: MOV ACC  RIGHT
    MOV UP   ACC
    JNZ N
 
-   MOV NIL DOWN
+E: MOV NIL DOWN
 
 @2
 
@@ -21,15 +21,17 @@ N: MOV ACC  RIGHT
 
 
 @4
-N: MOV ACC   DOWN
-   MOV UP    ACC
+S: MOV UP    ACC
    JNZ N
 
-   MOV RIGHT UP
+E: MOV RIGHT UP
    MOV UP    RIGHT
+   JMP S
+
+N: MOV ACC   DOWN
 
 @5
-   MOV NIL  LEFT
+   MOV 0 LEFT
    MOV DOWN DOWN
    MOV LEFT NIL
 
@@ -43,15 +45,12 @@ N: MOV UP   ACC
 @7
    MOV NIL  UP
 
-S: MOV LEFT ACC
+S: MOV ANY ACC
    MOV ACC  DOWN
    JNZ S
-
-   MOV UP   NIL
 
 N: MOV UP   ACC
    MOV ACC  DOWN
    JNZ N
 
 @8
-

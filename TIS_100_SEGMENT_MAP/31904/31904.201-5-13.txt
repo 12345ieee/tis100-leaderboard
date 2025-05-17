@@ -1,0 +1,39 @@
+@0
+#201/5/13
+
+@1
+MOV UP ACC
+JGZ A
+NOP
+MOV 0 DOWN
+A: MOV ACC DOWN
+
+@2
+
+
+@3
+
+
+@4
+ADD UP
+MOV ACC DOWN
+MOV ANY ACC
+
+@5
+MOV -2 DOWN
+
+@6
+
+
+@7
+
+
+@8
+MOV ANY ANY
+
+@9
+MOV ANY ACC
+ADD 1
+MOV ACC ANY
+
+@10

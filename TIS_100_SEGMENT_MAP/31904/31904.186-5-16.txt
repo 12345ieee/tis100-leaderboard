@@ -1,5 +1,5 @@
 @0
-
+#186/5/16
 
 @1
 B: MOV UP ACC
@@ -37,7 +37,6 @@ SUB 3
 A: SUB UP
 JRO ANY
 MOV ACC DOWN
-MOV UP ACC
-JMP A
+MOV 2 ACC
 
 @10

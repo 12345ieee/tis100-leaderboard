@@ -2,18 +2,19 @@
 
 
 @1
-ADD 20
-SUB UP
-MOV UP DOWN
+   ADD 20
+   SUB UP       #L
+   MOV UP  DOWN #C
+
+   JMP J
 L: ADD 7
    MOV -7  DOWN
-   JLZ L
+J: JLZ L
 
    SUB 8
-   JEZ E
    MOV ACC DOWN
-E: MOV  1  DOWN
-MOV 1 ACC
+   MOV  1  DOWN
+   MOV 1 ACC
 
 @2
 

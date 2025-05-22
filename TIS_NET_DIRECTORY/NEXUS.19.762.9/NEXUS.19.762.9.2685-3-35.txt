@@ -1,7 +1,7 @@
 @0
    ADD 10
-A: MOV 1 LEFT
-   SUB 1
+A: SUB 1
+   MOV 1 LEFT
 C: JGZ A
 
    MOV 0 LEFT
@@ -23,7 +23,7 @@ B: JEZ C
 @3
 D: MOV ACC DOWN
    MOV UP ACC
-   JGZ D
+   JNZ D
 
    MOV UP ACC
    JEZ C
@@ -45,11 +45,11 @@ C: ADD 2
 
 
 @7
-SUB 473
+SUB 472
 SAV
 JLZ D
 
-MOV LEFT ACC!
+MOV LEFT ACC
 JGZ C
 MOV -1 DOWN
 B: SWP
@@ -59,6 +59,6 @@ C: SUB 2
 JGZ B
 D: SWP
 
-A: ADD 474
+A: ADD 473
 
 @8

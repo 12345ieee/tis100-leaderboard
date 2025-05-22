@@ -51,10 +51,9 @@ MOV UP DOWN
    MOV 0     ACC
 
    JRO RIGHT
-   ADD 1
+   ADD 2
    JRO -2
 
-   ADD ACC
    JRO 3
    ADD ACC
    ADD 1

@@ -2,7 +2,6 @@
 S: MOV ANY ACC
 H: SAV
 G: SUB 6
-   MOV -1 DOWN
    JLZ M
    MOV -1 DOWN
    JGZ G
@@ -49,7 +48,7 @@ MOV DOWN LEFT
 
 @3
 S: MOV -1 ACC
-   ADD 1
+   ADD 2
    JRO UP
 E: MOV ACC UP
    MOV 3 DOWN

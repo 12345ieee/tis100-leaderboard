@@ -2,13 +2,12 @@
 MOV RIGHT DOWN
 
 @1
-S:    MOV UP LEFT
-MOV -50 ACC
+S: MOV UP LEFT
+   MOV -50 ACC
    ADD UP
    JLZ L
    SUB 25
    JLZ 2
-   MOV 3 DOWN
    JMP S
 L: ADD 25
    JLZ 0
@@ -27,6 +26,7 @@ S: MOV -50 ACC
    JLZ L
    SUB 25
    JLZ 2
+   MOV 3 RIGHT #D
    MOV 3 RIGHT
    JMP S
 L: ADD 25

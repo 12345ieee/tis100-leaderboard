@@ -1,0 +1,138 @@
+@0
+   MOV -13 ACC
+   MOV RIGHT DOWN
+   ADD RIGHT
+   JEZ .
+   ADD 9
+>: MOV 9 DOWN
+   SUB 1
+   JGZ >
+   MOV 7 DOWN
+^: MOV -3 ACC
+   MOV RIGHT DOWN
+   ADD RIGHT
+   JMP >
+.: MOV 1 DOWN
+   JMP ^
+
+@1
+   SUB UP
+   JGZ >
+   MOV UP RIGHT
+   JMP .
+>: SUB UP
+   MOV ACC RIGHT
+   NEG
+   MOV UP LEFT
+   MOV UP LEFT
+   MOV ACC RIGHT
+   JMP ^
+.: MOV UP LEFT
+   MOV UP LEFT
+^: MOV 1 ACC
+
+@2
+   MOV LEFT DOWN
+.: SUB LEFT
+   JGZ >
+   ADD 1
+   MOV ACC DOWN
+   SUB 2
+<: ADD 1
+   JLZ <
+>: MOV 0 DOWN
+   JEZ .
+   ADD 2
+&: SUB 1
+   JGZ &
+# IN=0: 0 STALL DX
+# 180: -DX STALL 0
+
+@3
+   MOV 3 DOWN
+
+# SUPPLY THE INK
+
+@4
+   MOV -94 ACC
+   ADD UP
+   JLZ &
+   SUB 179
+&: JRO UP
+   MOV -3 RIGHT
+   MOV -3 RIGHT
+   MOV -3 RIGHT
+   MOV -3 RIGHT
+   MOV -3 RIGHT
+   MOV -7 RIGHT
+   ADD 5
+   MOV ACC RIGHT
+   MOV ACC RIGHT
+   JLZ &
+
+@5
+   JMP *
+   MOV DOWN RIGHT
+   MOV -3 RIGHT
+   ADD 5
+   SUB 2
+*: ADD 1
+   MOV ACC RIGHT
+   MOV -3 RIGHT
+&: JRO LEFT
+   SUB 2
+   ADD 1
+.: MOV ACC RIGHT
+   MOV -4 RIGHT
+   JMP &
+
+@6
+   MOV -1 ACC
+   ADD UP
+   SAV
+   SUB 4
+>: SUB 1
+   JGZ >
+   SWP
+   JRO 2
+   ADD UP
+   MOV -1 RIGHT
+   MOV ACC RIGHT
+   MOV LEFT RIGHT
+*: JRO LEFT
+
+# * JUMPS -3 OR -4
+
+@7
+   MOV ANY DOWN
+
+# LEFT PROVIDES:
+# -1
+# X COORD
+# Y COORD
+# STALLING WAITING
+# FOR "ADD UP"
+# CONTROLS LENGTH
+
+@8
+   MOV 8 UP
+   MOV 318 ACC
+>: SUB 1
+   JGZ >
+   MOV 10 RIGHT!
+3: MOV 3 RIGHT
+   MOV 3 RIGHT
+   MOV 3 RIGHT
+   JMP 3
+
+@9
+   MOV LAST DOWN
+   MOV LAST DOWN
+   MOV ANY DOWN
+
+@10
+   MOV UP LEFT
+
+
+# BIGGIEMAC42
+# SEPT 15 2024

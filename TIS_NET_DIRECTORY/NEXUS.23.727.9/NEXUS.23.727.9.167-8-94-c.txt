@@ -81,17 +81,12 @@ S: MOV -3  ACC
    ADD UP
    MOV ACC LEFT
    JEZ Z
-
    MOV UP  LEFT
    JMP S
 
 Z: MOV UP  ACC
-   JEZ R
-   MOV 0   LEFT
-   JMP SW
 R: SWP
    MOV ACC LEFT
-SW:SWP
 
 @6
 S: MOV -1  ACC

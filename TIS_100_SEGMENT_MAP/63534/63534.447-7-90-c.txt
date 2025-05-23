@@ -91,9 +91,9 @@ S: SAV
 G: MOV RIGHT ACC
    JNZ N
    SWP
-   MOV ACC DOWN
+   JNZ N
    MOV   0 DOWN
-   MOV RIGHT NIL
+   MOV   0 DOWN
 
 @8
    MOV UP ACC

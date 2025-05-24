@@ -1,0 +1,41 @@
+@0
+
+
+@1
+JRO 2
+N: MOV ACC RIGHT
+   MOV UP  ACC
+   JNZ N
+Z: MOV 1   DOWN
+O: MOV -99 DOWN
+
+@2
+
+
+@3
+MOV -1 RIGHT
+
+@4
+MOV 8    ACC
+ADD LEFT
+ADD LEFT
+JRO ANY
+MOV ACC  RIGHT
+
+
+@5
+   JRO LEFT
+   MOV UP   DOWN
+   MOV UP   DOWN
+   MOV UP   DOWN
+   MOV UP   DOWN
+   MOV UP   DOWN
+   MOV 0 DOWN
+
+@6
+
+
+@7
+MOV UP DOWN
+
+@8

@@ -1,0 +1,86 @@
+@0
+MOV RIGHT DOWN
+
+@1
+MOV -199 ACC
+ADD UP
+   JRO 3
+L: SUB 200
+   MOV 1   LEFT
+   JGZ L
+
+   ADD 99
+   MOV ACC RIGHT
+   JLZ LZ
+G: MOV 5   LEFT
+   JRO -999
+LZ:MOV 3   LEFT
+
+@2
+   MOV LEFT ACC
+   JLZ LZ
+G: SUB 19
+   MOV ACC  DOWN
+   JRO -999
+LZ:ADD 81
+   MOV ACC  DOWN
+
+@3
+MOV UP DOWN
+
+@4
+MOV RIGHT DOWN
+
+@5
+   MOV UP ACC
+   JGZ L
+   JRO 4
+
+L: SUB 20
+   MOV 1    LEFT
+   JGZ L
+
+   MOV ACC  DOWN
+
+@6
+
+
+@7
+
+   MOV 0   ACC
+   JRO UP
+   ADD 2
+   JRO -2
+
+   JRO 3
+
+   ADD ACC
+   ADD 1
+
+   MOV ACC DOWN
+
+@8
+
+   MOV 0     ACC
+   JRO ANY
+   ADD 2
+   JRO -2
+
+   JRO 3
+
+   ADD ACC
+   ADD 1
+
+   MOV ACC   DOWN
+
+@9
+   MOV 9 ACC
+   ADD UP
+   JLZ LZ
+G: MOV 5    LEFT
+   JRO 3
+LZ:MOV 3    LEFT
+   ADD 10
+   MOV ACC  DOWN
+
+@10

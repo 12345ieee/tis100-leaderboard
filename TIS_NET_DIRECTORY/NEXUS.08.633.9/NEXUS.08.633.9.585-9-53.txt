@@ -4,7 +4,8 @@ MOV RIGHT DOWN
 @1
 MOV -199 ACC
 ADD UP
-   JRO 3
+   JGZ L
+   JRO 4
 L: SUB 200
    MOV 1   LEFT
    JGZ L
@@ -20,10 +21,9 @@ LZ:MOV 3   LEFT
    MOV LEFT ACC
    JLZ LZ
 G: SUB 19
-   MOV ACC  DOWN
-   JRO -999
+   JMP E
 LZ:ADD 81
-   MOV ACC  DOWN
+E: MOV ACC  DOWN
 
 @3
 MOV UP DOWN
@@ -46,7 +46,6 @@ L: SUB 20
 
 
 @7
-
    MOV 0   ACC
    JRO UP
    ADD 2
@@ -60,7 +59,6 @@ L: SUB 20
    MOV ACC DOWN
 
 @8
-
    MOV 0     ACC
    JRO ANY
    ADD 2

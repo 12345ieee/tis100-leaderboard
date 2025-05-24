@@ -29,10 +29,10 @@ G: SUB UP
 S: MOV ACC LEFT
    MOV UP ACC
    JGZ G
-   MOV 17 ACC
+   MOV 17 ACC!
 L: SUB 1
    JGZ L
-   MOV 2 DOWN!
+   MOV 8 DOWN
    JRO 0
 
 @5
@@ -44,17 +44,17 @@ L: SUB 1
 @7
    MOV -1 LEFT
    JRO UP
-S: ADD 1
-   SWP
-   MOV LEFT ACC
-   JEZ Z
-   JLZ -
 L: SWP
 -: MOV ACC DOWN
    SWP
    SUB 1
    JGZ L
 Z: SWP
-   JMP S
+S: ADD 1
+   SWP
+   MOV LEFT ACC
+   JGZ L
+   JEZ Z
+   MOV -1 DOWN
 
 @8

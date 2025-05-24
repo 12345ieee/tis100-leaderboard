@@ -45,7 +45,6 @@ S: SUB 20
    SUB 20
    MOV 1    LEFT
    JLZ O
-   JLZ O
    JMP S
 
 O: MOV ACC  DOWN

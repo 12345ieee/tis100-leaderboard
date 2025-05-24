@@ -23,11 +23,10 @@ E: MOV ACC  DOWN
 
 @3
    MOV UP  ACC
-   JGZ L
-   JRO 4
+   JMP J
 L: SUB 200
    MOV 1   DOWN
-   JGZ L
+J: JGZ L
 
    ADD 99
    JLZ LZ

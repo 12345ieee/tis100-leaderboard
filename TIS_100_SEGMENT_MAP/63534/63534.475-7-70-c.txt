@@ -7,19 +7,19 @@ L: MOV UP  ACC
    JNZ L
 
 @1
-G: MOV LEFT ACC
-   JNZ N
-   SWP
    MOV ACC  DOWN
    MOV ACC  DOWN
 
 L: MOV LEFT ACC
-Z: SWP
+   SWP
 N: MOV ACC DOWN
    MOV ACC DOWN
-
    SUB LEFT
    JLZ L
+
+G: MOV LEFT ACC
+   JNZ N
+   SWP
 
 @2
 

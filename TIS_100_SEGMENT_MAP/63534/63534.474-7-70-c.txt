@@ -61,8 +61,8 @@ S: SAV
    SUB UP
    JLZ L
 G: MOV UP ACC
-   JNZ N
-   JMP Z
+   JEZ Z
+   JMP N
 
 L: MOV UP ACC
 Z: SWP

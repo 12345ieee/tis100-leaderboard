@@ -38,8 +38,8 @@ T: MOV LEFT UP
 K: ADD LEFT
    MOV -2   DOWN
 Z: SUB LEFT
-   JGZ K
    JLZ W
+   JGZ K
    ADD LEFT
    MOV -5   DOWN
    JMP Z

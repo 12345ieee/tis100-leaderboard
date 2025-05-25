@@ -96,11 +96,8 @@ S: MOV -1  ACC
 
 Z: MOV UP  ACC
    JEZ R
-   MOV 0   RIGHT
-   JMP SW
 R: SWP
    MOV ACC RIGHT
-SW:SWP
 
 @7
 S: MOV -1   ACC

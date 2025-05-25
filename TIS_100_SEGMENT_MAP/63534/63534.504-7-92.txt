@@ -1,0 +1,123 @@
+@0
+   MOV 38 ACC
+   MOV UP DOWN
+
+L: SWP
+   MOV UP  ACC
+   MOV ACC DOWN #D
+   MOV ACC DOWN #D
+   SWP #D
+   SUB 1
+   JGZ L
+   MOV 1 ACC
+N: MOV ACC DOWN
+   MOV ACC DOWN
+   SWP
+   JMP N
+
+@1
+   MOV LEFT ACC
+   JMP S
+
+L: MOV LEFT ACC
+Z: SWP
+N: MOV ACC DOWN
+   MOV ACC DOWN
+   SWP
+S: SAV
+
+   SUB LEFT
+   JLZ L
+G: MOV LEFT ACC
+   JEZ Z
+   JMP N
+
+@2
+
+
+@3
+   MOV UP ACC
+   JMP S
+
+L: MOV UP ACC
+Z: SWP
+N: MOV ACC LAST
+   MOV ACC ANY
+   SWP
+S: SAV
+
+   SUB UP
+   JLZ L
+G: MOV UP ACC
+   JEZ Z
+   JMP N
+
+@4
+   MOV LEFT ACC
+   JMP S
+
+L: MOV LEFT ACC
+Z: SWP
+N: MOV ACC LAST
+   MOV ACC ANY
+   SWP
+S: SAV
+
+   SUB LEFT
+   JLZ L
+G: MOV LEFT ACC
+   JEZ Z
+   JMP N
+
+@5
+   MOV UP NIL
+   MOV UP ACC
+   JMP S
+
+L: MOV UP ACC
+Z: SWP
+N: MOV ACC LAST
+   MOV ACC ANY
+   SWP
+S: SAV
+   SUB UP
+   JLZ L
+G: MOV UP ACC
+   JEZ Z
+   JMP N
+
+@6
+
+
+@7
+   MOV RIGHT ACC
+   JMP S
+
+L: MOV RIGHT ACC
+Z: SWP
+N: MOV ACC DOWN
+   SWP
+S: SAV
+
+   SUB RIGHT
+   JLZ L
+G: MOV RIGHT ACC
+   JEZ Z
+   JMP N
+
+@8
+   MOV UP ACC
+   JMP S
+
+L: MOV UP ACC
+Z: SWP
+N: MOV ACC LAST
+   MOV ACC ANY
+   SWP
+S: SAV
+
+   SUB UP
+   JLZ L
+G: MOV UP ACC
+   JEZ Z
+   JMP N

@@ -37,12 +37,11 @@ S: MOV 5    ACC
    JEZ Z
 
    MOV RIGHT DOWN
+   JMP S
 
-   JMP SW
 Z: MOV RIGHT ACC
 R: SWP
    MOV ACC   DOWN
-SW:
 
 @3
 S: MOV -1    ACC
@@ -95,7 +94,6 @@ S: MOV -1  ACC
    JMP S
 
 Z: MOV UP  ACC
-   JEZ R
 R: SWP
    MOV ACC RIGHT
 

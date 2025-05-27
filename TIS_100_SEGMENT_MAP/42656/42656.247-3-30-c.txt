@@ -1,0 +1,54 @@
+@0
+
+
+@1
+   MOV 0 RIGHT
+   MOV UP DOWN #D
+   MOV UP ACC #D
+   JNZ 1
+   MOV 0 DOWN!
+S: MOV UP DOWN
+   MOV UP ACC
+1: MOV ACC RIGHT
+   MOV UP ACC
+   JNZ 1
+   MOV RIGHT DOWN
+O: MOV RIGHT ACC
+   MOV ACC DOWN
+   JNZ O
+
+@2
+
+
+@3
+
+
+@4
+MOV UP DOWN
+MOV UP DOWN
+NOP
+
+@5
+
+
+@6
+
+
+@7
+S: MOV LEFT ACC
+   SAV
+   JNZ O2
+
+1: MOV ACC DOWN
+   MOV LEFT ACC
+   JNZ 1
+   JMP Z
+
+O:  MOV ACC DOWN
+O2: MOV LEFT ACC
+    JNZ O
+    SWP
+    MOV ACC DOWN
+Z:  MOV 0 DOWN
+
+@8

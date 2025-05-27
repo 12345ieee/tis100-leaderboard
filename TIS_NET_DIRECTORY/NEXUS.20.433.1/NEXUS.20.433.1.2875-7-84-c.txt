@@ -1,10 +1,10 @@
 @0
-   MOV ANY ACC
+S: MOV ANY ACC
    JGZ H
    MOV 1 DOWN
-   JMP W
-S: MOV ANY ACC
 H: SAV
+   SUB 3
+   MOV -1 DOWN
 G: SUB 3
    MOV -1 DOWN
    JGZ G

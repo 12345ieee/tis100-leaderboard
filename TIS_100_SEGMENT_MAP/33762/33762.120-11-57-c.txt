@@ -26,7 +26,6 @@ U:  JEZ 0
     MOV UP NIL
     MOV UP NIL
     MOV UP NIL
-    MOV UP ACC
 0:  MOV UP ACC
     JEZ U
 HI: MOV 3 DOWN
@@ -37,9 +36,9 @@ U:  JEZ 0
 @3
    MOV UP NIL
 
+   MOV UP DOWN
 S: MOV UP DOWN
    JGZ S
-   MOV UP DOWN
    ADD 1
    MOV UP DOWN
 

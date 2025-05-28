@@ -1,12 +1,9 @@
 @0
+   MOV UP DOWN
    MOV UP NIL
-
 S: MOV UP DOWN
    JGZ S
-
-   MOV UP DOWN
    ADD 1
-   MOV UP DOWN
 
 @1
    MOV UP NIL

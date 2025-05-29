@@ -58,25 +58,23 @@ N: MOV ACC LAST
 S: SAV
 
 @5
+N: MOV ACC ANY
+   MOV ACC ANY
+   SWP
+S: SAV
    SUB UP
    JLZ L
 G: MOV UP ACC
    JEZ Z
    JMP N
-
 L: MOV UP ACC
 Z: SWP
-N: MOV ACC ANY
-   MOV ACC ANY
-   SWP
-S: SAV
 
 @6
 
 
 @7
-Z:
-   MOV 1 LEFT
+Z: MOV 1 LEFT #D
    MOV RIGHT ACC
    JEZ Z
    MOV ACC DOWN

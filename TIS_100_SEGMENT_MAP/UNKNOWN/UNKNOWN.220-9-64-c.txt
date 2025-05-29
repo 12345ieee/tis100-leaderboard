@@ -6,13 +6,13 @@ S: MOV -50 ACC
    JLZ 2
    MOV 3 DOWN
    JMP S
-2: MOV 2 DOWN
-   JMP S
 L: ADD 25
    JLZ 0
 1: MOV 1 DOWN
    JMP S
 0: MOV 0 DOWN
+   JMP S
+2: MOV 2 DOWN
 
 @1
    MOV 38 ACC!
@@ -53,8 +53,7 @@ JRO -3
 N: MOV ANY  NIL
    MOV ACC  DOWN
 
-Z: NOP
-   MOV LAST ACC
+Z: MOV LAST ACC
    SUB ANY
    JEZ Z
 

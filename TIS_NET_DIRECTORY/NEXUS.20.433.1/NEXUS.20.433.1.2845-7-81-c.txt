@@ -45,7 +45,7 @@ G: SUB  2
 E: MOV 1 DOWN
 
 @3
-S: MOV -2 ACC
+S: MOV ANY ACC
    ADD 1
    JRO UP
    JRO 999

@@ -76,7 +76,7 @@ S: MOV ANY ACC
    MOV 13 DOWN
 
 @5
-S: MOV -2 ACC
+S: MOV ANY ACC
    ADD 1
    JRO UP
    JEZ E

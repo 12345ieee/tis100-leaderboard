@@ -4,11 +4,11 @@
 @1
    MOV -199 ACC
    ADD UP
-   JMP J
+   JLZ A
 L: SUB 200
    MOV 2   DOWN
-J: JGZ L
-   ADD 99
+   JGZ L
+A: ADD 99
    JLZ LZ
 G: MOV 501  DOWN
    SUB 19

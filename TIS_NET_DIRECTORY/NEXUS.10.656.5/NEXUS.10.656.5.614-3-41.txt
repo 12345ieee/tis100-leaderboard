@@ -47,8 +47,8 @@ MOV RIGHT ACC
 L: SWP
    SAV
    ADD UP
-   JLZ E
-   JMP O
+   JGZ O
+   JEZ O
 E: MOV -1  LAST
 S: MOV UP  ACC
    JLZ L

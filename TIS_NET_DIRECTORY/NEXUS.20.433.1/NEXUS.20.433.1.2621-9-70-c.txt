@@ -75,7 +75,6 @@ E: MOV ACC UP
    MOV 1 ACC
    MOV UP NIL
    JMP S
-   MOV 2 DOWN
    MOV UP NIL
 
 @6

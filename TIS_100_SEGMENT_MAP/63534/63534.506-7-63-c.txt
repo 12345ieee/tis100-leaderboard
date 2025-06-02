@@ -38,8 +38,8 @@ S: SAV
    SUB LEFT
    JLZ L
 G: MOV LEFT ACC
-   JEZ Z
-   JMP N
+   JNZ N
+   JMP Z
 
 L: MOV LEFT ACC
 Z: SWP

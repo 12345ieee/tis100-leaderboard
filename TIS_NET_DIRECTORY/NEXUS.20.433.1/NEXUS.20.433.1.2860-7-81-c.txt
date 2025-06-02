@@ -1,7 +1,5 @@
 @0
 S: MOV ANY ACC
-   JGZ H
-   MOV 1 DOWN
 H: SAV
    SUB 3
    MOV -1 DOWN
@@ -50,7 +48,6 @@ E: MOV 1 DOWN
 S: MOV -2 ACC
    ADD 1
    JRO UP
-   MOV 8 RIGHT
    JRO 999
    JEZ E
    ADD 1

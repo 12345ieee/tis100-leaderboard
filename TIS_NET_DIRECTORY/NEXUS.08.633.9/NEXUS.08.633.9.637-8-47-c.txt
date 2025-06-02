@@ -60,12 +60,10 @@ A: ADD ACC
 
 @9
    MOV UP ACC
-   JGZ L
-   JRO 4
-
+   JLZ A
 L: SUB 20
    MOV 1    LEFT
-   JGZ L
+J: JGZ L
 A: ADD 9
    JLZ LZ
 G: MOV 5    LEFT

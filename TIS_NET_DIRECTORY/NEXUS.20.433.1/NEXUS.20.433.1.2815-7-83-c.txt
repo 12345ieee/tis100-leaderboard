@@ -2,12 +2,12 @@
 S: MOV ANY ACC
 H: SAV
    SUB 3 #D
-   MOV -1 DOWN #D
 G: SUB 3
    SUB 3
    MOV -1 DOWN
    MOV -1 DOWN
    JGZ G
+MOV -1 DOWN
    JEZ E
 W: SWP
 M: MOV ACC RIGHT

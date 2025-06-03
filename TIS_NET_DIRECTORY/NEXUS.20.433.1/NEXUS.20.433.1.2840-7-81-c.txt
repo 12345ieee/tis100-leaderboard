@@ -47,10 +47,10 @@ E: MOV 1 DOWN
 @3
 S: MOV ANY ACC
    ADD 1
+   ADD 1
    JRO UP
    JRO 999
-   JEZ E
-   ADD 1
+   NOP
 E: MOV ACC UP
    MOV 3 RIGHT
    MOV 3 RIGHT

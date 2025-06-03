@@ -41,8 +41,8 @@ MOV RIGHT DOWN
    JLZ O
 S: SUB 20
    MOV 1    LEFT
-   JLZ O
-   JMP S
+   JGZ S
+   JEZ S
 
 O: MOV ACC  DOWN
 

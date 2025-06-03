@@ -2,7 +2,7 @@
 
 
 @1
-S: MOV UP  ACC
+S: MOV ANY  ACC
    MOV ACC RIGHT
    NOP
    SWP

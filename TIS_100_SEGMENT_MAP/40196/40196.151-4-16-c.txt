@@ -1,0 +1,43 @@
+@0
+
+
+@1
+  MOV UP DOWN
+
+@2
+
+
+@3
+
+
+@4
+   MOV UP DOWN
+
+@5
+
+
+@6
+
+
+@7
+
+
+@8
+  MOV UP RIGHT
+
+@9
+2: MOV 0 DOWN
+1: MOV 0 DOWN
+   MOV LEFT ACC
+   JNZ 1
+   MOV LEFT ACC
+   JEZ .
+   JMP 2
+&: MOV 1 DOWN
+.: MOV LEFT ACC
+   JEZ &
+   MOV 0 DOWN
+   MOV LEFT ACC
+   MOV 0 DOWN
+
+@10

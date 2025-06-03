@@ -20,8 +20,8 @@ L: ADD 1
 
 G: MOV DOWN  ACC
    MOV ACC   ANY
-   JEZ G
    JGZ G
+   JEZ G
 
 @4
    MOV -5   LEFT

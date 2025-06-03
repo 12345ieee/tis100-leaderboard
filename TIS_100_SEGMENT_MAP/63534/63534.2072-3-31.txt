@@ -3,7 +3,7 @@ S: MOV ANY  ACC
    MOV ACC RIGHT
    JGZ N
 
-   SUB 151
+   SUB 150
 
 N: ADD 1
    JLZ N

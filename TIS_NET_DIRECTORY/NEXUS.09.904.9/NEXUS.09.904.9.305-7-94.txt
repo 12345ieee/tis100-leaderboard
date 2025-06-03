@@ -1,18 +1,18 @@
 @0
-N: ADD -3
-   JLZ 12
-   ADD -5
 345:MOV ACC RIGHT
    MOV UP ACC
    JNZ N
-   MOV 1 LEFT
    JMP Z
 12:MOV ACC LEFT
 S: MOV UP  ACC
    JNZ N
    NOP
-   MOV 1   LEFT
-Z: MOV 3   RIGHT
+Z: MOV 1   LEFT
+   MOV 3   RIGHT
+   JMP 345
+N: ADD -3
+   JLZ 12
+   ADD -5
 
 @1
 #2

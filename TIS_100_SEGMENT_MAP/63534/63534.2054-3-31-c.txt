@@ -1,9 +1,9 @@
 @0
-S: MOV UP  ACC
+S: MOV ANY  ACC
    MOV ACC RIGHT
    JGZ N
 
-   SUB 151
+   SUB 148
 
 N: ADD 1
    JLZ N
@@ -35,7 +35,7 @@ S: MOV UP   ACC
    MOV ACC  DOWN
    JNZ N
    MOV 0    DOWN
-   JRO 6
+   JMP M
 
 N: MOV UP   ACC
    MOV ACC  DOWN
@@ -43,7 +43,7 @@ N: MOV UP   ACC
    JNZ N
 
 L: MOV ACC  UP
-   MOV DOWN ACC
+M: MOV DOWN ACC
    JNZ L
 
 @5

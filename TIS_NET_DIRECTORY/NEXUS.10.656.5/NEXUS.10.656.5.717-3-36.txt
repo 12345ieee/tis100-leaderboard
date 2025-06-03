@@ -6,11 +6,11 @@ S: MOV UP  ACC
    MOV ACC RIGHT
    MOV ACC RIGHT
    SWP
-   ADD 24  #N
+   ADD 19  #N
    SWP
    JGZ S
    SWP
-G: SUB 5   #L
+G: SUB 4   #L
    JGZ G
 
 @2
@@ -39,7 +39,7 @@ O: MOV UP    ACC
 
 
 @7
-   MOV -153 ACC
+   MOV -143 ACC
 L: SAV
    ADD UP
    JGZ S

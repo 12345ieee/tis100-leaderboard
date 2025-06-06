@@ -57,7 +57,7 @@ E: MOV 1 RIGHT
    SAV
    ADD ACC
    ADD ACC
-   SWP
+SWP #D
    SWP
    MOV ACC LEFT
    NOP

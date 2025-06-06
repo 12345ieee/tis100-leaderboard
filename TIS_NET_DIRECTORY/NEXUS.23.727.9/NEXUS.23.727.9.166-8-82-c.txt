@@ -23,12 +23,8 @@ S: MOV -4   ACC
    JMP S
 
 Z: MOV LEFT ACC
-   JEZ R
-   MOV 0    DOWN
-   JMP SW
-R: SWP
+   SWP
    MOV ACC  DOWN
-SW:SWP
 
 @2
 S: MOV 5    ACC
@@ -40,7 +36,7 @@ S: MOV 5    ACC
    JMP S
 
 Z: MOV RIGHT ACC
-R: SWP
+   SWP
    MOV ACC   DOWN
 
 @3
@@ -94,7 +90,7 @@ S: MOV -1  ACC
    JMP S
 
 Z: MOV UP  ACC
-R: SWP
+   SWP
    MOV ACC RIGHT
 
 @7

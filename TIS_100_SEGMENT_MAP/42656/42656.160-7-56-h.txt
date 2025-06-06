@@ -10,6 +10,7 @@
 B:
    MOV UP  DOWN
    MOV UP  DOWN
+   MOV UP  DOWN
    JMP B
 
 @2
@@ -70,7 +71,6 @@ MOV UP DOWN
    MOV 4   LAST
    MOV 3   ANY
    MOV 2   UP
+   MOV 2   UP
    MOV 99  UP
-   MOV 4   UP
-   MOV 5   UP
    MOV 2   UP

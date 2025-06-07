@@ -2,8 +2,6 @@
 S: MOV ANY ACC
    JGZ H
    MOV 1 DOWN
-   MOV 999 RIGHT
-   JMP S
 H: SAV
 G: SUB 3
    MOV -1 DOWN
@@ -47,6 +45,7 @@ G: SUB  4
 E: MOV 1 DOWN
    JMP S
 F: MOV 7 DOWN
+   MOV DOWN LEFT
 
 @3
 S: MOV -2 ACC
@@ -76,7 +75,7 @@ S: MOV ANY ACC
    MOV 13 DOWN
 
 @5
-S: MOV ANY ACC
+S: MOV -2 ACC
    ADD 1
    JRO UP
    JEZ E
@@ -89,6 +88,7 @@ E: MOV ACC UP
    ADD 1
 F: MOV ACC UP
    MOV 2 DOWN
+   JMP S
    MOV UP NIL
 
 @6
@@ -107,8 +107,8 @@ S: JRO ANY
    MOV 7 DOWN
    MOV 7 DOWN
    JMP E
-   MOV UP NIL
    JRO UP
+   MOV UP NIL
    MOV 5 DOWN
    MOV UP DOWN
 E: MOV 0 DOWN

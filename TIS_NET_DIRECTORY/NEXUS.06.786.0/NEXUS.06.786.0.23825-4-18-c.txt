@@ -2,7 +2,7 @@
 
 
 @1
-1: MOV UP RIGHT
+MOV UP RIGHT
 
 @2
 1: MOV UP ACC
@@ -10,9 +10,9 @@
 3: SUB LEFT
 4: JGZ 7
 5: NEG
-6: MOV ACC DOWN
-   MOV -1 DOWN
-   SUB 2
+6: SUB 12
+   MOV ACC DOWN
+   SUB 12
 7: MOV -1 DOWN
 8: SUB 2
 9: JGZ 7
@@ -25,11 +25,7 @@ A: MOV 999 DOWN
 
 
 @5
-# L = MIN(A, B)
-# R = MAX(A, B)
-# AVG = FLOOR
-# [R-(R-L)/2]
-1: MOV UP DOWN
+MOV UP DOWN
 
 @6
 

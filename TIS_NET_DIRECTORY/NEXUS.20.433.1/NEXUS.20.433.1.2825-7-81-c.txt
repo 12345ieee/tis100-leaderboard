@@ -5,13 +5,13 @@ H: SAV
 G: SUB 3
    MOV -1 DOWN
    JGZ G
-   MOV -1 DOWN
-   JEZ E
+   JLZ W
+E: MOV -1 DOWN
+   MOV 3 DOWN
+   JMP S
 W: SWP
 M: MOV ACC RIGHT
    MOV -999 DOWN
-   JMP S
-E: MOV 3 DOWN
 
 @1
    MOV UP RIGHT
@@ -47,10 +47,10 @@ E: MOV 1 DOWN
 @3
 S: MOV ANY ACC
    ADD 1
-   ADD 1
    JRO UP
    JRO 999
-   NOP
+   JEZ E
+   ADD 1
 E: MOV ACC UP
    MOV 3 RIGHT
    MOV 3 RIGHT

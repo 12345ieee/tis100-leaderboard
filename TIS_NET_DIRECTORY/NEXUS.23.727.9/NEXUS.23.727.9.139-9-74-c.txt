@@ -11,14 +11,6 @@ W: MOV ANY RIGHT
    MOV LEFT DOWN
 
 @2
-S: MOV -2   ACC #6
-   ADD RIGHT
-   JNZ N
-
-Z: MOV RIGHT NIL
-   JMP S
-
-N: MOV ACC   DOWN
    MOV RIGHT DOWN
 
 @3
@@ -71,7 +63,7 @@ G: MOV ACC LEFT
    MOV UP  LEFT
 
 @6
-S: MOV 3  ACC #3
+S: MOV 1  ACC #3
    ADD UP
    JEZ Z
 
@@ -88,6 +80,7 @@ SW:SWP
 
 @7
 S: JRO ANY #5
+   NOP
    NOP
 
 Z: MOV LEFT ACC

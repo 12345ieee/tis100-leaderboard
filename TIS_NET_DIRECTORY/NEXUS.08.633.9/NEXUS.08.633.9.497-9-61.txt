@@ -5,7 +5,8 @@ MOV RIGHT DOWN
    MOV -199 ACC
    ADD UP
    MOV ACC LEFT
-   JLZ R
+   JGZ L
+   JMP R
 L: SUB 200
    JGZ L
 
@@ -21,16 +22,16 @@ E: MOV ACC  DOWN
 
 @3
    MOV UP  ACC
-   JLZ R
+   JGZ L
+   JMP R
 L: SUB 200
-   MOV -1   DOWN
+   MOV 2   DOWN
 J: JGZ L
 
 R: ADD 99
    JLZ LZ
 G: MOV 1   DOWN
-   JRO -999
-LZ:MOV 2   DOWN
+LZ:MOV 999   DOWN
 
 @4
 MOV RIGHT DOWN
@@ -39,16 +40,16 @@ MOV RIGHT DOWN
    MOV UP ACC
    JLZ O
    SUB 20
-   MOV 1    LEFT
+   MOV 2    LEFT
    JLZ O
    SUB 20
-   MOV 1    LEFT
+   MOV 2    LEFT
    JLZ O
    SUB 20
-   MOV 1    LEFT
+   MOV 2    LEFT
    JLZ O
    SUB 20
-   MOV 1    LEFT
+   MOV 2    LEFT
 
 O: MOV ACC  DOWN
 
@@ -56,34 +57,29 @@ O: MOV ACC  DOWN
 
 
 @7
-   MOV -2   ACC
-   ADD 2
-   JRO UP
-
-   ADD 1
-
-   MOV ACC DOWN
+MOV -999 ACC
+L:ADD UP
+JLZ L
+MOV ACC DOWN
 
 @8
-   MOV 0 ACC
-   JRO ANY
-   ADD 2
-   JRO -2
-   ADD 1
-   MOV ACC   DOWN
+MOV -998 ACC
+L:ADD ANY
+JLZ L
+MOV ACC DOWN
 
 @9
    MOV 10 ACC
    ADD UP
    JLZ LZ
-M: MOV 3 LEFT
-   MOV ACC   DOWN
+M: MOV 999 LEFT
+   MOV ACC DOWN
    MOV 10 ACC
    ADD UP
    JLZ LZ
-   MOV 3 LEFT
-G: JRO 4
-LZ:MOV 4    LEFT
+   MOV 999 LEFT
+   JRO 999
+LZ:MOV 998    LEFT
    ADD 10
    MOV ACC  DOWN
 

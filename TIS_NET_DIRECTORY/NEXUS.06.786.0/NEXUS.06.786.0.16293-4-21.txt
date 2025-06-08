@@ -1,0 +1,48 @@
+@0
+
+
+@1
+MOV UP RIGHT
+
+@2
+   MOV UP ACC
+   MOV ACC DOWN
+   SUB LEFT
+   JGZ G
+L: ADD 28
+   MOV -2 DOWN
+   JLZ L
+   JEZ S
+G: SUB 2
+   MOV -1 DOWN
+   JGZ G
+S: MOV 1 DOWN
+
+@3
+
+
+@4
+
+
+@5
+MOV UP DOWN
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+MOV -999 ACC
+ADD UP
+ADD 15
+SUB 1
+S:JRO UP
+ADD 985
+MOV ACC DOWN
+
+@10

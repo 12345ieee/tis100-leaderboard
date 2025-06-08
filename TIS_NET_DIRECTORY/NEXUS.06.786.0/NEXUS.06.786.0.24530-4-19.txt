@@ -1,0 +1,46 @@
+@0
+
+
+@1
+MOV UP RIGHT
+
+@2
+1: MOV UP ACC
+2: MOV ACC DOWN
+3: SUB LEFT
+4: JGZ 7
+5: NEG
+6: MOV ACC DOWN
+   JEZ A
+7: MOV -1 DOWN
+8: SUB 2
+9: JGZ 7
+A: MOV 999 DOWN
+
+@3
+
+
+@4
+
+
+@5
+MOV UP DOWN
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+MOV -999 ACC
+ADD UP
+ADD UP
+L:ADD UP
+JLZ L
+MOV ACC DOWN
+
+@10

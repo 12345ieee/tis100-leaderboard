@@ -1,0 +1,51 @@
+@0
+
+
+@1
+MOV UP RIGHT
+
+@2
+   MOV UP ACC
+   MOV ACC DOWN
+   SUB LEFT
+L: ADD 40
+   MOV -3 DOWN
+   JLZ L
+G: SUB 20
+   MOV -2 DOWN
+   JGZ G
+L2:ADD 2
+   JGZ S
+   MOV -1 DOWN
+   JLZ L2
+S: MOV 1 DOWN
+
+@3
+
+
+@4
+
+
+@5
+MOV UP DOWN
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+ MOV -999 ACC
+ ADD UP
+ ADD 30
+ SUB 11
+ ADD 1
+ JRO UP
+ ADD 979
+ MOV ACC DOWN
+
+@10

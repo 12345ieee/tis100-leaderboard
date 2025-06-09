@@ -67,18 +67,15 @@ O: MOV ACC   DOWN
 
 @9
    MOV LEFT ACC
-   JGZ G
-   ADD 9
-   JLZ L
-   JMP O
-G: SUB 20
+   JLZ A
+L: SUB 20
    MOV 1    LEFT
-   JGZ G
-   ADD 9
-   JLZ L
-O: MOV 99    LEFT
+   JGZ L
+A: ADD 9
+   JLZ LZ
+G: MOV 99    LEFT
    JRO 3
-L: MOV 2   LEFT
+LZ:MOV 2   LEFT
    ADD 10
    MOV ACC  DOWN
 

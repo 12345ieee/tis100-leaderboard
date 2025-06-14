@@ -57,9 +57,9 @@ E: MOV 1 RIGHT
    SAV
    ADD ACC
    ADD ACC
+   JMP M
    SWP
-   SWP
-   MOV ACC LEFT
+M: MOV ACC LEFT
    NOP
 L: SWP
    JRO ANY

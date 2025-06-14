@@ -1,0 +1,104 @@
+@0
+# T2 TOP NODE
+#-,0,1,0,0,1,-,0,1
+#1,-,-,1
+
+# T2 MIDDLE NODE
+#-,-,1,1,1,0,0,-,0
+#1,1,0,0
+
+# T2 BOTTOM NODE
+#-,-,1,-,1,-,-,1,0
+#0,-,-,1
+
+@1
+MOV UP DOWN
+MOV UP DOWN
+MOV UP RIGHT
+
+@2
+S:MOV UP    DOWN
+  MOV UP    DOWN
+  MOV UP    ACC
+  JGZ N
+  JEZ Z
+  MOV RIGHT NIL
+  JMP O
+Z:MOV RIGHT   ACC
+  ADD LEFT
+  MOV ACC   DOWN
+  JMP S
+N:MOV LEFT  NIL
+O:MOV ANY   DOWN
+
+@3
+MOV UP ANY
+
+@4
+# T1 TOP NODE
+#1,0,1,1,-,-,1,0,0
+#0,0,1,-
+
+# T1 MIDDLE NODE
+#1,-,1,0,-,1,0,0,-
+#1,0,1,1
+
+# T1 BOTTOM NODE
+#-,-,1,0,0,0,0,1,1
+#-,0,-,0
+
+@5
+MOV UP DOWN
+MOV UP RIGHT
+
+@6
+  MOV UP  DOWN
+  MOV UP  ACC
+  JEZ Z
+  JGZ N
+  MOV RIGHT NIL
+  JMP O
+Z:MOV ANY   ACC
+  ADD ANY
+  MOV ACC   DOWN
+  JRO 999
+N:MOV LEFT  NIL
+O:MOV ANY   DOWN
+  MOV UP    DOWN
+
+@7
+MOV UP DOWN
+MOV UP LEFT
+
+@8
+MOV UP RIGHT
+
+# T3 TOP NODE
+#-,1,0,1,-,-,0,1,1
+#0,0,0,0
+
+# T3 MIDDLE NODE
+#0,0,0,1,-,1,1,-,0
+#0,-,0,-
+
+# T3 BOTTOM NODE
+#1,1,0,0,1,0,0,1,1
+#1,0,1,0
+
+@9
+  MOV UP  ACC
+  JEZ Z
+  JGZ N
+  MOV RIGHT NIL
+  JMP O
+Z:MOV ANY   ACC
+  ADD ANY
+  MOV ACC   ANY
+  JMP M
+N:MOV LEFT  NIL
+O:MOV ANY   DOWN
+M:MOV UP    DOWN
+  MOV UP    DOWN
+
+@10
+MOV UP LEFT

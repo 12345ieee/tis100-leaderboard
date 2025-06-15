@@ -1,15 +1,5 @@
 @0
-# T2 TOP NODE
-#-,0,1,0,0,1,-,0,1
-#1,-,-,1
 
-# T2 MIDDLE NODE
-#-,-,1,1,1,0,0,-,0
-#1,1,0,0
-
-# T2 BOTTOM NODE
-#-,-,1,-,1,-,-,1,0
-#0,-,-,1
 
 @1
 MOV UP DOWN
@@ -35,17 +25,7 @@ O:MOV ANY   DOWN
 MOV UP ANY
 
 @4
-# T1 TOP NODE
-#1,0,1,1,-,-,1,0,0
-#0,0,1,-
 
-# T1 MIDDLE NODE
-#1,-,1,0,-,1,0,0,-
-#1,0,1,1
-
-# T1 BOTTOM NODE
-#-,-,1,0,0,0,0,1,1
-#-,0,-,0
 
 @5
 MOV UP DOWN
@@ -72,18 +52,6 @@ MOV UP LEFT
 
 @8
 MOV UP RIGHT
-
-# T3 TOP NODE
-#-,1,0,1,-,-,0,1,1
-#0,0,0,0
-
-# T3 MIDDLE NODE
-#0,0,0,1,-,1,1,-,0
-#0,-,0,-
-
-# T3 BOTTOM NODE
-#1,1,0,0,1,0,0,1,1
-#1,0,1,0
 
 @9
   MOV UP  ACC

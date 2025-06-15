@@ -26,7 +26,6 @@ MOV ACC LEFT
 
 
 @5
-E: MOV UP ACC
 MOV -3 DOWN
 JGZ A
 JMP D
@@ -37,6 +36,7 @@ D: MOV UP ACC
 
 A: SUB UP
 JGZ B
+E: MOV UP ACC
 
 @6
 

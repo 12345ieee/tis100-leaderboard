@@ -53,8 +53,8 @@ G: MOV UP ACC
    SUB LEFT
    JLZ L
 G: MOV LEFT ACC
-   JNZ N
-   JMP Z
+   JEZ Z
+   JMP N
 
 L: MOV LEFT ACC
 Z: SWP

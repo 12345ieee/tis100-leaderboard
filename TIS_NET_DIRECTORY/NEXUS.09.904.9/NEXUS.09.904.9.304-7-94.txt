@@ -1,5 +1,4 @@
 @0
-345:MOV ACC RIGHT
    MOV UP ACC
    JNZ N
    JMP Z
@@ -13,6 +12,7 @@ Z: MOV 1   LEFT
 N: ADD -3
    JLZ 12
    ADD -5
+345:MOV ACC RIGHT
 
 @1
 #2

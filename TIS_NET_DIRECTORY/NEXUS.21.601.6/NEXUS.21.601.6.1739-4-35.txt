@@ -10,18 +10,18 @@ JRO RIGHT
 MOV UP ACC
 
 @2
-   MOV LEFT LEFT
+E: MOV LEFT LEFT
    MOV 10   LAST
-
 C: MOV UP   ACC
-   MOV -99   LAST
+   MOV -99  LAST
    MOV LEFT ANY
-   JMP E
+
+S: SUB 1
+   JEZ E
 D: MOV LEFT DOWN
    MOV -1   LEFT
-   MOV -99   DOWN
-E: SUB 1
-   JGZ D
+   MOV -99  DOWN
+   JMP S
 
 @3
 

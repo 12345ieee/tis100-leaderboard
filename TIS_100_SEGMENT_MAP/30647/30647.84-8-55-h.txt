@@ -50,7 +50,6 @@ G: MOV ACC  RIGHT
 3: MOV -2   RIGHT
    MOV -2   RIGHT
    MOV 2    RIGHT
-   JMP 3
 
 @5
    NEG
@@ -71,7 +70,7 @@ MOV 0   DOWN
 
 @8
    ADD 1
-N: MOV 6  LAST
+N: MOV 1  LAST
    NEG
    JLZ N
 

@@ -27,8 +27,7 @@ E: MOV 1    DOWN
    MOV ACC  DOWN
    JRO -3
    JRO 0
-   MOV 12 DOWN
-   JRO -1
+   MOV 9 DOWN
 
 @3
 MOV UP RIGHT

@@ -44,7 +44,7 @@ G: SUB  4
    MOV 999 DOWN
 E: MOV 1 DOWN
    JMP S
-F: MOV 7 DOWN
+F: MOV 6 DOWN
 
 @3
 S: MOV -2 ACC
@@ -82,7 +82,6 @@ G: ADD 1
 E: MOV ACC UP
    MOV 1 DOWN
    JMP S
-   JEZ F
    ADD ACC
    ADD 1
 F: MOV ACC UP

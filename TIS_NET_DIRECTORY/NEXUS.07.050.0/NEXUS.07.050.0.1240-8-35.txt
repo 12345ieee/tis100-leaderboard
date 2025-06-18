@@ -49,9 +49,9 @@ MOV ACC RIGHT
 S: MOV LAST  ACC
    SAV
 D: SUB ANY
-   JLZ S
-   JEZ S
-   ADD LAST
+   JGZ A
+   JMP S
+A: ADD LAST
    JGZ D
 
 L: SWP

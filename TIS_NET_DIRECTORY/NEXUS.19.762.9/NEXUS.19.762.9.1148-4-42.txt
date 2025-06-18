@@ -35,7 +35,7 @@ S: MOV ACC LEFT
    MOV 15 ACC
 L: SUB 1
    JGZ L
-   MOV 8 DOWN
+   MOV 9 DOWN
    JRO 0
 
 @5

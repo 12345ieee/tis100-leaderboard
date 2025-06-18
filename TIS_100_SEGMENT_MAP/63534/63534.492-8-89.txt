@@ -81,7 +81,7 @@ S: SAV
 G: SUB 1
    JGZ G
    
-   MOV 0 RIGHT
+   MOV 1 RIGHT
    JRO -1
 
 @7
@@ -90,7 +90,6 @@ Z: SWP
 N: MOV ACC ANY
    SWP
 S: SAV
-SUB 1 #D
 
    SUB RIGHT
    JLZ L

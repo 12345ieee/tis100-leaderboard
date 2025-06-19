@@ -43,14 +43,13 @@ L: MOV 13   UP
 @5
 L: MOV 5   ACC
    ADD UP
-   SAV
+S: SAV
    MOV UP  ACC
-J: JLZ O
-   SUB UP
+   JLZ O
+J: SUB UP
    JLZ L
    MOV UP  NIL
-   JGZ Q
-Z: SAV
+Z: JEZ S
 Q: ADD UP
    JGZ J
 O: SWP

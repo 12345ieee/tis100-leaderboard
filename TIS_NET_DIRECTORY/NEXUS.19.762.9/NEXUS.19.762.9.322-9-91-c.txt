@@ -48,10 +48,9 @@ S: JRO RIGHT
 9: MOV DOWN NIL
 
 @3
-   JEZ 3
 S: JRO UP
 1: MOV -1 RIGHT
-   JMP S
+   JNZ S
 3: SUB 1 # 3
    JMP S
 5: MOV -1 LEFT # 5

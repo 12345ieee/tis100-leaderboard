@@ -3,7 +3,8 @@ S: MOV UP,ACC
    JGZ G
    JLZ L
 E: MOV 1 DOWN
-   JMP S
+   MOV UP,ACC
+   JGZ G
 
 L: MOV 3 DOWN
    MOV -3 RIGHT
@@ -74,18 +75,17 @@ S: JRO ANY
    MOV LEFT  ACC
 
 @5
-   JNZ S
+   JNZ W
 
 6: SWP
    SUB 1
-   SWP
+W: SWP
    JNZ S
 4: SUB 1
 S: JRO UP
    MOV UP   LEFT
    MOV ACC  UP
    MOV DOWN ACC
-   SWP
 
 8: MOV DOWN NIL
    MOV DOWN NIL

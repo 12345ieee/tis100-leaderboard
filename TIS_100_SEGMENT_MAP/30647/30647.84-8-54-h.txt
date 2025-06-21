@@ -48,7 +48,6 @@ G: MOV ACC  RIGHT
    JRO ANY
 
 3: MOV -2   RIGHT
-   MOV -2   RIGHT
    MOV 2    RIGHT
 
 @5
@@ -70,12 +69,11 @@ MOV 0   DOWN
 
 @8
    ADD 1
-N: MOV 1  LAST
-   NEG
-   JLZ N
-
+   MOV 1  LAST
+   JNZ E
    MOV -2 ANY
-   MOV -2 LAST
+E: MOV -2 LAST
+   NEG
 
 @9
 MOV UP DOWN

@@ -53,13 +53,12 @@ JRO -3
    MOV ANY  NIL
 
 Z: MOV LAST ACC
-   NOP
    SUB ANY
-   JEZ Z
+   JEZ E
 
    MOV 1    DOWN
    MOV ACC  DOWN
-   JMP Z
+E: JMP Z
 
 @5
 MOV UP  ACC

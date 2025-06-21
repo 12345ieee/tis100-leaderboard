@@ -37,16 +37,15 @@ S: SAV
    JLZ L
 G: MOV ANY ACC
    JNZ N
-   SWP
    MOV ACC RIGHT
+   SWP
    MOV ACC RIGHT
 
 @4
    SUB LEFT
    JLZ L
 G: MOV LEFT ACC
-   JNZ N
-   SWP
+   JEZ Z
    MOV ACC  LAST
    MOV ACC  LAST
    MOV LEFT NIL
@@ -97,8 +96,8 @@ S: SAV
    JLZ L
 
 G: MOV UP ACC
-   JEZ Z
-   JMP N
+JNZ N
+JMP Z
 
 L: MOV UP ACC
 Z: SWP

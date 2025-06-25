@@ -1,0 +1,114 @@
+@0
+   MOV UP ACC
+N: ADD -3
+   JLZ 12
+   ADD -5
+345:MOV ACC RIGHT
+   MOV UP ACC
+O: JNZ N
+   MOV 1 LEFT
+   MOV 3 RIGHT
+   JMP S
+12:MOV ACC LEFT
+   MOV UP  ACC
+   JEZ O
+   JNZ N
+S: MOV 0 RIGHT
+
+@1
+#2
+   JMP J
+1: ADD 1
+   MOV -2   DOWN
+   JMP J
+   JMP 1
+2: MOV -1 DOWN
+J: JRO UP
+
+O: MOV 1    DOWN
+   MOV ACC  DOWN
+
+S: MOV 0    ACC
+   MOV DOWN RIGHT
+
+@2
+J: JRO RIGHT    #3
+   ADD 1
+   JMP J
+O: SUB DOWN
+   JLZ L
+   MOV LEFT NIL
+   JEZ Z
+G: ADD DOWN
+   MOV ACC  DOWN
+   MOV 3    DOWN
+   JMP S
+L: MOV LEFT ACC
+Z: MOV DOWN DOWN
+   MOV ACC  DOWN
+S: MOV 0    ACC
+
+@3
+   JMP J
+   JMP 3
+   JMP 4
+5: ADD 1
+   JMP J
+4: MOV -1  DOWN
+J: JRO ANY
+3: MOV 1   LEFT
+   JMP J
+O: MOV 3   LEFT
+   MOV 1   DOWN
+   MOV ACC DOWN
+   MOV ACC DOWN
+S: MOV 0   ACC
+
+@4
+S: MOV 1  ACC
+   SUB 2
+   ADD 1
+J: JRO UP
+
+O: JGZ G
+   MOV UP  RIGHT
+   JEZ Z
+L: MOV 1   UP
+   JMP S
+G: ADD UP
+   MOV ACC RIGHT
+   MOV 2   ACC
+Z: MOV ACC UP
+
+@5
+S: MOV LEFT  ACC
+   MOV ACC   UP
+   MOV ACC   UP
+
+   MOV RIGHT ACC
+   SUB UP
+   JLZ L
+   MOV UP    NIL
+   JEZ Z
+G: MOV RIGHT DOWN
+   JMP S
+L: MOV UP    DOWN
+Z: MOV RIGHT NIL
+   JNZ S
+   MOV 0     DOWN
+
+@6
+#4
+S: MOV -1  ACC
+   ADD 1
+J: JRO UP
+O: SUB UP
+   JGZ G
+   MOV UP  LEFT
+   JEZ Z
+L: MOV 5   ACC
+   JMP Z
+G: ADD UP
+   MOV ACC LEFT
+   MOV 4   ACC
+Z: MOV ACC LEFT

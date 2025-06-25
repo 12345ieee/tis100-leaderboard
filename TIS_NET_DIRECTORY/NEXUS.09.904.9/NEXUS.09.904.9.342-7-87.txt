@@ -2,7 +2,7 @@
 S: MOV UP  ACC
    JNZ N
 Z: MOV 1   LEFT
-   MOV 3   DOWN
+   MOV 1   DOWN
    MOV 6   RIGHT
    #MOV UP ACC
 
@@ -11,8 +11,8 @@ N: ADD -3
    JEZ 3
 45:MOV ACC RIGHT
    JMP S
-3: MOV 1   DOWN
-   #JMP S
+3: MOV 99   DOWN
+   JMP S
 12:MOV ACC LEFT
 
 @1
@@ -31,8 +31,6 @@ S: MOV 0    ACC
 
 @2
 J: JRO UP       #3
-   ADD 1
-   JMP J
 O: SUB DOWN
    JLZ L
    MOV DOWN NIL
@@ -44,7 +42,8 @@ G: ADD DOWN
 L: MOV DOWN ACC
 Z: MOV DOWN DOWN
    MOV ACC  DOWN
-S: MOV 0    ACC
+S: MOV -1    ACC
+   ADD 1
 
 @3
 J: JRO UP

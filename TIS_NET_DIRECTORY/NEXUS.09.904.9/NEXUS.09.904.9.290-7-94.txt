@@ -7,8 +7,7 @@ N: SUB 8
 O: JNZ N
    MOV 3 LEFT
    MOV 3 RIGHT
-   NOP
-   NOP
+   MOV 0 LEFT
 
 @1
    JMP J
@@ -24,7 +23,7 @@ J: JRO UP
    JMP J
 O: MOV 1    DOWN
    MOV ACC  DOWN
-S: MOV 0    ACC
+S: MOV UP   ACC
    MOV DOWN RIGHT
 
 @2

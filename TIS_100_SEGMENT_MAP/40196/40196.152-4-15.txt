@@ -1,0 +1,42 @@
+@0
+#152/4/15
+
+@1
+MOV UP RIGHT
+
+@2
+MOV LEFT DOWN
+
+@3
+
+
+@4
+
+
+@5
+MOV UP DOWN
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+A: MOV 0 DOWN
+B: MOV 0 DOWN
+MOV UP ACC
+JNZ B
+MOV UP ACC
+JNZ A
+MOV UP ACC
+JNZ E
+C: MOV 1 DOWN
+MOV UP ACC
+JEZ C
+E: MOV 0 DOWN
+
+@10

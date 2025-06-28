@@ -1,0 +1,79 @@
+@0
+   ADD 13!
+
+A: MOV UP DOWN
+   MOV UP DOWN
+   SUB 1
+   MOV UP DOWN
+   JGZ A
+
+   MOV  0 DOWN
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+C: MOV UP ACC
+   JGZ A
+   JLZ B
+   MOV  5 DOWN
+   JMP C
+A: MOV UP ACC
+   JLZ F
+   JGZ E
+   MOV  4 DOWN
+   JMP C
+E: MOV  7 DOWN
+   JMP C
+F: MOV  1 DOWN
+   JMP C
+B: MOV 11 DOWN
+
+@5
+MOV UP RIGHT
+
+@6
+A: JRO LEFT
+   MOV 10 RIGHT
+   MOV  1 DOWN
+   JMP B
+   MOV  4 RIGHT
+   MOV  1 ANY
+   JMP B
+   MOV  7 RIGHT
+   MOV  1 DOWN
+   MOV  1 DOWN
+   JMP A
+   MOV 13 RIGHT
+B: MOV  0 DOWN
+
+@7
+A: JRO LEFT
+   MOV 5 RIGHT
+B: MOV 1 DOWN
+   JMP A
+   MOV 4 RIGHT
+   MOV 0 DOWN
+   JMP B
+   MOV 4 RIGHT
+   MOV 0 DOWN
+   JMP C
+   MOV 1 RIGHT
+   MOV 0 DOWN
+   JMP C
+   MOV 2 RIGHT
+C: MOV 0 DOWN
+
+@8
+A: JRO LEFT
+   MOV 0 DOWN
+   MOV 1 DOWN
+   JMP A
+   MOV 0 DOWN
+   MOV 0 DOWN

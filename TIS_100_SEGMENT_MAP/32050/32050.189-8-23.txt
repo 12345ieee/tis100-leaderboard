@@ -1,6 +1,5 @@
 @0
-MOV ANY NIL
-JRO 0
+MOV ANY UP
 
 @1
 MOV UP ANY

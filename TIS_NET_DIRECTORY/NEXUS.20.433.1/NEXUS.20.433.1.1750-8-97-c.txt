@@ -3,7 +3,7 @@ S: MOV ANY ACC
    JGZ H
    MOV 1 DOWN
    MOV 999 RIGHT
-   JMP S
+   MOV ANY ACC
 H: SAV
 G: SUB 3
    MOV -1 DOWN

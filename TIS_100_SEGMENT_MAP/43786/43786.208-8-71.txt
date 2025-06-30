@@ -2,9 +2,7 @@
 
 
 @1
-MOV UP DOWN
-
-MOV UP RIGHT
+MOV UP ANY
 
 @2
 MOV UP   DOWN

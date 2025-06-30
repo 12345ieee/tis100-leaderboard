@@ -16,17 +16,15 @@
 
 
 @5
- MOV UP ACC
- MOV UP DOWN
- JMP C
-
-L: MOV UP DOWN
-   SWP
+   MOV UP ACC
+   JMP M
+L: SWP
+M: MOV UP DOWN
 C: SAV
    SUB UP
-  JLZ L
+   JLZ L
    MOV UP ACC
-  JNZ C
+   JNZ C
 
 O: MOV -999 DOWN
    SWP

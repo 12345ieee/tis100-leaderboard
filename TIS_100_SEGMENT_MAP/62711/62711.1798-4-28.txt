@@ -42,9 +42,8 @@ S: MOV ACC LEFT
    JGZ S
 
    MOV UP ACC
-   JEZ E
 
-G: MOV LEFT UP
+G: MOV LEFT ANY
    SUB 1
    JGZ G
 

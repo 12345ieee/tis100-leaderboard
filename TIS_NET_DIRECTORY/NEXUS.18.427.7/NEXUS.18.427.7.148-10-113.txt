@@ -35,9 +35,7 @@ MOV 40 ACC
 E: MOV ACC DOWN
 
 @3
-## FEWEST CYCLES
 
-# 148/10/116
 
 @4
 MOV ACC RIGHT #8,9
@@ -46,7 +44,8 @@ MOV UP ACC    #1
 JGZ CD        #2
 AB: ADD 8     #3
 JGZ B         #4
-A: ADD -2      #5
+A: ADD 7      #5
+JMP E         #6
 B: ADD 9      #5
 JMP E         #6
 CD: SUB 8     #3
@@ -118,10 +117,7 @@ MOV ACC RIGHT #8,9
 MOV UP RIGHT
 
 @9
-MOV LEFT DOWN
-MOV LEFT DOWN
-MOV RIGHT DOWN
-MOV RIGHT DOWN
+MOV ANY DOWN
 
 @10
 MOV UP ACC    #1

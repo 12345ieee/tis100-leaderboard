@@ -9,6 +9,7 @@
    MOV ACC DOWN
 B:
    MOV UP  DOWN
+   MOV UP  DOWN
    JMP B
 
 @2
@@ -21,8 +22,7 @@ B:
    MOV 3 DOWN
    MOV 4 DOWN
    MOV 3 DOWN
-A: MOV 5 DOWN
-   JMP A
+   MOV 3 ANY
 
 @3
 

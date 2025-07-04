@@ -3,20 +3,18 @@ MOV RIGHT DOWN
 
 @1
 S: MOV UP  ACC
-   JGZ G
-Z: MOV  0  DOWN
-   MOV UP  ACC
-   JEZ Z
+   JEZ E
 G: MOV ACC LEFT
    MOV UP  ACC
    JNZ N
    MOV -4  DOWN
    JMP S
-
 N: MOV ACC DOWN
    MOV UP  ACC
    JNZ N
    MOV -5  DOWN
+   JMP S
+E: MOV 0 DOWN
 
 @2
 

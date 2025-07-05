@@ -4,8 +4,8 @@
 @1
 S: MOV UP  ACC
    JGZ G
-   MOV -3 DOWN
-   JMP S
+   SUB 3
+   JMP E
 G: SAV
    MOV UP  ACC
    JNZ N

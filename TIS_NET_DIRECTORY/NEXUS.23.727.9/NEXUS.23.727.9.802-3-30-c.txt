@@ -33,7 +33,7 @@ O: MOV ACC  DOWN
 
 
 @4
-   MOV 57  ACC
+   MOV 49  ACC
 S: SUB 8
    MOV ACC DOWN
    JGZ S

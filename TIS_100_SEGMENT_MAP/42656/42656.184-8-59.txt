@@ -6,15 +6,16 @@ S: MOV UP  ACC
    JGZ G
 E: MOV -3 DOWN
    JMP S
-G: MOV ACC LEFT
-   MOV UP  ACC
-   JNZ N
-   MOV -4  DOWN
-   JMP S
 N: MOV ACC DOWN
    MOV UP  ACC
    JNZ N
    MOV -5  DOWN
+   MOV UP ACC
+   JEZ E
+G: MOV ACC LEFT
+   MOV UP  ACC
+   JNZ N
+   MOV -4  DOWN
 
 @2
 
@@ -69,10 +70,9 @@ S: MOV UP ACC
    MOV ACC ANY
    JRO ACC
 G: SAV
-   MOV UP  ACC
-   JLZ L
+   JMP M
 N: MOV ACC ANY
-   MOV UP  ACC
+M: MOV UP  ACC
    JGZ N
 L: MOV -6  ANY
    SWP

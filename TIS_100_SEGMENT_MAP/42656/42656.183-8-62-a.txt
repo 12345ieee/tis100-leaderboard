@@ -71,10 +71,9 @@ S: MOV UP ACC
    MOV ACC ANY
    JRO ACC
 G: SAV
-   MOV UP  ACC
-   JLZ L
+   JMP M
 N: MOV ACC ANY
-   MOV UP  ACC
+M: MOV UP  ACC
    JGZ N
 L: MOV -6  ANY
    SWP

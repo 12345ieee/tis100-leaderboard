@@ -1,8 +1,10 @@
 @0
 D: MOV UP, ACC
+   JGZ G
    JLZ B
-   JEZ A
-   MOV 1, DOWN
+A: MOV 4, DOWN
+   JMP D
+G: MOV 1, DOWN
 E: MOV UP, ACC
    JGZ F
    JLZ A
@@ -10,8 +12,6 @@ C: MOV 1, DOWN
    JMP D
 F: MOV -2, DOWN
    JMP E
-A: MOV 4, DOWN
-   JMP D
 B: MOV 7, DOWN
 
 @1
@@ -21,7 +21,7 @@ B: MOV 7, DOWN
 
 
 @3
-## 212/6/34
+
 
 @4
    MOV UP, DOWN

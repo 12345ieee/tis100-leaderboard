@@ -1,0 +1,54 @@
+@0
+D: MOV UP, ACC
+   JLZ B
+   JEZ A
+   MOV 1, DOWN
+E: MOV UP, ACC
+   JGZ F
+   JLZ A
+C: MOV 1, DOWN
+   JMP D
+F: MOV -2, DOWN
+   JMP E
+A: MOV 4, DOWN
+   JMP D
+B: MOV 7, DOWN
+
+@1
+
+
+@2
+
+
+@3
+## 212/6/34
+
+@4
+   MOV UP, DOWN
+
+@5
+MOV UP, ACC
+MOV ACC, RIGHT
+MOV ACC, RIGHT
+
+@6
+   MOV LEFT, RIGHT
+   JRO LEFT
+1: MOV 1, DOWN
+   MOV LEFT, RIGHT
+   JRO LEFT
+4: MOV 0, DOWN
+
+@7
+A: JRO LEFT
+1: MOV 0, RIGHT
+   MOV 0, DOWN
+   JRO LEFT
+4: MOV 0, RIGHT
+   MOV 1, DOWN
+   JMP A
+7: MOV 1, RIGHT
+   MOV 0, DOWN
+
+@8
+   MOV LEFT, DOWN

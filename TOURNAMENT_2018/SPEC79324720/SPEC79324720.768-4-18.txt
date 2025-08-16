@@ -1,0 +1,45 @@
+@0
+
+
+@1
+MOV UP RIGHT
+
+@2
+SUB 8
+
+MOV LEFT DOWN
+MOV UP   LAST
+
+MOV  0  LAST
+MOV ACC ANY
+
+@3
+
+
+@4
+
+
+@5
+MOV UP  ACC
+MOV ACC LAST
+MOV ACC ANY
+
+@6
+
+
+@7
+   SUB LAST
+
+   SUB LAST
+   JLZ O
+
+L: ADD LAST
+   SUB LAST
+   JLZ L
+
+O: MOV ANY DOWN
+
+   MOV 0 ACC
+   JRO UP
+
+@8

@@ -1,0 +1,78 @@
+@0
+## GIGGS
+# 248 CHARACTERS
+
+@1
+S: MOV UP ACC
+   JRO ACC
+
+2: MOV 3 ANY
+   JEZ S
+
+   MOV -2 ANY
+   SUB 2
+
+   JLZ S
+   JEZ 2
+
+   MOV 1 ANY
+
+@2
+   MOV UP ACC
+   ADD 1
+1: MOV -1 ANY
+   SUB 100
+   JGZ 1
+   ADD 100
+   MOV ANY ANY
+
+2: MOV -1 ANY
+   SUB 10
+   JGZ 2
+   MOV ANY ANY
+
+   SUB 2
+   MOV ACC ANY
+
+@3
+
+
+@4
+
+
+@5
+   MOV -1 ACC
+
+   ADD 1
+   JRO UP
+
+   MOV UP ACC
+   ADD 12
+
+L: SUB 1
+   MOV -1 ANY
+   JGZ L
+
+   MOV 1 ANY
+
+@6
+
+
+@7
+
+
+@8
+   MOV -222 ACC
+
+   ADD 100
+   JRO UP
+
+   ADD 10
+   JRO UP
+
+   ADD 1
+   JRO UP
+
+   MOV ACC ANY
+
+@9

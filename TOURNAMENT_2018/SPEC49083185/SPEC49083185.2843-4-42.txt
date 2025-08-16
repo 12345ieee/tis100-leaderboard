@@ -1,0 +1,66 @@
+@0
+
+
+@1
+   MOV UP ACC
+   JMP *
+&: MOV -10 RIGHT
+   MOV RIGHT RIGHT
+*: SUB 1
+   JNZ &
+.: MOV 999 RIGHT
+
+@2
+   MOV UP ACC
+   ADD 1
+   JMP *
+   MOV ACC LEFT
+   ADD ACC
+   ADD ACC
+   ADD LEFT
+   ADD ACC
+   ADD 991
+*: MOV -999 DOWN
+&: SUB 100
+   MOV 1 DOWN
+   JGZ &
+   JRO LEFT
+   MOV 998 DOWN
+
+@3
+
+
+@4
+
+
+@5
+&: ADD UP
+   JLZ &
+   MOV ACC DOWN
+   NEG
+   MOV DOWN DOWN
+
+@6
+## BIGGIEMAC42
+
+@7
+
+
+@8
+   MOV 3 ACC
+   SWP
+   JMP *
+&: SWP
+   ADD ACC
+   ADD ACC
+   ADD UP
+   ADD ACC
+*: ADD UP
+   MOV ACC UP
+   SWP
+   SUB 1
+   JNZ &
+.: MOV UP DOWN
+   SWP
+
+@9

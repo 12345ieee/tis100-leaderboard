@@ -28,18 +28,17 @@ MOV ACC ANY
 
 
 @7
-   SUB LAST
+   MOV LAST ACC
 
-   SUB LAST
-   JLZ O
+   ADD LAST
+   JGZ O
 
-L: ADD LAST
-   SUB LAST
-   JLZ L
+L: SUB LAST
+   ADD LAST
+   JGZ L
 
 O: MOV ANY DOWN
 
-   MOV 0 ACC
    JRO UP
 
 @8

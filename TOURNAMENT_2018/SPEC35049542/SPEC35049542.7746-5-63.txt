@@ -40,8 +40,8 @@
 
 @4
    MOV 39 ACC
-&: MOV LEFT LEFT
-   SUB 1
+&: SUB 1
+   MOV LEFT LEFT
    JGZ &
 ^: MOV RIGHT DOWN
    MOV DOWN ACC

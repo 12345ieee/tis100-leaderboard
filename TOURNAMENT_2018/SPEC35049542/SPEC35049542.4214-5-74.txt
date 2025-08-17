@@ -54,8 +54,8 @@
 @4
    MOV 39 ACC
    MOV 72 DOWN
-&: MOV LEFT LEFT
-   SUB 1
+&: SUB 1
+   MOV LEFT LEFT
    JGZ &
    MOV 420 DOWN
 ^: MOV DOWN UP

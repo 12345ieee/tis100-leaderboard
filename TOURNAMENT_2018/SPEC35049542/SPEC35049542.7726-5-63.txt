@@ -67,9 +67,9 @@
 .: SUB 570
    SWP
    MOV UP ACC
-   SWP
+   JMP M
 <: SWP
-   MOV ACC DOWN
+M: MOV ACC DOWN
    SWP
    ADD 19
    JLZ <

@@ -83,16 +83,14 @@ S: MOV ACC LEFT
 
 @9
    MOV UP ACC
-
    JEZ =
 
 L: MOV -2 LEFT
    SUB 1
    JGZ L
-   MOV 1 LEFT
-   JRO -6
+   JMP E
 
 =: MOV 5 LEFT
    MOV -5 LEFT
    MOV 1 LEFT
-   MOV 1 LEFT
+E: MOV 1 LEFT

@@ -67,7 +67,6 @@
 @8
 ^: MOV ACC LEFT
    ADD RIGHT
-   JMP ^
 
 @9
    MOV UP ACC

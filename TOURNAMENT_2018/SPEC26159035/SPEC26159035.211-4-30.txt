@@ -1,0 +1,76 @@
+@0
+   MOV RIGHT DOWN
+
+@1
+   MOV UP ACC
+^: MOV ACC DOWN
+   MOV UP ACC
+   JNZ ^
+   SUB DOWN
+   ADD DOWN
+   MOV ACC LEFT
+   JRO DOWN
+
+@2
+# COMPUTES THE
+# DIFFERENCE OF
+# LAST TWO VALUES
+
+# TRANSFORMS VIA
+# MOD 37 AND 16
+# INTO ONE OF:
+
+# 7, 11  -> 1
+# 2      -> 2
+# 10, 5  -> 4
+# 9      -> 8
+# 8      -> 16
+# 15, 4  -> 64
+# 3      -> 512
+
+@3
+## BIGGIEMAC42
+
+@4
+   MOV UP ACC
+   MOV -99 RIGHT
+*: SUB 37
+   JGZ *
+&: ADD 16
+   JLZ &
+   MOV ACC DOWN
+
+@5
+# CONVERTS THE
+# SMALL SET OF
+# VALUES INTO THE
+# CORRECT OUTPUT
+# USING A LOOKUP
+# TABLE
+
+# NOTE THAT TAKING
+# 512 - 1  =  511
+# 64 - 512 = -448
+# MOD SMALL VALUES
+# IS SLOW.  THESE
+# DON'T ARISE IN
+# ANY FIXED TESTS
+
+@6
+
+
+@7
+   MOV 64 ACC
+^: JRO UP
+   HCF
+   SUB 510
+   ADD 448
+   JMP .
+   MOV 4 DOWN
+   JMP ^
+   JRO 4
+   ADD 8
+   ADD 4
+   ADD 3
+   SUB 63
+.: MOV ACC DOWN

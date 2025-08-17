@@ -1,6 +1,5 @@
 @0
    ADD 16
-   NOP
 >: SUB 1
    JGZ >
    MOV -9 ACC
@@ -13,6 +12,7 @@
    ADD 9
 .: MOV ACC RIGHT
    ADD ACC
+   NOP
 
 @1
    ADD 9

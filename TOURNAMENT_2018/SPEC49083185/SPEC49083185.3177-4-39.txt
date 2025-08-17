@@ -18,13 +18,13 @@ S: MOV UP ACC
    MOV 1 ANY
 
 @2
-   MOV UP ACC
-   ADD 1
+   MOV 1 ACC
+   ADD UP
 1: MOV -1 ANY
    SUB 100
    JGZ 1
-   ADD 100
    MOV ANY ANY
+   ADD 100
 
 2: MOV -1 ANY
    SUB 10
@@ -46,8 +46,8 @@ S: MOV UP ACC
    ADD 1
    JRO UP
 
-   MOV UP ACC
-   ADD 12
+   MOV 12 ACC
+   ADD UP
 
 L: SUB 1
    MOV -1 ANY

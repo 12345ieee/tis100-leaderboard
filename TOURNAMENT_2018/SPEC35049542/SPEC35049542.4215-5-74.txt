@@ -1,5 +1,5 @@
 @0
-   ADD 17
+   ADD 16
 >: SUB 1
    JGZ >
    MOV -9 ACC
@@ -53,10 +53,10 @@
 
 @4
    MOV 39 ACC
+   MOV 72 DOWN
 &: MOV LEFT LEFT
    SUB 1
    JGZ &
-   MOV 72 DOWN
    MOV 420 DOWN
 ^: MOV DOWN UP
    MOV -999 ACC

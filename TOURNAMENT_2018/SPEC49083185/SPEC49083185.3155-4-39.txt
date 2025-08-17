@@ -20,14 +20,14 @@ S: MOV UP ACC
 @2
    MOV 1 ACC
    ADD UP
-1: MOV -1 ANY
-   SUB 100
+1: SUB 100
+   MOV -1 ANY
    JGZ 1
    MOV ANY ANY
    ADD 100
 
-2: MOV -1 ANY
-   SUB 10
+2: SUB 10
+   MOV -1 ANY
    JGZ 2
    MOV ANY ANY
 

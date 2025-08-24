@@ -8,22 +8,21 @@
    MOV 1 RIGHT
 
 @2
-   MOV -999 ACC
+   MOV -990 ACC
    ADD UP
-   SUB 1
    SWP
-   MOV -1 ACC
+   MOV 9 ACC
    JMP B
-A: SWP
+A: ADD 10
+   SWP
    SUB 1
 B: SWP
-   ADD 10
    JLZ A
 .: JRO LEFT
    MOV ACC DOWN
 
 @3
-#9646/4/29
+#9528/4/28
 
 @4
 

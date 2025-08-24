@@ -1,38 +1,37 @@
 @0
-## GIGGS
-# 248 CHARACTERS
+#3095/4/39
+#GIGGS/EASONE
 
 @1
 S: MOV UP ACC
    JRO ACC
 
-2: MOV 3 ANY
+2: MOV 5 RIGHT
    JEZ S
 
-   MOV -2 ANY
+   MOV -1 RIGHT
    SUB 2
 
    JLZ S
    JEZ 2
 
-   MOV 1 ANY
+   MOV 3 RIGHT
 
 @2
    MOV 1 ACC
    ADD UP
 1: SUB 100
-   MOV -1 ANY
+   MOV 1 DOWN
    JGZ 1
-   MOV ANY ANY
+   MOV LEFT DOWN
    ADD 100
 
 2: SUB 10
-   MOV -1 ANY
+   MOV 1 DOWN
    JGZ 2
-   MOV ANY ANY
+   MOV LEFT DOWN
 
-   SUB 2
-   MOV ACC ANY
+   MOV ACC DOWN
 
 @3
 
@@ -41,19 +40,20 @@ S: MOV UP ACC
 
 
 @5
-   MOV -1 ACC
+   MOV 0 ACC
 
+A: JRO UP
    ADD 1
-   JRO UP
+   JMP A
 
-   MOV 12 ACC
+   MOV 10 ACC
    ADD UP
 
 L: SUB 1
-   MOV -1 ANY
+   MOV -1 DOWN
    JGZ L
 
-   MOV 1 ANY
+   MOV 2 DOWN
 
 @6
 
@@ -62,7 +62,7 @@ L: SUB 1
 
 
 @8
-   MOV -222 ACC
+   MOV -211 ACC
 
    ADD 100
    JRO UP
@@ -73,6 +73,6 @@ L: SUB 1
    ADD 1
    JRO UP
 
-   MOV ACC ANY
+   MOV ACC DOWN
 
 @9

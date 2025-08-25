@@ -1,0 +1,52 @@
+@0
+## 291/3/32
+
+@1
+^: MOV UP ACC
+   MOV ACC DOWN
+   JNZ ^
+   ADD DOWN
+   SUB DOWN
+   MOV ACC DOWN
+   MOV UP ACC
+   JRO DOWN
+
+@2
+
+
+@3
+
+
+@4
+^: MOV RIGHT ACC
+   MOV ACC RIGHT
+   JNZ ^
+   MOV 26 ACC
+   ADD RIGHT
+*: SUB 25
+   JGZ *
+&: ADD 13
+   JLZ &
+   MOV -6 RIGHT
+   MOV ACC DOWN
+
+@5
+
+
+@6
+
+
+@7
+^: MOV 1 ACC
+   JRO UP
+   JRO 8
+   HCF
+   SUB 4
+   JRO 6
+   ADD 15
+   JRO 5
+   SUB 510
+   ADD 448
+   ADD 56
+   ADD 7
+   MOV ACC DOWN

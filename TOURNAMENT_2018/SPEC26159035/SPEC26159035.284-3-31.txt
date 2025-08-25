@@ -1,0 +1,51 @@
+@0
+
+
+@1
+^: MOV UP ACC
+   MOV ACC DOWN
+   JNZ ^
+   MOV DOWN DOWN
+   NOP
+   JRO DOWN
+
+@2
+
+
+@3
+
+
+@4
+   MOV ACC DOWN
+G: MOV ACC RIGHT
+   MOV RIGHT ACC
+   JGZ G
+   ADD RIGHT
+   SUB RIGHT
+*: SUB 37
+   JGZ *
+&: ADD 16
+   JLZ &
+   MOV -9 RIGHT
+
+@5
+
+
+@6
+
+
+@7
+   MOV 64 ACC
+^: JRO UP
+   HCF
+   SUB 510
+   ADD 448
+   JMP .
+   MOV 4 DOWN
+   JMP ^
+   JRO 4
+   ADD 8
+   ADD 4
+   ADD 3
+   SUB 63
+.: MOV ACC DOWN

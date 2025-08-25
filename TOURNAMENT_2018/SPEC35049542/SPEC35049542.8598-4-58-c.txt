@@ -1,5 +1,5 @@
 @0
-   MOV 10 ACC
+   MOV 9 ACC
 %: MOV -45 RIGHT
    SUB 1
    JGZ %
@@ -74,9 +74,9 @@
 .: SUB 570
    SWP
    MOV UP ACC
-   SWP
+   JMP M
 <: SWP
-   MOV ACC DOWN
+M: MOV ACC DOWN
    SWP
    ADD 19
    JLZ <
@@ -84,7 +84,6 @@
    MOV 0 DOWN
    MOV ACC DOWN
    SUB 9
-   JGZ .
-   MOV LEFT UP
+MOV ANY ANY #G
 
 @7

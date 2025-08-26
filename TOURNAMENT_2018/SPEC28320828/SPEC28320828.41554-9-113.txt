@@ -52,7 +52,7 @@
    JMP ^
    ADD 7
    JRO 99
-   JRO 3
+   JRO 6
 *: JRO LEFT
    ADD 8
    ADD 3 # LUT FOR

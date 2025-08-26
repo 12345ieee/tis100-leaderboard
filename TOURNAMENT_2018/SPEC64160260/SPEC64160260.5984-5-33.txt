@@ -16,10 +16,10 @@
    MOV RIGHT ACC
    SUB RIGHT
    JEZ +
-   SUB 100
+   SUB 200
    JNZ +
-   ADD 100
-+: ADD 100
+   ADD 200
++: ADD 200
    ADD RIGHT
    JGZ >
    MOV 1 RIGHT
@@ -45,13 +45,13 @@ N: MOV ACC DOWN
    MOV UP LEFT
 
 @7
-   MOV -200 ACC
-   ADD UP
-   JGZ >
-   ADD 200
-   MOV ACC RIGHT
-   JRO -5
+   MOV UP ACC
+   ADD -400
+   JLZ <
+   MOV ACC DOWN
+   JRO -4
 
->: MOV ACC DOWN
+<: ADD 400
+   MOV ACC RIGHT
 
 @8

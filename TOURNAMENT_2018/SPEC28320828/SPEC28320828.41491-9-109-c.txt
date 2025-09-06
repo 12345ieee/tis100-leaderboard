@@ -35,8 +35,8 @@
    MOV LEFT RIGHT
    MOV RIGHT ACC
    JMP >
-.: MOV LEFT NIL
-   ADD 99
+.: ADD 99
+   MOV LEFT NIL
    JRO 3
 >: MOV 1 LEFT
    MOV 1 LEFT
@@ -52,12 +52,13 @@
    JMP ^
    ADD 7
    JRO 99
-   JRO 3
+   JRO 6
 *: JRO LEFT
    ADD 8
    ADD 3 # LUT FOR
    SUB 1 # 98 & 99
-ADD 8
+   SUB 2
+   ADD 10
    MOV ACC LEFT
 
 @4
@@ -113,15 +114,12 @@ ADD 8
    MOV ACC DOWN
 
 @8
-^: MOV -159 ACC
+^: MOV -79 ACC
    MOV -999 LEFT
-   ADD 80
    SUB UP
    JGZ .
    ADD 72
-   JGZ >
-   MOV 999 LEFT
-   JMP ^
+   JLZ *
 >: MOV 1 LEFT
 .: SUB 8
    JGZ >

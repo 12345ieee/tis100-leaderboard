@@ -26,7 +26,7 @@ JGZ C
 
 @4
 MOV UP DOWN
-NOP
+MOV ANY DOWN
 
 @5
 

@@ -2,9 +2,8 @@
 S: MOV ANY ACC
 H: SAV
    SUB 3
-G: SUB 3
+G: SUB 6
    MOV -1 DOWN
-   SUB 3
    MOV -1 DOWN
    JGZ G
    JLZ W

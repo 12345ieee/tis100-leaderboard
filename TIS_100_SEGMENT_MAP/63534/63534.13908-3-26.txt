@@ -1,10 +1,10 @@
 @0
-   MOV UP  RIGHT
+   MOV ANY RIGHT
 
 D: SUB 1
    JGZ D
 
-   ADD 186
+   ADD 185
 
 @1
 

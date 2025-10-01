@@ -1,10 +1,10 @@
 @0
-MOV UP RIGHT
-   MOV UP  RIGHT
+S: MOV ANY RIGHT
 
-D: SUB 1
+D: SUB 2
    JGZ D
 
+   JEZ S
    ADD 183
 
 @1

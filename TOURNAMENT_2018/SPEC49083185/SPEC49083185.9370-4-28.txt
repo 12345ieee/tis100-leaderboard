@@ -12,7 +12,7 @@
    ADD UP
    SWP
    MOV 9 ACC
-   JMP B
+   SWP
 A: ADD 10
    SWP
    SUB 1
@@ -22,7 +22,7 @@ B: SWP
    MOV ACC DOWN
 
 @3
-#9528/4/28
+
 
 @4
 

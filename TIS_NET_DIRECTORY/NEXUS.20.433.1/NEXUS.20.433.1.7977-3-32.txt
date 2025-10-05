@@ -4,8 +4,8 @@
 @1
    MOV -1   ACC
    ADD UP
-JMP N
-JRO 3
+   SWP
+   JRO 3
 N: SWP
    MOV -1   ACC
 
@@ -64,4 +64,3 @@ J: JRO UP
 
 
 @10
-

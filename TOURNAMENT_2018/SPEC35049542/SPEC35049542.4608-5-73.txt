@@ -11,8 +11,8 @@
 <: MOV 100 RIGHT
    ADD 9
 .: MOV ACC RIGHT
+   JEZ >
    ADD ACC
-   NOP
 
 @1
    ADD 9

@@ -2,13 +2,13 @@
    MOV RIGHT DOWN
 
 @1
-   MOV UP ACC
 ^: MOV ACC DOWN
    MOV UP ACC
    JNZ ^
    SUB DOWN
    ADD DOWN
    MOV ACC LEFT
+   MOV UP ACC
    JRO DOWN
 
 @2

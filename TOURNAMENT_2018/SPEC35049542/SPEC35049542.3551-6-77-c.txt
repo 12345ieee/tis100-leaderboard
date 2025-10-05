@@ -112,7 +112,7 @@ L:  MOV UP ACC
 
 @7
     MOV -6 LEFT
-    MOV -6 LEFT
-    MOV -6 LEFT
     MOV 1 LEFT
+    MOV -6 LEFT
+    MOV -6 LEFT
     MOV -6 LEFT

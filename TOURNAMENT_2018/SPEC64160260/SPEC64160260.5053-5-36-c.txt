@@ -1,0 +1,60 @@
+@0
+## GIGGS
+
+@1
+
+
+@2
+
+
+@3
+   MOV UP DOWN
+
+@4
+>: MOV -3 RIGHT
+   MOV ACC LEFT
+   MOV RIGHT ACC
+   SUB RIGHT
+   JEZ +
+   SUB 200
+   JNZ +
+   ADD 200
++: ADD 200
+   ADD RIGHT
+   JGZ >
+   MOV 1 RIGHT
+N: MOV ACC DOWN
+   MOV LEFT ACC
+   JNZ N
+
+@5
+   MOV ANY ACC
+   JNZ N
+
+   MOV ANY ACC
+   MOV DOWN LEFT
+   MOV ACC LEFT
+   MOV ACC LEFT
+J: JRO LEFT
+
+   MOV RIGHT ACC
+   JNZ J
+   JRO -2
+
+N: MOV ACC DOWN
+
+@6
+   MOV UP LEFT
+
+@7
+MOV UP ACC
+ADD -400
+JLZ <
+MOV ACC DOWN
+ADD -400
+JMP E
+
+<: ADD 400
+E: MOV ACC RIGHT
+
+@8

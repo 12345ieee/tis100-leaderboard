@@ -1,0 +1,44 @@
+@0
+#1348/2/15
+
+@1
+
+
+@2
+
+
+@3
+
+
+@4
+
+
+@5
+MOV 0 DOWN
+MOV 1 DOWN
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+MOV UP DOWN
+MOV ACC DOWN
+SUB 79
+JMP B
+A: MOV 0 DOWN
+ADD 20
+B: MOV 3 DOWN
+MOV 0 DOWN
+MOV 3 DOWN
+MOV 0 DOWN
+MOV 3 DOWN
+JLZ A
+MOV -1 DOWN
+
+@10

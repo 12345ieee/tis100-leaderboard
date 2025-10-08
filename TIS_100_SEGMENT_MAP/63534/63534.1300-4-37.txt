@@ -37,8 +37,7 @@ N: MOV LEFT    ACC
 F: MOV UP  ACC
    MOV ACC LEFT
    JNZ F
-   JMP S
-Z: MOV UP DOWN
+Z: MOV 0 DOWN
 
 @5
 
@@ -47,6 +46,7 @@ Z: MOV UP DOWN
 
 
 @7
+MOV 1 LEFT
 S: MOV 1 LEFT
    JRO UP
 G: ADD 100

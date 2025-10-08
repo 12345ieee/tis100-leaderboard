@@ -25,7 +25,7 @@ F: MOV ACC DOWN
 S: MOV LEFT   ACC
    JNZ N
    MOV 3 DOWN
-   JRO 999
+   JMP Z
 L: MOV -2    LEFT
 N: MOV LEFT    ACC
    MOV ACC   UP
@@ -35,8 +35,7 @@ N: MOV LEFT    ACC
 F: MOV UP  ACC
    MOV ACC LEFT
    JNZ F
-   JMP S
-   MOV UP DOWN
+Z: MOV 0 DOWN
 
 @5
 

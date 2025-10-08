@@ -27,8 +27,7 @@ F: MOV ACC DOWN
 S: MOV LEFT   ACC
    JNZ N
    MOV 3 DOWN
-   MOV UP DOWN
-   JMP S
+   JMP Z
 L: MOV -4   LEFT
 N: MOV LEFT    ACC
    MOV ACC   UP
@@ -38,6 +37,7 @@ N: MOV LEFT    ACC
 F: MOV UP  ACC
    MOV ACC LEFT
    JNZ F
+Z: MOV 0 DOWN
 
 @5
 

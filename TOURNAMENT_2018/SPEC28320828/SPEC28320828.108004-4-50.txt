@@ -18,8 +18,8 @@ S: MOV 1 DOWN
    SWP
    MOV LEFT ACC
 G: SUB 1
-  JEZ S
   JLZ L
+  JEZ S
    MOV 4 ANY
    SWP
    MOV ACC DOWN

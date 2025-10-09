@@ -19,4 +19,5 @@
 69924/7/76/c|giggs/12345ieee||
 71140/6/69|giggs/12345ieee||
 73323/6/67|giggs/12345ieee||
-105750/4/52|LongingForRest||NC,NI,NX,IC,IN,IX,cNC,cNI,cNX,cIC,cIN,cIX,hNC,hNI,hNX,hIC,hIN,hIX
+105750/4/52|LongingForRest||NC,cNC,hNC
+105753/4/51|LongingForRest||NI,NX,IC,IN,IX,cNI,cNX,cIC,cIN,cIX,hNI,hNX,hIC,hIN,hIX

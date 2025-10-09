@@ -13,19 +13,19 @@ G: SWP
 
 @1
    MOV UP LEFT
-S: MOV -9 DOWN
+S: MOV 1 DOWN
    MOV DOWN ACC
    SWP
    MOV LEFT ACC
-   JRO 5
-G: MOV -6 ANY
+G: SUB 1
+  JEZ S
+  JLZ L
+   MOV 4 ANY
    SWP
    MOV ACC DOWN
    SWP
-   SUB 1
-  JGZ G
-  JEZ S
-E: MOV -99 DOWN
+  JMP G
+L: MOV -4 DOWN
 
 @2
 
@@ -41,7 +41,7 @@ E: MOV -99 DOWN
 G: MOV 19 LAST
    SUB 1
    SUB 999
-  JMP S
+S: JRO UP
    MOV ACC UP
    MOV -9 DOWN
   JMP S
@@ -51,7 +51,7 @@ G: MOV 19 LAST
    MOV ANY DOWN
   JGZ G
    MOV 20 DOWN
-S: JRO UP
+  JMP S
 
 @6
 

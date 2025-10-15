@@ -22,8 +22,8 @@ N: SWP
 
 @4
 N: MOV 1    UP
-   MOV UP   ACC
    MOV -4 DOWN
+   MOV UP   ACC
 1: ADD 1
 E: MOV -5 DOWN
    MOV -1  UP

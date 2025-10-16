@@ -41,7 +41,7 @@ N: MOV LEFT ACC
 
 
 @7
-   MOV 66 ACC
+   MOV 57 ACC
 S: SUB 9
    MOV ACC LEFT
    JGZ S

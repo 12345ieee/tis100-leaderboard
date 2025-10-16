@@ -25,9 +25,9 @@ N: MOV  1 UP
    MOV -3 DOWN
    MOV UP  ACC
    MOV ACC LAST
-G: MOV -1 UP
-   MOV -5  DOWN
+G: MOV -5  DOWN
    SUB ANY
+   MOV -1 UP
    JGZ G
    ADD 1
    JNZ N

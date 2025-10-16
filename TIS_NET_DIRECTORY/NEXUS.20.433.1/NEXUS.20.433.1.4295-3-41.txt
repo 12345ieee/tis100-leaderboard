@@ -2,19 +2,18 @@
 
 
 @1
-   JGZ A
+   JNZ A
    SUB DOWN
    MOV UP DOWN
    SAV
-   JMP A
-   MOV -8 ACC
-   SWP
-   MOV ACC DOWN
-A: MOV -3 ACC
+A: MOV -2 ACC
+   MOV DOWN NIL
    JNZ B
    ADD 1
 B: ADD 1
    JRO DOWN
+   MOV -8 ACC
+   SWP
    MOV ACC DOWN
 
 @2
@@ -32,7 +31,7 @@ O: MOV 7 UP
    JEZ S
    SWP
    JMP L
-I: MOV -7 UP
+I: MOV 1 UP
    SUB 6
    JGZ J
    SUB UP

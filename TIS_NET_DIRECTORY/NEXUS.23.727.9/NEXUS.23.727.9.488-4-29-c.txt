@@ -1,0 +1,58 @@
+@0
+   MOV 74  ACC
+S: SUB 10
+   MOV ACC LEFT
+   JGZ S
+
+   MOV UP DOWN
+   JRO -1
+
+@1
+
+
+@2
+
+
+@3
+G: MOV UP    ACC
+   MOV ACC   DOWN
+   JGZ G
+
+   ADD RIGHT
+
+L: ADD 1
+   MOV DOWN  UP
+   JLZ L
+
+   MOV DOWN  RIGHT
+
+@4
+   MOV UP   ACC
+   MOV UP   LEFT
+   MOV ACC  DOWN
+   JNZ N
+
+Z: MOV LEFT NIL
+   MOV UP   DOWN
+   JRO -999
+
+N: MOV LEFT DOWN
+
+@5
+
+
+@6
+
+
+@7
+MOV UP  ACC
+JNZ N
+MOV UP  LEFT
+JRO -999
+
+N: MOV UP ACC
+MOV ACC LEFT
+MOV ACC DOWN
+
+@8
+

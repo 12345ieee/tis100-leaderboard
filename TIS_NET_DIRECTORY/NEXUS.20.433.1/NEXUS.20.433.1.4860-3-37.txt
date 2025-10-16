@@ -4,8 +4,8 @@
 @1
    MOV UP DOWN
 
-A: MOV -6 ACC
-   JGZ B
+A: MOV -3 ACC
+   JNZ B
    ADD 1
 B: ADD 1
    JRO DOWN
@@ -54,7 +54,6 @@ C: MOV UP ACC
 B: MOV -6 UP #I
    SWP
 F: SAV
-
 A: SUB UP
    JLZ B
    MOV -2 UP #L

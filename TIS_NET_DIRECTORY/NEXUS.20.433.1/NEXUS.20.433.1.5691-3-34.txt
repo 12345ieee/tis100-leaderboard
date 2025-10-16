@@ -24,10 +24,10 @@ N: SWP
 N: MOV  1 UP
    MOV -3 DOWN
    MOV UP  ACC
-   MOV ACC DOWN
+   MOV ACC LAST
 G: MOV -7  DOWN
    MOV -1 UP
-   SUB DOWN
+   SUB ANY
    JGZ G
    ADD 1
    JNZ N

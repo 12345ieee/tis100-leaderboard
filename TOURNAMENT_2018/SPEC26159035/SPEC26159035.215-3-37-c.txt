@@ -7,16 +7,14 @@
    SWP
 M: MOV UP ACC
    JEZ Z
-N: MOV -1  DOWN
-   SWP
+N: SWP
+   MOV -1  DOWN
    MOV ACC DOWN
    MOV UP ACC
    JNZ N
-Z: MOV  1  DOWN
-   SWP
+Z: SWP
+   MOV  1  DOWN
    MOV ACC DOWN
-   NOP
-   NOP
 
 @2
 
@@ -26,15 +24,18 @@ Z: MOV  1  DOWN
 
 @4
    MOV RIGHT ACC
-   JRO RIGHT
+S: JRO RIGHT
    SUB 59
    SUB RIGHT
    JGZ E
-   ADD 64
+   ADD 77
+   JLZ L
+   SUB 13
    JGZ E
-   ADD 13
-   JGZ E
-   ADD 43
+   MOV 6 DOWN
+   MOV RIGHT ACC
+   JMP S
+L: ADD 43
 E: MOV ACC DOWN
 
 @5
@@ -44,7 +45,8 @@ E: MOV ACC DOWN
 
 
 @7
-S: JRO UP
+S: MOV 0 ACC
+   JRO UP
 1: SUB 15
    ADD 8
 3: ADD 4
@@ -52,9 +54,4 @@ S: JRO UP
 5: ADD 448
 6: ADD 64
 O: MOV ACC DOWN
-   MOV 0 ACC
-   JMP S
-   HCF
-11:JMP 6
-12:ADD 1
-   JMP 1
+   JEZ 1

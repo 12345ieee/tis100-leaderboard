@@ -1,0 +1,62 @@
+@0
+
+
+@1
+   MOV UP DOWN
+   MOV UP ACC
+   SWP
+M: MOV UP ACC
+   JEZ Z
+   SWP
+   MOV -1  DOWN
+   MOV ACC DOWN
+   JMP M
+Z: MOV  1  DOWN
+   SWP
+   MOV ACC DOWN
+S: SUB 7
+   JGZ S
+
+@2
+
+
+@3
+
+
+@4
+   MOV RIGHT ACC
+   JRO RIGHT
+   SUB 508
+   SUB RIGHT
+   JGZ E
+A: ADD 449
+   JGZ E
+   ADD 64
+   JGZ E
+   ADD 13
+   JGZ E
+   ADD 43
+   JLZ A
+E: MOV ACC DOWN
+
+@5
+
+
+@6
+
+
+@7
+S: JRO UP
+1: SUB 15
+   ADD 8
+3: ADD 4
+4: SUB 508
+5: ADD 448
+6: ADD 64
+O: MOV ACC DOWN
+   MOV 0 ACC
+   JMP S
+   HCF
+11:JMP 6
+12:ADD 1
+   JMP 1

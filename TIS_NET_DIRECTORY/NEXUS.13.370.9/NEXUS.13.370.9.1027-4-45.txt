@@ -19,10 +19,10 @@
    MOV  UP RIGHT
 
 @2
+   SUB    1
    MOV  -15 LAST
    MOV LEFT  ANY
    ADD LEFT
-   SUB    1
    MOV  ACC DOWN
    SUB    2
  3:MOV   -1 DOWN

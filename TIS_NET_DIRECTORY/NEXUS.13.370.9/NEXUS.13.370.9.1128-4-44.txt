@@ -19,8 +19,8 @@ L: MOV UP RIGHT
 # THEN PASS LENGTH
 
 @2
-   SUB    1
    MOV LEFT  DOWN
+   SUB    1
    ADD LEFT
    MOV  ACC  DOWN
    SUB    1

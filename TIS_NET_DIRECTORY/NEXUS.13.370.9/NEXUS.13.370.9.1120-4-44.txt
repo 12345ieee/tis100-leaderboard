@@ -3,8 +3,8 @@
 
 @1
 # CATEGORY NODE
-   MOV UP ACC
-   SUB 135
+   MOV -135 ACC
+   ADD UP
    JLZ 1
 4: MOV 4 RIGHT
    JMP L
@@ -19,8 +19,9 @@ L: MOV UP RIGHT
 # THEN PASS LENGTH
 
 @2
-   MOV LEFT  DOWN
    SUB    1
+ R:MOV  -14  DOWN
+   MOV LEFT  DOWN
    ADD LEFT
    MOV  ACC  DOWN
    SUB    1
@@ -33,7 +34,6 @@ XL:JGZ    3
  L:MOV   -2  DOWN
    SUB    1
 YL:JGZ    L
- R:MOV  -14  DOWN
 
 @3
 # LOOP NODE

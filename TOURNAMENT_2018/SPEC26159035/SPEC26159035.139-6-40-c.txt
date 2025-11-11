@@ -30,7 +30,7 @@ MOV DOWN LEFT
    JGZ E
    ADD 51
    JGZ E
-   ADD 64
+   ADD 62
 E: MOV ACC DOWN
 
 @5

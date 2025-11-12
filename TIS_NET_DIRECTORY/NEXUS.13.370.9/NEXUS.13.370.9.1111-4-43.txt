@@ -2,7 +2,6 @@
 
 
 @1
-# CATEGORY NODE
    MOV -135 ACC
    ADD UP
    JLZ 1
@@ -25,7 +24,7 @@ L: MOV UP RIGHT
    ADD LEFT
    MOV  ACC  DOWN
    SUB    1
- 3:MOV   -1  DOWN
+ 3:MOV   -5  DOWN
    SUB    1
 XL:JGZ    3
    MOV LEFT  DOWN
@@ -59,12 +58,11 @@ YL:JGZ    L
 @6
 Q1:JRO  UP
 X+:ADD  UP
-   JMP  3
-   NOP     # LUL
+   MOV  -1 DOWN
+   JMP  Q2
 -X:MOV  -4 DOWN
    SUB  UP
    MOV ACC DOWN
- 3:MOV  -1 DOWN
 Q2:JRO UP
    MOV  +1 DOWN
    MOV ACC DOWN

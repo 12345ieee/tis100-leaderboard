@@ -69,8 +69,8 @@ J: JRO UP
    JMP J
 
 1:
-MOV ANY ACC #G
-SUB 20 #D
+   MOV -20 ACC
+   ADD ANY
 G: SUB 20
    JGZ G
    JEZ O

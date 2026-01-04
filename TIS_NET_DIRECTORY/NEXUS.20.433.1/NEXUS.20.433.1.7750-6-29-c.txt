@@ -1,0 +1,56 @@
+@0
+
+
+@1
+&&: MOV UP DOWN
+
+@2
+
+
+@3
+&&: MOV RIGHT RIGHT
+
+@4
+L: MOV -1  DOWN
+   MOV ANY ACC
+N: MOV  2  RIGHT
+   MOV ACC LEFT
+
+G: MOV  2  DOWN
+   SUB DOWN
+   JGZ G
+   JLZ L
+
+   MOV LEFT DOWN
+   SUB RIGHT
+   JNZ N
+   MOV 1 DOWN
+
+@5
+&&: MOV ANY ANY
+
+@6
+
+
+@7
+
+
+@8
+&&:    JNZ N
+   JEZ A
+   ADD 2
+JMP &&
+A: ADD 1
+N: JRO ANY
+   MOV 0 ACC
+   MOV ACC ANY
+
+@9
+&&:    MOV UP ACC
+J: JNZ N
+   SUB 1
+   JMP J
+N: SUB 1
+   MOV ACC ANY
+
+@10

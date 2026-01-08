@@ -3,16 +3,15 @@
   MOV ACC ANY
   JNZ N
 
-   NOP
+   MOV 10 ACC
    MOV UP RIGHT
    MOV 0 RIGHT
-   JEZ E
+N: JGZ J
 
-N: MOV -2 ACC
-E: ADD 5
+   MOV 6 ACC
 
-G: SUB 1
-   JGZ G
+G: SUB 2
+J: JGZ G
 
 @1
 

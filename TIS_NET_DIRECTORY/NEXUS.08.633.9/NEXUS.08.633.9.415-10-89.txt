@@ -15,7 +15,6 @@ E: MOV ACC DOWN
 
 @1
    MOV -800 ACC
-   MOV 100 LAST
 
 A: ADD UP
    JLZ LZ
@@ -27,6 +26,7 @@ GZ:SUB 800
    JMP A
 
 LZ:MOV ACC ANY
+   MOV 100 LAST
 
 @2
 

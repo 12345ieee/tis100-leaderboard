@@ -2,20 +2,22 @@
 S: MOV UP  ACC
    MOV ACC RIGHT
    SWP
-   ADD 19
+   ADD 56
    SWP
    JGZ S
 
    SWP
-
-L: SUB 1
+L: SUB 3
    JGZ L
 
 @1
 
+
 @2
 
+
 @3
+
 
 @4
 S: MOV UP   ACC
@@ -38,11 +40,12 @@ L: MOV ACC  UP
 
 @6
 
+
 @7
 S: MOV ACC  LEFT
    JMP E
 
-E2:MOV ANY  ACC
+E2:MOV LEFT ACC
    MOV UP   LEFT
 L: MOV ACC  LEFT
    SUB UP

@@ -2,19 +2,19 @@
 
 
 @1
-   MOV UP DOWN
+   MOV ACC DOWN
    MOV UP ACC
    SWP
 M: MOV UP ACC
-   JEZ Z
-   SWP
+N: SWP
    MOV -1  DOWN
    MOV ACC DOWN
-   JMP M
-Z: MOV  1  DOWN
-   SWP
+   MOV UP ACC
+   JNZ N
+Z: SWP
+   MOV  1  DOWN
    MOV ACC DOWN
-S: SUB 7
+S: SUB 63
    JGZ S
 
 @2

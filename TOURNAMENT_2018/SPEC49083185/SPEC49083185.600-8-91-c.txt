@@ -3,6 +3,7 @@ S: MOV 69 ACC
    SUB RIGHT
    JLZ L
    SUB 50
+   JLZ L2
    JMP E
 
 L: MOV  -2 DOWN
@@ -30,7 +31,7 @@ O: MOV ACC DOWN
 @2
 S: MOV -800 ACC
    ADD UP
-JMP E #J
+   JMP E
 L: MOV  1 DOWN
 E: ADD 200
    JLZ L
@@ -83,12 +84,11 @@ S: JRO UP
 6: MOV 6 ACC
    JMP O
 
-2: SUB 2
 J: JRO UP
-   JMP 2
+2: SUB 2
+   JMP J
 
-8: MOV 7 ACC
-   ADD 1
+8: ADD 1
 O: MOV ACC LEFT
 
 @6

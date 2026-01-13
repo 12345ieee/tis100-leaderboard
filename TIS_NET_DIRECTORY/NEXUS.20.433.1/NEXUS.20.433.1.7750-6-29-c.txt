@@ -2,13 +2,13 @@
 
 
 @1
-&&: MOV UP DOWN
+MOV UP DOWN
 
 @2
 
 
 @3
-&&: MOV RIGHT RIGHT
+MOV RIGHT RIGHT
 
 @4
 L: MOV -1  DOWN
@@ -27,7 +27,7 @@ G: MOV  2  DOWN
    MOV 1 DOWN
 
 @5
-&&: MOV ANY ANY
+MOV ANY ANY
 
 @6
 
@@ -36,17 +36,17 @@ G: MOV  2  DOWN
 
 
 @8
-&&:    JNZ N
+S: JNZ N
    JEZ A
    ADD 2
-JMP &&
+   JMP S
 A: ADD 1
 N: JRO ANY
    MOV 0 ACC
    MOV ACC ANY
 
 @9
-&&:    MOV UP ACC
+   MOV UP ACC
 J: JNZ N
    SUB 1
    JMP J

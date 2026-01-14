@@ -7,7 +7,7 @@ A: MOV UP DOWN
    MOV UP DOWN
    JGZ A
 
-   MOV  0 DOWN
+   MOV 1 DOWN
 
 @1
 

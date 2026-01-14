@@ -41,8 +41,7 @@ L2:ADD 100
 O: MOV ACC LEFT
 
 @3
-   MOV -5 ACC
-   ADD 3
+   MOV -2 ACC
    ADD 2
    JRO UP
 

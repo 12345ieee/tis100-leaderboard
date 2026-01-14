@@ -5,7 +5,7 @@
    MOV UP  NIL
 0: MOV -5  LAST
 S: MOV -1  ACC
-U: SUB UP
+   SUB UP
 N: JGZ 24
    MOV -99 ANY
    JLZ 0
@@ -14,8 +14,9 @@ N: JGZ 24
 
 24:MOV ACC RIGHT
    MOV -1  ACC
+   SUB UP
    MOV 99  RIGHT
-   JMP U
+   JMP N
 
 @2
    JGZ S
@@ -27,10 +28,9 @@ D: MOV LEFT DOWN
    MOV ACC  DOWN
    JRO LEFT
 
-1: MOV UP   ACC
-   SWP
+1: SWP
    MOV ACC  LAST
-   JMP D
+   SWP
 
 24:MOV UP   ACC
 

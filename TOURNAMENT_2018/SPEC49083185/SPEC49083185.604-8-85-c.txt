@@ -21,7 +21,7 @@ S: JRO UP
 3: MOV RIGHT ACC
    MOV   4 DOWN
 O: MOV ACC DOWN
-&&:    JMP S
+   JMP S
 2: MOV RIGHT LEFT
    MOV   1 ACC
    JMP O
@@ -35,7 +35,7 @@ S: MOV -800 ACC
 L: MOV  1 DOWN
 E: ADD 200
    JLZ L
-&&:    SUB 100
+   SUB 100
    JLZ L2
 G: MOV  3 DOWN
    JMP O
@@ -51,7 +51,7 @@ O: MOV ACC LEFT
 
    JMP +
    JMP +
-&&:    JMP +
+   JMP +
    JMP +
    JMP +
    JMP +
@@ -68,7 +68,7 @@ J: JRO UP
    JMP J
 
 1: MOV -50 ACC
-&&:    ADD UP
+   ADD UP
 G: SUB 20
    JGZ G
 L: ADD 10
@@ -101,7 +101,7 @@ ADD ACC
 ADD ACC
 ADD LEFT
 ADD ACC
-&&: ADD LEFT
+ADD LEFT
 MOV ACC LEFT
 ADD ACC
 ADD ACC

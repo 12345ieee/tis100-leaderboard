@@ -2,14 +2,14 @@
 
 
 @1
-   MOV ACC DOWN
+   MOV UP DOWN
    MOV UP ACC
    SWP
-M: MOV UP ACC
+   JMP M
 N: SWP
    MOV -1  DOWN
    MOV ACC DOWN
-   MOV UP ACC
+M: MOV UP ACC
    JNZ N
 Z: SWP
    MOV  1  DOWN

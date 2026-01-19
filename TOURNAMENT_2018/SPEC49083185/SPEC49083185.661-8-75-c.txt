@@ -63,8 +63,7 @@ S: MOV RIGHT ACC
 
    MOV -81 ACC
    ADD UP
-   JLZ L
-   JMP E
+   JGZ E
 L: ADD 20
    JLZ L
 

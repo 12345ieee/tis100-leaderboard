@@ -4,14 +4,13 @@ S: MOV 69 ACC
    JLZ L
    SUB 50
    JLZ L2
-   MOV ACC DOWN
-   JMP E
+   JMP M
 
 L: MOV  -2 DOWN
 L2:ADD 20
    MOV  -1 DOWN
    JLZ L2
-   MOV ACC DOWN
+M: MOV ACC DOWN
 E: JNZ S
 Z: MOV   9 DOWN
 
@@ -32,7 +31,8 @@ O: MOV ACC DOWN
 @2
 S: MOV -800 ACC
    ADD UP
-JMP E #J
+   JNZ E
+   JMP Z
 L: MOV  1 DOWN
 E: ADD 200
    JLZ L

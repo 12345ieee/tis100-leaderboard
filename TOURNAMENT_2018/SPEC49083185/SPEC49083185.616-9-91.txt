@@ -33,6 +33,7 @@ J: JRO UP
 @2
 S: MOV -700 ACC
    ADD UP
+   JLZ G
    JMP E
 G: ADD 200
    MOV  1 DOWN
@@ -73,9 +74,7 @@ J: JRO UP
 1: MOV -40 ACC
    ADD UP
    JLZ E
-   SUB 30
-   JLZ E
-G: SUB 30
+G: ADD -60
 E: ADD 10
    JLZ E
 O: MOV ACC DOWN

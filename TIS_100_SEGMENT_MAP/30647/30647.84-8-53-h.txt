@@ -47,8 +47,7 @@ S: ADD 1
 G: MOV ACC  RIGHT
    JRO ANY
 
-3: MOV -2   RIGHT
-   MOV 2    RIGHT
+3: JLZ G
 
 @5
    NEG

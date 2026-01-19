@@ -65,11 +65,10 @@ L: ADD 20
 E: SUB 10
    JLZ Z
    JMP E
-   JLZ L
-   JMP E
 Z: ADD 10
 O: MOV ACC DOWN
    JMP S
+   JMP E
    MOV LEFT DOWN
 
 @5

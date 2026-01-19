@@ -26,7 +26,7 @@ G: MOV ACC RIGHT
    JGZ *
 &: ADD 32
    JLZ &
-   SUB 16
+   SUB 17
    JGZ N
    ADD 16
 N: MOV -9 RIGHT
@@ -40,7 +40,6 @@ N: MOV -9 RIGHT
 @7
    MOV 64 ACC
 ^: JRO UP
-   HCF
    SUB 510
    ADD 448
    JMP .

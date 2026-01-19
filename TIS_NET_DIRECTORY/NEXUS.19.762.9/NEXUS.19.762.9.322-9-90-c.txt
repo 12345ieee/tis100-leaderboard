@@ -76,18 +76,16 @@ O: MOV RIGHT DOWN
    JMP S
 
 @5
-   JNZ S
-
+   JNZ W
 6: SWP
    SUB 1
-   SWP
+W: SWP
    JNZ S
 4: SUB 1
 S: JRO UP
    MOV UP   LEFT
    MOV ACC  UP
    MOV DOWN ACC
-   SWP
 
 8: MOV DOWN NIL
    MOV DOWN NIL

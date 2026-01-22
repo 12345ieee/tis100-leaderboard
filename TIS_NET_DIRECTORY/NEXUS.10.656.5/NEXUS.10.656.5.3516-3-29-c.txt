@@ -4,10 +4,10 @@
 @1
    MOV UP RIGHT
 
-G: SUB 20
+G: SUB 17
    JGZ G
 
-   ADD 933
+   ADD 791
 
 @2
 

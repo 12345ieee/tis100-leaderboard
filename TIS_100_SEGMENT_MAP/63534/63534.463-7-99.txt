@@ -1,5 +1,5 @@
 @0
-   MOV -32 ACC
+   MOV -65 ACC
    MOV UP  DOWN
    MOV UP  RIGHT
    MOV UP  RIGHT
@@ -11,7 +11,7 @@ L: SWP
 O: MOV ACC DOWN
    MOV ACC DOWN
    SWP
-   ADD 1
+   ADD 2
    JLZ L
    JMP O
 

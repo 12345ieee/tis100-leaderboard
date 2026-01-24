@@ -40,12 +40,6 @@ MOV -1 UP
 
 
 @7
-   ADD UP
-   JGZ O
-   JEZ O
-E: MOV -1  LAST
-S: MOV UP  ACC
-   JLZ L
    NEG
    SAV
    ADD UP
@@ -55,5 +49,11 @@ S: MOV UP  ACC
 O: MOV ACC ANY
 L: SWP
    SAV
+   ADD UP
+   JGZ O
+   JEZ O
+E: MOV -1  LAST
+S: MOV UP  ACC
+   JLZ L
 
 @8

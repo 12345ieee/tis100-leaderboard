@@ -1,0 +1,53 @@
+@0
+##BIGGIEMAC/EASONE
+
+@1
+   JRO UP
+   MOV -8 RIGHT
+   MOV -2 RIGHT
+   MOV 1 RIGHT
+
+@2
+   MOV -880 ACC
+   ADD UP
+   SWP
+   MOV 8 ACC
+   SWP
+   JEZ .
+A: ADD 10
+   SWP
+   SUB 1
+B: SWP
+   JLZ A
+.: JRO LEFT
+   MOV ACC DOWN
+
+@3
+#7136/4/29
+
+@4
+
+
+@5
+   ADD ANY
+   MOV ACC DOWN
+   ADD ACC
+   ADD ACC
+   ADD DOWN
+   ADD ACC
+
+@6
+
+
+@7
+
+
+@8
+   MOV UP UP
+   MOV UP UP
+   MOV UP DOWN
+   MOV 999 UP
+   MOV -999 UP
+   MOV UP UP
+
+@9

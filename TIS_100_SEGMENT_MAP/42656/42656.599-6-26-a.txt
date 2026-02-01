@@ -1,0 +1,50 @@
+@0
+
+
+@1
+   MOV -5 ACC
+
+A: SWP
+   JEZ Z
+   ADD 1
+   SWP
+Z: MOV ACC DOWN
+   JLZ A
+
+   MOV UP ACC
+   JGZ A
+
+@2
+
+
+@3
+
+
+@4
+MOV UP  ACC
+MOV UP  RIGHT
+MOV ACC RIGHT
+
+@5
+A: MOV LEFT RIGHT
+   MOV LEFT ACC
+   JEZ A
+
+   MOV LEFT DOWN
+   MOV LEFT DOWN
+
+B: MOV RIGHT DOWN
+   MOV ACC  DOWN
+   SWP
+   JEZ B
+
+@6
+MOV ANY ANY
+
+@7
+L: MOV UP  ACC
+   JLZ L
+   MOV ACC DOWN
+
+@8
+MOV UP UP

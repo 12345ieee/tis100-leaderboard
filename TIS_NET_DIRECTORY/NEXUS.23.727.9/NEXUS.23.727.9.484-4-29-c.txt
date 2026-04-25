@@ -1,5 +1,5 @@
 @0
-   MOV 74  ACC
+   MOV 64  ACC
 S: SUB 10
    MOV ACC LEFT
    JGZ S
@@ -55,4 +55,3 @@ MOV ACC LEFT
 MOV ACC DOWN
 
 @8
-

@@ -39,6 +39,7 @@ MOV ANY ANY
    JNZ N
    ADD 1
    JNZ N
+   JNZ N
    ADD 1
 N: JRO ANY
    MOV 0 ACC
@@ -46,9 +47,8 @@ N: JRO ANY
 
 @9
    MOV UP ACC
-J: JNZ N
+   JNZ N
    SUB 1
-   JMP J
 N: SUB 1
    MOV ACC ANY
 

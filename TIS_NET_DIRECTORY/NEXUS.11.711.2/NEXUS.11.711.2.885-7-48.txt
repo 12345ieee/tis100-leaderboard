@@ -5,18 +5,7 @@
 
 
 @2
-#G:MOV 1 ANY
-# MOV ACC LEFT
-# JGZ D
-# SUB Z
-#D:SUB X
-#L:ADD 2
-# JLZ L
-# JGZ G
-# MOV 1 LEFT
-# MOV ACC LEFT
-# SUB Y
-# JMP L
+
 
 @3
  ADD 29
@@ -44,20 +33,19 @@
 L: ADD 4
 
 @5
-   MOV 3 LEFT
-N: SUB 7
-   ADD 32
-G: SUB 1
-  JGZ G
+ MOV 3 LEFT
+ MOV 13  ACC
 
-   MOV 1 ANY
-   MOV 0 LEFT
-   SUB 234
-L: ADD 8
+G: SUB 2
+E: SUB 59
+
+L: ADD 2
   JLZ L
-   MOV 1 LEFT
-   MOV 1 ANY
-  JMP N
+
+  MOV 1 LEFT
+  MOV ACC LEFT
+ JEZ E
+ JMP G
 
 @6
 
@@ -83,7 +71,7 @@ G: MOV 0 RIGHT
    JGZ G
 
 @9
-MOV ANY DOWN
+ MOV ANY DOWN
 
 @10
  MOV 3 ANY

@@ -4,8 +4,7 @@
 @1
    ADD UP
    MOV ACC RIGHT
-   SWP
-   SUB 16
+   MOV -16 ACC
 S: SAV
    ADD UP
    MOV ACC RIGHT

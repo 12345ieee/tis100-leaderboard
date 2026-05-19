@@ -2,8 +2,7 @@
 
 
 @1
-   ADD UP
-   MOV ACC RIGHT
+   MOV UP RIGHT
    MOV -16 ACC
 S: SAV
    ADD UP

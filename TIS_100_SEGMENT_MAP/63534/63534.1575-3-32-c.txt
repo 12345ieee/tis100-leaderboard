@@ -3,9 +3,9 @@ A: MOV UP ACC
 MOV ACC RIGHT
 JEZ B
 SWP
-SUB 21
+SUB 31
 B: SWP
-JGZ A
+ADD 72
 C: ADD 1
 JLZ C
 
@@ -13,7 +13,7 @@ JLZ C
 
 
 @2
-#1646/3/32/C
+#1575/3/32/C
 
 @3
 

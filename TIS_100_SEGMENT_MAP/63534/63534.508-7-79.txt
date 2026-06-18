@@ -8,9 +8,8 @@ O: MOV ACC DOWN
    MOV ACC DOWN
    SWP
    ADD 1
-   JLZ L
-
-   JMP O
+   JGZ O
+   JMP L
 
 @1
 L: MOV LEFT ACC

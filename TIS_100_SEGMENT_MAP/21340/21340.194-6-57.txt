@@ -9,14 +9,17 @@ A: MOV UP DOWN
 
 @1
 
+
 @2
+
 
 @3
 
+
 @4
 C: MOV UP ACC
-   JGZ A
    JLZ B
+   JGZ A
    MOV 2 DOWN
    JMP C
 A: MOV UP ACC

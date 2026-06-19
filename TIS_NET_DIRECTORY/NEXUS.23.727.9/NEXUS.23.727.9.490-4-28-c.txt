@@ -1,6 +1,6 @@
 @0
-   MOV 82  ACC
-S: SUB 11
+   MOV 78  ACC
+S: SUB 12
    MOV ACC LEFT
    JGZ S
 
@@ -53,4 +53,3 @@ S: MOV UP ACC
    MOV UP DOWN
 
 @8
-

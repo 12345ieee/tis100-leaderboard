@@ -1,7 +1,7 @@
 @0
 EX: MOV UP ACC
-JLZ EL
 JGZ GX #EG
+JLZ EL
 EE: MOV -11 DOWN
 JMP A
 EL: MOV -19 DOWN
@@ -16,7 +16,7 @@ LX: MOV -5 DOWN
 JMP A
 
 @1
-#189/6/85
+#188/6/85
 
 @2
 

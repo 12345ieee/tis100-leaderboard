@@ -1,0 +1,44 @@
+@0
+#1368/3/19
+
+@1
+S: MOV UP ACC
+ADD ACC
+ADD ACC
+A: MOV ACC DOWN
+SUB 16
+JGZ A
+ADD 8
+JGZ B
+JEZ C
+MOV 8 DOWN
+C: MOV 998 DOWN
+JMP S
+B: MOV 997 DOWN
+
+@2
+
+
+@3
+
+
+@4
+MOV UP DOWN
+
+@5
+
+
+@6
+
+
+@7
+
+
+@8
+MOV -991 ACC
+A: SUB 6
+ADD UP
+JLZ A
+MOV ACC DOWN
+
+@9

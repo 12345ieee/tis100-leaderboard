@@ -6,17 +6,17 @@
 1:  MOV 3 DOWN
 S:  MOV 25 ACC
     SUB UP
-    JLZ 123
+   JLZ 123
 LO: SUB 25
-    JGZ 23
+   JGZ 23
 0:  MOV 2 DOWN
     MOV 25 ACC
     SUB UP
-    JGZ LO
+   JGZ LO
 123:ADD 25
-    JGZ 1
+   JGZ 1
 23: MOV ACC DOWN
-    JMP S
+   JMP S
 
 @2
 
@@ -25,17 +25,21 @@ LO: SUB 25
 
 
 @4
-JRO UP
+   JRO UP
 LO: SUB 2
-MOV ACC DOWN
+    MOV ACC DOWN
+
 S: MOV UP ACC
-JGZ LO
+ JGZ LO
+
 HI: ADD 25
-JGZ 2
+ JGZ 2
+
 3: MOV 3 DOWN
-JMP S
+ JMP S
+
 2: MOV 2 DOWN
-JMP S
+ JMP S
 
 @5
 
@@ -55,7 +59,7 @@ E: MOV ANY ACC
    ADD 1
    SWP
    SUB LEFT
-   JEZ E
+  JEZ E
    ADD LEFT
    SWP
    MOV ACC DOWN

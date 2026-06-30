@@ -1,5 +1,6 @@
 @0
 
+
 @1
    MOV 11 ACC
    SWP
@@ -30,6 +31,7 @@ S: SUB RIGHT
    MOV ACC DOWN
 
 @3
+
 
 @4
    MOV UP ACC
@@ -63,15 +65,14 @@ E: MOV 1 RIGHT
 
 @7
    MOV UP ACC
-   SUB RIGHT
-   JLZ E
+   JMP S
 M: MOV -1 RIGHT
    MOV LEFT LEFT
    SUB RIGHT
    JLZ E
    MOV -1 RIGHT
    MOV LEFT LEFT
-   SUB RIGHT
+S: SUB RIGHT
    JLZ E
    JMP M
 E: MOV 1 RIGHT

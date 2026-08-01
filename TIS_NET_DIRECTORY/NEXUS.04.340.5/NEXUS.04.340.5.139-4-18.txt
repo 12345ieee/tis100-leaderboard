@@ -1,0 +1,45 @@
+@0
+#139/4/18
+
+@1
+A: MOV UP ACC
+MOV UP RIGHT
+JEZ A
+B: MOV RIGHT NIL
+SUB 1
+JGZ B
+
+@2
+MOV LEFT ACC
+A: SUB 2
+MOV UP ANY
+JLZ B
+MOV UP ANY
+JGZ A
+B: MOV UP DOWN
+MOV 0 DOWN
+C: MOV UP ACC
+JNZ C
+
+@3
+
+
+@4
+
+
+@5
+
+
+@6
+MOV UP DOWN
+
+@7
+
+
+@8
+
+
+@9
+MOV UP DOWN
+
+@10

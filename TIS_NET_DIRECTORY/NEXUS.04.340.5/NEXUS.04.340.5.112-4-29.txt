@@ -4,7 +4,6 @@
 @1
 MOV UP ACC
 JNZ B
-NEG
 ADD 11
 JMP C
 B: ADD 6

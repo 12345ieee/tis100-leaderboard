@@ -143,8 +143,8 @@ S:  MOV 162 ACC
    JGZ 40
 2:  ADD 160
     MOV 2 LEFT
-   JLZ 2
    JGZ 40
+   JLZ 2
     MOV 2 LEFT
     MOV -19 LEFT
     JMP S

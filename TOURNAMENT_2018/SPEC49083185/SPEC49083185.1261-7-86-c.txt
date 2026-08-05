@@ -18,12 +18,11 @@ O: MOV RIGHT ANY
 @2
    MOV 199 ACC
    SUB UP
-   JLZ G
-   JRO 4
+   JGZ S
 G: ADD 200
    MOV  1 LEFT
    JLZ G
-   SUB 99
+S: SUB 99
    JGZ L
    ADD 19
    MOV  2 LEFT

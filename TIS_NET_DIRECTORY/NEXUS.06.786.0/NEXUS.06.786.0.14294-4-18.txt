@@ -1,0 +1,45 @@
+@0
+#14399/4/17
+
+@1
+MOV UP RIGHT
+
+@2
+MOV UP ACC
+MOV ACC DOWN
+SUB LEFT
+ADD 1
+JLZ B
+A: SUB 38
+MOV -19 DOWN
+JGZ A
+JEZ A
+B: ADD 2
+MOV 1 DOWN
+JLZ B
+C: MOV 0 DOWN
+
+@3
+
+
+@4
+
+
+@5
+MOV ANY ACC
+ADD UP
+MOV ACC DOWN
+
+@6
+
+
+@7
+
+
+@8
+
+
+@9
+MOV UP ANY
+
+@10

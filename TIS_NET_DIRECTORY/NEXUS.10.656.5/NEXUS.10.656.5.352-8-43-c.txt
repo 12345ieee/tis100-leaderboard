@@ -5,7 +5,7 @@ G: SUB 1
    MOV RIGHT DOWN
    JGZ G
 
-   MOV 999   DOWN
+   MOV 999 DOWN
    JRO -1
 
 @1
@@ -15,8 +15,7 @@ MOV ACC RIGHT
 MOV ACC LEFT
 
 @2
-   MOV LEFT NIL
-   MOV 0    ACC
+   MOV 999 LEFT
 
 L: ADD LEFT
 G: SAV

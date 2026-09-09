@@ -48,9 +48,7 @@ MOV ACC DOWN
   JMP J
 0: MOV 2 UP
    ADD DOWN
-L: ADD 30
-J:JLZ L
-   SUB 12
+J: SUB 12
   JLZ >
 
 <: SUB 30

@@ -43,9 +43,7 @@ MOV ACC DOWN
   JMP J
 0: ADD DOWN
    MOV 3 UP
-L: ADD 30
-J:JLZ L
-   SUB 12
+J: SUB 12
   JLZ >
 
 <: SUB 30
@@ -87,7 +85,6 @@ J:JLZ L # CHANGE
 
 D: ADD 398
    MOV LEFT NIL
-   NOP
 S: SUB 265
   JMP J
 

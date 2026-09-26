@@ -6,14 +6,13 @@ S:MOV -5 ACC
  ADD 4 # 3 = -4
  SUB 8 # 4 = -8
  ADD 5 # 5 =  0
-       # 6 = -5
  MOV -999 RIGHT
  JEZ S
  MOV RIGHT DOWN
-L:ADD DOWN
- MOV ACC RIGHT
+L:MOV ACC RIGHT
  MOV ACC DOWN
- JLZ L
+ SUB DOWN
+ JNZ L
 
 @1
 S:MOV LEFT DOWN
@@ -44,14 +43,14 @@ MOV 999 LEFT
 
 @4
 MOV DOWN NIL
-MOV LAST NIL
+MOV LAST LAST
 MOV 0 DOWN
-MOV ANY ACC
-G: MOV 0 UP
+MOV UP ACC
+G: MOV 0 ANY
 SUB 1
 MOV UP DOWN
 JGZ G
-MOV 999 UP
+MOV -999 ANY
 MOV -12 DOWN
 
 @5
@@ -98,8 +97,23 @@ ADD 99
 MOV ACC ANY
 
 @8
-#ADD 1
+# ADD 1
 
-# 795C FIRST !
+# T3
+# 2 :
+# 3 :
+# 4 :
+# 6 :
 
 @9
+# T1
+# 2 : 575
+# 3 : 318
+# 4 : 430
+# 6 : 239
+
+# T2!
+# 2 : 299
+# 3 : 663
+# 4 : 372
+# 6 : 480

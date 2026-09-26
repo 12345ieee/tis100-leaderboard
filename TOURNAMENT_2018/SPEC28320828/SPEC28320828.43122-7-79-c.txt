@@ -95,9 +95,7 @@ ADD 99
 MOV ACC ANY
 
 @8
-ADD 1
-
-# 795C FIRST !
+# ADD 1
 
 # T3
 # 2 :

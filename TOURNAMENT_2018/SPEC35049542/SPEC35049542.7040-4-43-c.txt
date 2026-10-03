@@ -1,7 +1,4 @@
 @0
-L: ADD 11
-   MOV 55 RIGHT
-   ADD LAST
 
 G: SUB 9
    JLZ L
@@ -9,6 +6,9 @@ G: SUB 9
 
    MOV -18 ANY
    MOV UP RIGHT
+L: ADD 11
+   MOV 55 RIGHT
+   ADD LAST
 
 @1
 
@@ -22,7 +22,7 @@ G: MOV ACC DOWN
    JGZ G
    ADD ANY
    JLZ L
-   !
+
    MOV DOWN RIGHT
    JRO -1
 

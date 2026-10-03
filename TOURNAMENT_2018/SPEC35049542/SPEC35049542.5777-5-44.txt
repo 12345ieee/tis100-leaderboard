@@ -1,0 +1,68 @@
+@0
+   MOV 361 ACC
+
+G: MOV 27 RIGHT
+   SUB 40
+   JGZ G
+   MOV -18 RIGHT
+
+   MOV UP DOWN
+   JRO -1
+
+@1
+
+
+@2
+MOV UP RIGHT
+
+@3
+N: MOV ACC DOWN
+   MOV UP  ACC
+   JGZ N
+   ADD ANY
+   JLZ E
+   !
+   MOV DOWN RIGHT
+   JRO -1
+E: MOV -18 UP
+L: MOV DOWN UP
+   ADD 2
+   JLZ L
+   JGZ G
+   MOV 26 ACC
+G: ADD DOWN
+
+@4
+   MOV ACC DOWN
+   JRO DOWN
+
+   MOV DOWN  ACC
+   SWP
+   JGZ E
+
+   MOV LEFT ACC
+G: SWP
+   ADD 1
+   SWP
+E: SUB 26
+   JGZ G
+L: ADD 5
+   JLZ L
+
+@5
+
+
+@6
+   ADD 17
+   MOV UP DOWN
+   JLZ L
+
+   MOV -1  DOWN
+   MOV  0  DOWN
+   MOV ACC DOWN
+   SUB 511
+
+   MOV  1 UP
+L: MOV -1 UP
+
+@7

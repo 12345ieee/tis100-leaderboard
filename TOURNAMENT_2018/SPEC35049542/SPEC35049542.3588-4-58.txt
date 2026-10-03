@@ -13,7 +13,7 @@ L: MOV 1 RIGHT
    SWP
    ADD 1
    JLZ S
-   MOV 0 RIGHT!
+   MOV 0 RIGHT
 
 @1
 
@@ -33,16 +33,15 @@ E: ADD 2
    JLZ L
    JGZ G
    MOV -40 ACC
-   ADD DOWN
-   JGZ N
-   MOV 200 DOWN
 G: ADD DOWN
+   JGZ N
+   ADD 205
 
 @4
    MOV  4  ACC
    SWP
    MOV ACC LAST
-   MOV -40 ACC
+   MOV -35 ACC
    ADD LEFT
    JLZ L
 G: SWP

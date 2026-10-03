@@ -35,7 +35,7 @@ E: ADD 2
    MOV -40 ACC
 G: ADD DOWN
    JGZ N
-   ADD 200
+   ADD 205
 
 @4
    MOV  5  ACC

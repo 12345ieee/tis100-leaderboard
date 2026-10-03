@@ -1,0 +1,77 @@
+@0
+   MOV 321 ACC
+G: MOV 170 RIGHT
+   SUB 40
+   JGZ G
+S: SWP
+   MOV -18 ACC
+   ADD UP
+   MOV ACC RIGHT
+L: MOV 1 RIGHT
+   ADD RIGHT
+   JLZ L
+   SWP
+   ADD 1
+   JLZ S
+   MOV 0 RIGHT!
+
+@1
+
+
+@2
+
+
+@3
+N: MOV ACC DOWN
+   MOV UP  ACC
+   JGZ N
+   JLZ E
+   MOV DOWN RIGHT
+   JRO -1
+L: MOV DOWN UP
+E: ADD 2
+   JLZ L
+   JGZ G
+   MOV -40 ACC
+   ADD DOWN
+   JGZ N
+   MOV 200 DOWN
+G: ADD DOWN
+
+@4
+   MOV  4  ACC
+   SWP
+   MOV ACC LAST
+   MOV -40 ACC
+   ADD LEFT
+   JLZ L
+G: SWP
+   SUB 1
+   SWP
+   SUB 40
+   JGZ G
+L: ADD 5
+   JLZ L
+   MOV ACC ANY
+
+@5
+
+
+@6
+L: ADD 17
+   SWP
+   MOV ACC DOWN
+   MOV ACC DOWN
+E: MOV ACC DOWN
+   MOV ACC DOWN
+   SWP
+   JLZ L
+   MOV -1  DOWN
+   MOV  0  DOWN
+   MOV ACC DOWN
+   SUB 120
+   SWP
+   MOV UP ACC
+   JMP E
+
+@7

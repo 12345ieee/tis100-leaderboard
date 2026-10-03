@@ -1,0 +1,67 @@
+@0
+   MOV 54 ACC
+G: MOV 170 RIGHT
+S: SUB 6
+L: JGZ G
+   ADD 1
+   JLZ L
+   MOV -1 ACC
+   SUB UP
+   MOV ACC RIGHT
+   JMP S
+
+@1
+
+
+@2
+
+
+@3
+   MOV ANY ACC
+   JGZ G
+L: MOV DOWN LAST
+   ADD 2
+   JLZ L
+   JNZ N
+   MOV -40 ACC
+N: ADD ANY
+   JGZ G
+   ADD 200
+G: MOV ACC DOWN
+
+@4
+   ADD 936
+   JGZ W
+   MOV -2 LEFT
+   MOV LEFT ACC
+G: SWP
+   SUB 1
+   SWP
+   SUB 40
+   JGZ G
+   MOV ACC DOWN
+   MOV -1 ACC
+   SWP
+   MOV ACC DOWN
+W: SUB 937
+
+@5
+
+
+@6
+   MOV  0  DOWN
+   MOV ACC DOWN
+   SUB 579
+   SWP
+   MOV UP ACC
+5: ADD 5
+   JLZ 5
+   JMP E
+L: ADD 20
+   SWP
+E: MOV ACC DOWN
+   SWP
+   JLZ L
+   MOV -1  DOWN
+
+@7
